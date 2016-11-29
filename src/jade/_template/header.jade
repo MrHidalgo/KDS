@@ -1,0 +1,25 @@
+
+.header
+    .container
+        include macros/logo
+
+        .header__wrap
+            .header__wrap-row.block_skew
+
+            include macros/nav
+
+            include macros/slogan
+
+
+
+    .maps-arrow
+        i.maps-arrow__icon
+        p.maps-arrow__title!= "Киев"
+        p.maps-arrow__data!= "<span class='maps-arrow__num'>11</span> марта"
+
+
+    a(href="javascript:vois(0);", class="btn btn-header", title="start")
+        div.btn_orange.btn_small.block_skew
+        p.btn__text!= "СТАРТ"
+
+    include macros/bottomInfo

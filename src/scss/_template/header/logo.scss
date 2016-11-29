@@ -1,0 +1,84 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+
+
+
+///
+/// MAIN
+///
+.img-logo {
+	width: 172px;
+}
+.img-logo-mobile {
+	width: 110px;
+}
+
+
+.img-logo,
+.img-logo-mobile {
+	float: left;
+	margin-top: render-pixel(30px);
+	@include respond-to("small") {
+		margin-top: 15px;
+	}
+
+	&-mobile_normal,
+	&-mobile_normal-retina,
+	&_retina {
+		display: none;
+	}
+
+	&_normal {
+		@include respond-to("small") {
+			display: none;
+		}
+	}
+
+	&-mobile_normal {
+		@include respond-to("small") {
+			display: block;
+		}
+	}
+}
+///
+/// RETINA DISPLAY
+///
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(   min--moz-device-pixel-ratio: 2),
+(     -o-min-device-pixel-ratio: 2/1),
+(        min-device-pixel-ratio: 2),
+(                min-resolution: 192dpi),
+(                min-resolution: 2dppx)
+{
+	/// WIDTH 320 ->
+	@media (min-width: 300px) {
+		.img-logo,
+		.img-logo-mobile {
+			&_normal{
+				display: none;
+			}
+		}
+	}
+
+	/// WIDTH 320 <-> 767
+	@media (min-width: 300px) and (max-width: 767px) {
+		.img-logo-mobile {
+			&_retina {
+				display: block;
+			}
+		}
+	}
+
+	/// WIDTH 768 ->
+	@media (min-width: 768px) {
+		.img-logo {
+			&_retina {
+				display: block;
+			}
+		}
+	}
+}

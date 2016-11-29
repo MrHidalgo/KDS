@@ -1,152 +1,102 @@
 @font-face {
-	font-family: 'Fira Sans ExtraLight';
-	src:
-		url("../fonts/firasansextralight.woff2") format("woff2"),
-		url("../fonts/firasansextralight.woff") format("woff"),
-		url("../fonts/firasansextralight.ttf") format("truetype");
+	font-family: 'Gotham Condensed Bold';
+		src: url("../fonts/Gotham Condensed Bold.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans ExtraLight Italic';
-	src:
-		url("../fonts/firasansextralightitalic.woff2") format("woff2"),
-		url("../fonts/firasansextralightitalic.woff") format("woff"),
-		url("../fonts/firasansextralightitalic.ttf") format("truetype");
+	font-family: 'Gotham Condensed Book Regular';
+		src: url("../fonts/Gotham Condensed Book Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Light';
-	src:
-		url("../fonts/firasanslight.woff2") format("woff2"),
-		url("../fonts/firasanslight.woff") format("woff"),
-		url("../fonts/firasanslight.ttf") format("truetype");
+	font-family: 'Gotham Condensed Light Regular';
+		src: url("../fonts/Gotham Condensed Light Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Light Italic';
-	src:
-		url("../fonts/firasanslightitalic.woff2") format("woff2"),
-		url("../fonts/firasanslightitalic.woff2") format("woff"),
-		url("../fonts/firasanslightitalic.ttf") format("truetype");
+	font-family: 'Gotham Condensed Light';
+		src: url("../fonts/Gotham Condensed Light.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Book';
-	src:
-		url("../fonts/firasansbook.woff2") format("woff2"),
-		url("../fonts/firasansbook.woff") format("woff"),
-		url("../fonts/firasansbook.ttf") format("truetype");
+	font-family: 'Gotham Condensed Medium';
+		src: url("../fonts/Gotham Condensed Medium.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Book Italic';
-	src:
-		url("../fonts/firasansbookitalic.woff2") format("woff2"),
-		url("../fonts/firasansbookitalic.woff") format("woff"),
-		url("../fonts/firasansbookitalic.ttf") format("truetype");
+	font-family: 'GothaProBla';
+		src: url("../fonts/GothaProBla.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Regular';
-	src:
-		url("../fonts/firasans.woff2") format("woff2"),
-		url("../fonts/firasans.woff") format("woff"),
-		url("../fonts/firasans.ttf") format("truetype");
+	font-family: 'GothaProBlaIta';
+		src: url("../fonts/GothaProBlaIta.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Italic';
-	src:
-		url("../fonts/firasansitalic.woff2") format("woff2"),
-		url("../fonts/firasansitalic.woff") format("woff"),
-		url("../fonts/firasansitalic.ttf") format("truetype");
+	font-family: 'GothaProBol';
+		src: url("../fonts/GothaProBol.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Medium';
-	src:
-		url("../fonts/firasansmedium.woff2") format("woff2"),
-		url("../fonts/firasansmedium.woff") format("woff"),
-		url("../fonts/firasansmedium.ttf") format("truetype");
+	font-family: 'GothaProBolIta';
+		src: url("../fonts/GothaProBolIta.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Medium Italic';
-	src:
-		url("../fonts/firasansmediumitalic.woff2") format("woff2"),
-		url("../fonts/firasansmediumitalic.woff") format("woff"),
-		url("../fonts/firasansmediumitalic.ttf") format("truetype");
+	font-family: 'GothaProIta';
+		src: url("../fonts/GothaProIta.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans SemiBold';
-	src:
-		url("../fonts/firasanssemibold.woff2") format("woff2"),
-		url("../fonts/firasanssemibold.woff") format("woff"),
-		url("../fonts/firasanssemibold.ttf") format("truetype");
+	font-family: 'GothaProLig';
+		src: url("../fonts/GothaProLig.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans SemiBold Italic';
-	src:
-		url("../fonts/firasanssemibolditalic.woff2") format("woff2"),
-		url("../fonts/firasanssemibolditalic.woff") format("woff"),
-		url("../fonts/firasanssemibolditalic.ttf") format("truetype");
+	font-family: 'GothaProLigIta';
+		src: url("../fonts/GothaProLigIta.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Bold';
-	src:
-		url("../fonts/firasansbold.woff2") format("woff2"),
-		url("../fonts/firasansbold.woff") format("woff"),
-		url("../fonts/firasansbold.ttf") format("truetype");
+	font-family: 'GothaProMed';
+		src: url("../fonts/GothaProMed.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Fira Sans Bold Italic';
-	src:
-		url("../fonts/firasansbolditalic.woff2") format("woff2"),
-		url("../fonts/firasansbolditalic.woff") format("woff"),
-		url("../fonts/firasansbolditalic.ttf") format("truetype");
+	font-family: 'GothaProMedIta';
+		src: url("../fonts/GothaProMedIta.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Verdana Bold Italic';
-	src: url("../fonts/Verdana Bold Italic.otf") format("opentype");
+	font-family: 'GothaProNarBol';
+		src: url("../fonts/GothaProNarBol.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Verdana Bold';
-	src: url("../fonts/Verdana Bold.otf") format("opentype");
+	font-family: 'GothaProNarMed';
+		src: url("../fonts/GothaProNarMed.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Verdana Italic';
-	src: url("../fonts/Verdana Italic.otf") format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Verdana';
-	src:
-		url("../fonts/verdana.otf") format("opentype"),
-		url("../fonts/verdana.ttf") format('truetype');
+	font-family: 'GothaProReg';
+		src: url("../fonts/GothaProReg.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }

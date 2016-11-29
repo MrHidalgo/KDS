@@ -1,0 +1,11 @@
+-
+    var linkText = [
+        "О конференции",
+        "Спикеры",
+        "Расписание"
+    ];
+
+
+.nav
+    -for(var i = 0; i < 3; i++)
+        a(href="javascript:void(0);", class="nav__link", title="linkText[i]")!= linkText[i]

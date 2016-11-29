@@ -1,0 +1,81 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+@import "../../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all      : return-value(dimension, all);
+
+$c-white    : return-value(color, white);
+
+$f-GP_bold  : return-value(fonts, GP_bold);
+$f-GP_light : return-value(fonts, GP_light);
+
+///
+/// MAIN
+///
+.bottom-info {
+	position: absolute;
+	bottom: 0;  left: 0;
+
+	@include mixinDimensions($w-all, render-pixel(84px));
+	min-height: 84px;
+	line-height: 84px;
+
+	background-color: rgba(0,0,0,0.7);
+	color: $c-white;
+	text-align: center;
+	@include respond-to("small") {
+		height: auto;
+		line-height: normal;
+		padding: 10px 0;
+	}
+
+
+	&__title {
+		font: {
+			size: 21px;
+			family: $f-GP_bold;
+		}
+	}
+
+
+	&__icon {
+		margin: 0 15px 0 20px;
+		vertical-align: middle;
+		@include retina-sprite($sp-i-bottom-info-group);
+		@include respond-to("small") {
+			margin: 10px auto;
+		}
+	}
+
+
+	&__text {
+		font: {
+			size: 15px;
+			family: $f-GP_light;
+		}
+	}
+
+
+	&__title,
+	&__text {
+		vertical-align: top;
+		@include respond-to("small") {
+			font-size: 14px;
+		}
+	}
+
+
+	&__title,
+	&__icon,
+	&__text {
+		display: inline-block;
+		@include respond-to("small") {
+			display: block;
+		}
+	}
+}

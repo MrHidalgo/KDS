@@ -5,11 +5,17 @@ doctype html
 html(lang="en")
 
 
-    +headSite("", "", "")
+    +headSite("KDS", linkSite.fontLink, "")
 
 
     body
 
 
-        - for(var i = 0; i < ""; i++)
-            script(src= "")
+        // BLOCK HEADER [nav, bottomInfo, logo, slogan]
+        block header
+            include _template/header
+
+
+
+        - for(var i = 0; i < linkSite.scriptLink.length; i++)
+            script(src= linkSite.scriptLink[i])

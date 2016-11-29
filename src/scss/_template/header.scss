@@ -1,0 +1,93 @@
+///
+/// IMPORT BLOCK
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// IMPORT TEMPLATE
+///
+@import "header/nav";
+@import "header/logo";
+@import "header/bottomInfo";
+@import "header/slogan";
+///
+/// DECLARATION VARIABLE
+///
+$w-all        : return-value(dimension, all);
+
+$c-whiteSmoke : return-value(color, whiteSmoke);
+$c-summerSky  : return-value(color, summerSky);
+$c-dimGray    : return-value(color, dimGray);
+
+$f-GP_bold    : return-value(fonts, GP_bold);
+$f-GP_light   : return-value(fonts, GP_light);
+
+
+///
+/// MAIN
+///
+.header {
+	position: relative;
+	min-height: render-pixel(925);
+	overflow: hidden;
+
+	background: $c-whiteSmoke url("../img/img-header-bg.png") no-repeat bottom right;
+
+
+	&__wrap {
+		position: absolute;
+		@include mixinDimensions($w-all);
+		top: 0;
+		left: 0;
+
+		&-row {
+			position: absolute;
+			top: 0;
+			left: -80px;
+			background: $c-summerSky;
+			min-width: 930px;
+			min-height: 925px;
+			box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
+		}
+	}
+}
+
+.maps-arrow {
+	position: absolute;
+	right: 420px; bottom: 450px;
+	color: $c-dimGray;
+	font: {
+		family: $f-GP_bold;
+	}
+
+
+	&__icon {
+		float: right;
+		@include retina-sprite($sp-i-header-arrow-maps-group);
+	}
+	&__title {
+
+	}
+	&__data {
+		font-family: $f-GP_light;
+	}
+	&__num {
+		font-family: $f-GP_bold;
+		color: $c-summerSky;
+	}
+
+	&__title,
+	&__data {
+		line-height: 1;
+		position: relative;
+		top: 15px;
+	}
+
+
+	&__title,
+	&__data,
+	&__num {
+		font-size: 35px;
+	}
+}

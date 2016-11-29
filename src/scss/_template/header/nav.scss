@@ -1,0 +1,37 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$c-white    : return-value(color, white);
+
+$f-GP_bold  : return-value(fonts, GP_bold);
+
+
+///
+/// MAIN
+///
+.nav {
+	position: absolute;
+	top: 100px;
+	right: 15px;
+
+
+	&__link {
+		font: {
+			size: 15px;
+			family: $f-GP_bold;
+		}
+		color: $c-white;
+		margin-left: 100px;
+		text-transform: uppercase;
+
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+}

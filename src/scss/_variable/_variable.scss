@@ -6,15 +6,47 @@
 /// @name   object
 ///
 
+// Gotham Condensed --> GC
+// Gotham Pro       --> GP
 
 $object : (
 	color : (
 		white             : #fff,
-		black             : #000
+		whisper           : #e6e6e6,
+		gainsboro         : #e1e1e1,
+		whiteSmoke        : #f3f3f3,
+		black             : #000,
+		dimGray           : #676767,
+		nobel             : #979797,
+		selectiveYellow   : #ffb103,
+		darkOrange        : #ff8d0d,
+		orange            : #ffad00,
+		summerSky         : #269ed8,
+		pelorous          : #1b89be,
+		freeSpeechRed     : #d70808,
+		darkPastelGreen   : #10bc2c,
+
 	),
 
 	fonts : (
+		GC_bold           : "Gotham Condensed Bold",
+		GC_bookRegular    : "Gotham Condensed Book Regular",
+		GC_lightRegular   : "Gotham Condensed Light Regular",
+		GC_light          : "Gotham Condensed Light",
+		GC_medium         : "Gotham Condensed Medium",
 
+		GP_black          : "GothaProBla",
+		GP_blackItaly     : "GothaProBlaIta",
+		GP_bold           : "GothaProBol",
+		GP_boldItaly      : "GothaProBolIta",
+		GP_italy          : "GothaProIta",
+		GP_light          : "GothaProLig",
+		GP_lightItaly     : "GothaProLigIta",
+		GP_medium         : "GothaProMed",
+		GP_mediumItaly    : "GothaProMedIta",
+		GP_narBold        : "GothaProNarBol",
+		GP_narMedium      : "GothaProNarMed",
+		GP_regular        : "GothaProReg"
 	),
 
 	dimension : (

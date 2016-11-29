@@ -4,14 +4,13 @@
 @import "_mixin/mixin";
 @import "_function/function";
 ///
-///	SPRITE
-///
-//@import "_variable/sprite_NLP";
-///
 /// IMPORT TEMPLATE
 ///
 @import "_template/_grid";
 @import "_template/_base";
+
+@import "_template/header";
+
 
 ///
 /// DECLARATION VARIABLE
@@ -19,6 +18,8 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+
+$f-GP_regular       : return-value(fonts, GP_regular);
 
 
 
@@ -48,9 +49,9 @@ body{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	//font-family: $f-FS_regular;
-	//
-	//background: $c-aliceBlue url("../img/img-bg.png") repeat top right;
+	font-family: $f-GP_regular;
+
+	background-color: $c-white;
 }
 
 * {
