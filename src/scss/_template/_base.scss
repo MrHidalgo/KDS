@@ -1,0 +1,10 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$c-white				: return-value(color, white);
+
+///
+/// MAIN
+///
