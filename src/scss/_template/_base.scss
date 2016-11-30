@@ -8,6 +8,7 @@ $w-all          : return-value(dimension, all);
 $c-white				: return-value(color, white);
 $c-darkOrange 	: return-value(color, darkOrange);
 $c-orange     	: return-value(color, orange);
+$c-dimGray 	    : return-value(color, dimGray);
 
 $f-GP_bold      : return-value(fonts, GP_bold);
 
@@ -15,10 +16,8 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 ///
 /// MAIN
 ///
-.block {
-	&_skew {
-		transform: skewX(-45deg);
-	}
+.block_skew {
+	transform: skewX(-45deg);
 }
 
 .btn {
@@ -26,15 +25,32 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 
 
 	&-header {
-		position: absolute;
 		bottom: 165px;
+		@include respond-to("medium") {
+			left: 100px;
+		}
+	}
+
+	&-timer {
+		top: -15px;
+	}
+
+
+	&-header,
+	&-timer {
+		position: absolute;
+		z-index: 11;
 		left: 0;
 		right: 0;
 		margin: auto;
+		max-width: 310px;
 		color: $c-white;
 		font: {
 			size: 20px;
 			family: $f-GP_bold;
+		}
+		@include respond-to("medium") {
+			max-width: 300px;
 		}
 	}
 
@@ -47,9 +63,14 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 
 	&_small {
 		margin: auto;
-		max-width: 310px;
+		max-width: 260px;
 		height: 60px;
 		line-height: 60px;
+		@include respond-to("medium") {
+			max-width: 250px;
+			height: 55px;
+			line-height: 55px;
+		}
 	}
 
 
@@ -59,5 +80,19 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 		left: 0;
 		line-height: 60px;
 		@include mixinDimensions($w-all);
+		@include respond-to("medium") {
+			line-height: 55px;
+		}
+	}
+}
+
+
+.main {
+	&__title {
+		color: $c-dimGray;
+		font-size: 45px;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 40px;
 	}
 }

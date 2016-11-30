@@ -329,7 +329,9 @@ $breakpoints: (
 	'small'             : screen and (min-width: 480px) and (max-width:  767px),
 	'small-all'         : screen and (max-width: 767px),
 	'medium'            : screen and (min-width: 768px) and (max-width:  991px),
+	'medium-all'        : screen and (max-width: 991px),
 	'large'             : screen and (min-width: 992px) and (max-width: 1199px),
+	'large-all'         : screen and (max-width: 1199px),
 	'extra_large'       : screen and (min-width: 1200px)
 );
 

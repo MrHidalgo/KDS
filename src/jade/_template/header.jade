@@ -8,18 +8,21 @@
 
             include macros/nav
 
+            a(href="javascript:void(0);", class="btn-mobile", title="burger button")
+                span.btn-mobile__line
+
             include macros/slogan
 
 
+            .maps-arrow
+                i.maps-arrow__icon
+                p.maps-arrow__title!= "Киев"
+                p.maps-arrow__data!= "<span class='maps-arrow__num'>11</span> <span class='maps-arrow__month'>марта</span>"
 
-    .maps-arrow
-        i.maps-arrow__icon
-        p.maps-arrow__title!= "Киев"
-        p.maps-arrow__data!= "<span class='maps-arrow__num'>11</span> марта"
 
+            a(href="javascript:void(0);", class="btn btn-header", title="start")
+                div.btn_orange.btn_small.block_skew
+                p.btn__text!= "СТАРТ"
 
-    a(href="javascript:vois(0);", class="btn btn-header", title="start")
-        div.btn_orange.btn_small.block_skew
-        p.btn__text!= "СТАРТ"
 
     include macros/bottomInfo

@@ -1,0 +1,159 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-dimGray   		    : return-value(color, dimGray);
+$c-summerSky 		    : return-value(color, summerSky);
+$c-selectiveYellow  : return-value(color, selectiveYellow);
+$c-whiteSmoke       : return-value(color, whiteSmoke);
+
+$f-GP_light         : return-value(fonts, GP_light);
+
+///
+/// MAIN
+///
+.timer {
+	min-height: 840px;
+	padding-top: 150px;
+	padding-bottom: 30px;
+
+
+	&__seconds {
+		width: 100%;
+		margin-left: 25px;
+		height: 108px;
+		background-color: $c-whiteSmoke;
+		margin-bottom: 40px;
+		box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.25);
+
+
+		&-row {
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+
+	&__data {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 40px;
+
+
+		&-time {
+			text-align: center;
+			width: (100 / 7) * 1%;
+		}
+
+
+		&-line {
+			width: 2px;
+			height: 100px;
+			background-color: $c-whiteSmoke;
+		}
+
+
+		&_value {
+			font: {
+				size: 100px;
+			}
+			color: $c-summerSky;
+			line-height: 1;
+		}
+		&_text {
+			font: {
+				size: 19px;
+			}
+		}
+		&_value,
+		&_text {
+			font: {
+				family: $f-GP_light;
+			}
+		}
+	}
+
+
+	&__btn {
+		height: 25px;
+		margin-top: 15px;
+		margin-left: 25px;
+		background-color: $c-summerSky;
+	}
+
+
+	&__info {
+		text-align: center;
+		margin-bottom: 40px;
+
+
+		&-icon {
+			margin-right: 20px;
+			@include retina-sprite($sp-i-info-group);
+		}
+
+
+		&-text {
+			font-size: 20px;
+			color: $c-summerSky;
+
+			&_color {
+				color: $c-selectiveYellow;
+			}
+		}
+
+
+		&-icon,
+		&-text {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+.seconds {
+	&__wrap {
+		margin: 0 5px;
+		position: relative;
+
+
+		&-line {
+			display: inline-block;
+			width: 1px;
+			height: 10px;
+			margin: 0 6px;
+			background-color: $c-dimGray;
+			vertical-align: middle;
+
+			&:first-of-type,
+			&:last-of-type {
+				height: 13px;
+			}
+			//
+			//&:before {
+			//	content: attr(data-second);
+			//	top: 0;
+			//}
+			//
+			//&:after {
+			//	//content: attr(data-text);
+			//}
+			//
+			//&:before,
+			//&:after {
+			//	position: absolute;
+			//}
+		}
+	}
+}

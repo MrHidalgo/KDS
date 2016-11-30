@@ -1,0 +1,54 @@
+mixin secondsLine(num)
+    - var sec = 1;
+    - for(var i = 0; i < num; i++)
+        div(class="seconds__wrap")
+            -for(var j = 0; j < 5; j++)
+                span(class="seconds__wrap-line", data-second= sec, data-text="секунд")
+                - sec++
+
+
+.timer
+    h2.main__title!= "НАЧАЛО ЧЕРЕЗ"
+
+    .timer__seconds
+        .container
+            .timer__seconds-row
+                +secondsLine(12)
+
+    .container
+        .timer__data
+            div.timer__data-month.timer__data-time
+                p.timer__data_value!= "4"
+                p.timer__data_text!= "месяца"
+
+            div.timer__data-line.block_skew
+
+            div.timer__data-day.timer__data-time
+                p.timer__data_value!= "14"
+                p.timer__data_text!= "дней"
+
+            div.timer__data-line.block_skew
+
+            div.timer__data-hour.timer__data-time
+                p.timer__data_value!= "22"
+                p.timer__data_text!= "часа"
+
+            div.timer__data-line.block_skew
+
+            div.timer__data-minute.timer__data-time
+                p.timer__data_value!= "10"
+                p.timer__data_text!= "минут"
+
+
+        h3.main__title!= "ГДЕ?"
+
+        .timer__info
+            i.timer__info-icon
+            span.timer__info-text!= "<span class='timer__info-text_color'>Киев, ВДНХ</span> 11 марта 11:00"
+
+    .timer__btn
+        .container
+            a(href="javascript:void(0);", class="btn btn-timer", title="start")
+                div.btn_orange.btn_small.block_skew
+                p.btn__text!= "СТАРТ"
+

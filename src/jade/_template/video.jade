@@ -1,0 +1,21 @@
+-
+    var videoText1 = "<strong class='video__text_bold'>Kyiv Data Spring</strong> - одно из крупнейших мероприятий про данные в Восточной Европе. Этот фестиваль  – главная площадка, где встречаются и делятся знаниями люди, заинтересованные в развитии больших данных и машинного обучения.";
+    var videoText2 = "Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.";
+
+
+.video
+
+    .video__skale-blue.block_skew
+    .video__skale-white.block_skew
+    .video__skale-gray.block_skew
+
+    .container.video__row
+        .video__row_present
+            video(id='video', width='100%', height='100%', autoplay=false, muted=false, loop=false, controls=true)
+                source(src='')
+
+
+        .video__row_static
+            p.video__text!= videoText1
+            br
+            p.video__text!= videoText2

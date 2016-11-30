@@ -19,6 +19,7 @@ $f-GP_light : return-value(fonts, GP_light);
 ///
 .bottom-info {
 	position: absolute;
+	z-index: 11;
 	bottom: 0;  left: 0;
 
 	@include mixinDimensions($w-all, render-pixel(84px));

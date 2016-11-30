@@ -31,34 +31,116 @@ $f-GP_light   : return-value(fonts, GP_light);
 	position: relative;
 	min-height: render-pixel(925);
 	overflow: hidden;
-
-	background: $c-whiteSmoke url("../img/img-header-bg.png") no-repeat bottom right;
+	background: $c-whiteSmoke;
 
 
 	&__wrap {
 		position: absolute;
-		@include mixinDimensions($w-all);
+		width: $w-all;
+		min-width: 930px;
+		min-height: 925px;
 		top: 0;
 		left: 0;
+		@include respond-to("medium-all") {
+			min-width: $w-all;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			@include mixinDimensions(1061px, 700px);
+			right: -333px;
+			top: 225px;
+			background: url("../img/img-headerMap-desktop.png") no-repeat;
+			@include respond-to("large-all") {
+				@include mixinDimensions(600px, 532px);
+				right: -250px;
+				top: 393px;
+				background-image: url("../img/img-headerMap-tablet.png");
+			}
+		}
 
 		&-row {
 			position: absolute;
+			z-index: 10;
 			top: 0;
 			left: -80px;
 			background: $c-summerSky;
 			min-width: 930px;
 			min-height: 925px;
 			box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
+			@include respond-to("medium") {
+				min-width: 800px;
+			}
+		}
+	}
+}
+
+
+.btn-mobile {
+	display: none;
+	position: absolute;
+	z-index: 11;
+	right: 15px;
+	top: 55px;
+	@include mixinDimensions(55px);
+	border-radius: $w-all;
+	background-color: $c-summerSky;
+	box-shadow: 0 4px 15px 4px rgba(0,0,0,0.2);
+	@include respond-to("medium-all") {
+		display: block;
+	}
+
+
+	&__line {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin: -1px auto 0;
+		@include mixinDimensions(20px, 2px);
+		background-color: $c-white;
+
+
+		&:before {
+			top: -6px;
+		}
+		&:after {
+			bottom: -6px;
+		}
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			@include mixinDimensions(20px, 2px);
+			background-color: $c-white;
 		}
 	}
 }
 
 .maps-arrow {
 	position: absolute;
-	right: 420px; bottom: 450px;
+	z-index: 11;
+	right: 80px;
+	top: 50%;
+	margin-top: -60px;
 	color: $c-dimGray;
 	font: {
 		family: $f-GP_bold;
+	}
+	@include respond-to("large") {
+		right: 40px;
+		top: 60%;
+		margin-top: 0;
+	}
+	@include respond-to("medium") {
+		right: 40px;
+		top: 60%;
+		margin-top: 0;
+	}
+	@include respond-to("small-all") {
+		display: none;
 	}
 
 
@@ -84,10 +166,19 @@ $f-GP_light   : return-value(fonts, GP_light);
 		top: 15px;
 	}
 
+	&__title,
+	&__data {
+		font-size: 35px;
+	}
 
 	&__title,
-	&__data,
-	&__num {
-		font-size: 35px;
+	&__data {
+		@include respond-to("medium") {
+			font-size: 20px;
+			line-height: inherit;
+			position: relative;
+			top: 30px;
+			left: 50px;
+		}
 	}
 }

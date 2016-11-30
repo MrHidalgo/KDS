@@ -10,8 +10,9 @@
 @import "_template/_base";
 
 @import "_template/header";
-
-
+@import "_template/advantages";
+@import "_template/video";
+@import "_template/timer";
 ///
 /// DECLARATION VARIABLE
 ///
@@ -20,9 +21,7 @@ $w-all              : return-value(dimension, all);
 $c-white            : return-value(color, white);
 
 $f-GP_regular       : return-value(fonts, GP_regular);
-
-
-
+$f-GP_bold          : return-value(fonts, GP_bold);
 ///
 /// MAIN BLOCK
 ///
@@ -49,7 +48,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	font-family: $f-GP_regular;
+	font-family: $f-GP_bold;
 
 	background-color: $c-white;
 }

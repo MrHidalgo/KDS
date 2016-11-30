@@ -72,14 +72,39 @@
 
 
 .btn-header {
-  position: absolute;
   bottom: 165px;
+}
+
+@media (max-width: 991px) {
+  
+  .btn-header {
+    left: 100px;
+  }
+}
+
+
+.btn-timer {
+  top: -15px;
+}
+
+
+.btn-header, .btn-timer {
+  position: absolute;
+  z-index: 11;
   left: 0;
   right: 0;
   margin: auto;
+  max-width: 310px;
   color: #fff;
   font-size: 20px;
   font-family: "GothaProBol";
+}
+
+@media (max-width: 991px) {
+  
+  .btn-header, .btn-timer {
+    max-width: 300px;
+  }
 }
 
 
@@ -91,9 +116,18 @@
 
 .btn_small {
   margin: auto;
-  max-width: 310px;
+  max-width: 260px;
   height: 60px;
   line-height: 60px;
+}
+
+@media (max-width: 991px) {
+  
+  .btn_small {
+    max-width: 250px;
+    height: 55px;
+    line-height: 55px;
+  }
 }
 
 
@@ -106,6 +140,22 @@
   height: 100%;
 }
 
+@media (max-width: 991px) {
+  
+  .btn__text {
+    line-height: 55px;
+  }
+}
+
+
+.main__title {
+  color: #676767;
+  font-size: 45px;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
 
 
 
@@ -115,8 +165,16 @@
 
 .nav {
   position: absolute;
+  z-index: 11;
   top: 100px;
   right: 15px;
+}
+
+@media (max-width: 991px) {
+  
+  .nav {
+    display: none;
+  }
 }
 
 
@@ -213,6 +271,7 @@
 
 .bottom-info {
   position: absolute;
+  z-index: 11;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -244,7 +303,7 @@
   margin: 0 15px 0 20px;
   vertical-align: middle;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px 0px;
+  background-position: 0px -178px;
   width: 43px;
   height: 37px;
 }
@@ -253,7 +312,7 @@
   
   .bottom-info__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 43px 69px;
+    background-size: 130px 410px;
   }
 }
 
@@ -297,7 +356,8 @@
 
 .slogan {
   position: absolute;
-  top: 355px;
+  z-index: 11;
+  top: 340px;
   left: 15px;
 }
 
@@ -307,6 +367,13 @@
   font-family: "GothaProBol";
   line-height: 1.3;
   margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  
+  .slogan__title {
+    font-size: 40px;
+  }
 }
 
 
@@ -326,21 +393,52 @@
   position: relative;
   min-height: 57.8125em;
   overflow: hidden;
-  background: #f3f3f3 url("../img/img-header-bg.png") no-repeat bottom right;
+  background: #f3f3f3;
 }
 
 
 .header__wrap {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-width: 930px;
+  min-height: 925px;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 991px) {
+  
+  .header__wrap {
+    min-width: 100%;
+  }
+}
+
+
+.header__wrap:after {
+  content: "";
+  position: absolute;
+  width: 1061px;
+  height: 700px;
+  right: -333px;
+  top: 225px;
+  background: url("../img/img-headerMap-desktop.png") no-repeat;
+}
+
+@media (max-width: 1199px) {
+  
+  .header__wrap:after {
+    width: 600px;
+    height: 532px;
+    right: -250px;
+    top: 393px;
+    background-image: url("../img/img-headerMap-tablet.png");
+  }
 }
 
 
 .header__wrap-row {
   position: absolute;
+  z-index: 10;
   top: 0;
   left: -80px;
   background: #269ed8;
@@ -349,20 +447,107 @@
   box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
+@media (max-width: 991px) {
+  
+  .header__wrap-row {
+    min-width: 800px;
+  }
+}
+
+
+.btn-mobile {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  right: 15px;
+  top: 55px;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: #269ed8;
+  box-shadow: 0 4px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  
+  .btn-mobile {
+    display: block;
+  }
+}
+
+
+.btn-mobile__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -1px auto 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+
+.btn-mobile__line:before {
+  top: -6px;
+}
+
+
+.btn-mobile__line:after {
+  bottom: -6px;
+}
+
+
+.btn-mobile__line:after, .btn-mobile__line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
 
 .maps-arrow {
   position: absolute;
-  right: 420px;
-  bottom: 450px;
+  z-index: 11;
+  right: 80px;
+  top: 50%;
+  margin-top: -60px;
   color: #676767;
   font-family: "GothaProBol";
+}
+
+@media (max-width: 1199px) {
+  
+  .maps-arrow {
+    right: 40px;
+    top: 60%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  
+  .maps-arrow {
+    right: 40px;
+    top: 60%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .maps-arrow {
+    display: none;
+  }
 }
 
 
 .maps-arrow__icon {
   float: right;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -42px;
+  background-position: 0px -220px;
   width: 20px;
   height: 27px;
 }
@@ -371,7 +556,7 @@
   
   .maps-arrow__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 43px 69px;
+    background-size: 130px 410px;
   }
 }
 
@@ -394,8 +579,502 @@
 }
 
 
-.maps-arrow__title, .maps-arrow__data, .maps-arrow__num {
+.maps-arrow__title, .maps-arrow__data {
   font-size: 35px;
+}
+
+@media (max-width: 991px) {
+  
+  .maps-arrow__title, .maps-arrow__data {
+    font-size: 20px;
+    line-height: inherit;
+    position: relative;
+    top: 30px;
+    left: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+.advantages {
+  min-height: 470px;
+}
+
+
+.advantages__row {
+  height: 470px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.advantages__wrap {
+  display: inline-block;
+  padding-right: 10px;
+  width: 33.33333%;
+}
+
+
+.advantages__icon {
+  position: relative;
+  display: block;
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px -283px;
+  width: 130px;
+  height: 127px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .advantages__icon {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 130px 410px;
+  }
+}
+
+
+.advantages__icon:before, .advantages__icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+
+.advantages__icon:after {
+  bottom: -20px;
+  background-color: #269ed8;
+  width: 16px;
+  height: 5px;
+}
+
+
+.advantages__text {
+  margin-top: 50px;
+  color: #676767;
+  font-size: 21px;
+}
+
+@media (max-width: 991px) {
+  
+  .advantages__text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .advantages__text {
+    font-size: 15px;
+  }
+}
+
+
+.advantages__wrap.speaker .advantages__icon:before {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px -119px;
+  width: 57px;
+  height: 54px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .advantages__wrap.speaker .advantages__icon:before {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 130px 410px;
+  }
+}
+
+
+.advantages__wrap.flow .advantages__icon:before {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px 0px;
+  width: 99px;
+  height: 54px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .advantages__wrap.flow .advantages__icon:before {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 130px 410px;
+  }
+}
+
+
+.advantages__wrap.reporter .advantages__icon:before {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px -59px;
+  width: 55px;
+  height: 55px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .advantages__wrap.reporter .advantages__icon:before {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 130px 410px;
+  }
+}
+
+
+.video {
+  position: relative;
+  height: 450px;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  
+  .video {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  
+  .video {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .video {
+    padding: 30px 0;
+  }
+}
+
+
+.video__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  
+  .video__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+
+.video__row_present {
+  width: 570px;
+}
+
+@media (max-width: 991px) {
+  
+  .video__row_present {
+    width: 100%;
+  }
+}
+
+
+.video__row_present video {
+  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+}
+
+@media (max-width: 991px) {
+  
+  .video__row_present video {
+    margin-bottom: 30px;
+  }
+}
+
+
+.video__row_static {
+  width: 600px;
+  padding: 15px 30px;
+}
+
+@media (max-width: 991px) {
+  
+  .video__row_static {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.video__text {
+  color: #676767;
+  font-size: 16px;
+  font-family: "GothaProLig";
+}
+
+
+.video__text_bold {
+  color: #1a1a1a;
+}
+
+
+.video__skale-blue {
+  background-color: #269ed8;
+  left: -58.82353%;
+}
+
+@media (max-width: 767px) {
+  
+  .video__skale-blue {
+    left: -80%;
+  }
+}
+
+@media (max-width: 479px) {
+  
+  .video__skale-blue {
+    left: -100%;
+  }
+}
+
+
+.video__skale-gray {
+  background-color: #f3f3f3;
+  right: -76.92308%;
+}
+
+@media (max-width: 767px) {
+  
+  .video__skale-gray {
+    right: -80%;
+  }
+}
+
+@media (max-width: 479px) {
+  
+  .video__skale-gray {
+    right: -100%;
+  }
+}
+
+
+.video__skale-white {
+  width: 33.33333%;
+  background-color: #fff;
+  left: 100%;
+}
+
+
+.video__skale-blue, .video__skale-white, .video__skale-gray {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+
+.video__skale-blue, .video__skale-gray {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.timer {
+  min-height: 840px;
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+
+.timer__seconds {
+  width: 100%;
+  margin-left: 25px;
+  height: 108px;
+  background-color: #f3f3f3;
+  margin-bottom: 40px;
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.timer__seconds-row {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.timer__data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+
+.timer__data-time {
+  text-align: center;
+  width: 14.28571%;
+}
+
+
+.timer__data-line {
+  width: 2px;
+  height: 100px;
+  background-color: #f3f3f3;
+}
+
+
+.timer__data_value {
+  font-size: 100px;
+  color: #269ed8;
+  line-height: 1;
+}
+
+
+.timer__data_text {
+  font-size: 19px;
+}
+
+
+.timer__data_value, .timer__data_text {
+  font-family: "GothaProLig";
+}
+
+
+.timer__btn {
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 25px;
+  background-color: #269ed8;
+}
+
+
+.timer__info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.timer__info-icon {
+  margin-right: 20px;
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px -252px;
+  width: 20px;
+  height: 26px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .timer__info-icon {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 130px 410px;
+  }
+}
+
+
+.timer__info-text {
+  font-size: 20px;
+  color: #269ed8;
+}
+
+
+.timer__info-text_color {
+  color: #ffb103;
+}
+
+
+.timer__info-icon, .timer__info-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.seconds__wrap {
+  margin: 0 5px;
+  position: relative;
+}
+
+
+.seconds__wrap-line {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #676767;
+  vertical-align: middle;
+}
+
+
+.seconds__wrap-line:first-of-type, .seconds__wrap-line:last-of-type {
+  height: 13px;
 }
 
 
@@ -418,7 +1097,7 @@ body {
   line-height: 1.42857143;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "GothaProReg";
+  font-family: "GothaProBol";
   background-color: #fff;
 }
 

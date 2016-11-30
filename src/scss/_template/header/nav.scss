@@ -16,8 +16,12 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 ///
 .nav {
 	position: absolute;
+	z-index: 11;
 	top: 100px;
 	right: 15px;
+	@include respond-to("medium-all") {
+		display: none;
+	}
 
 
 	&__link {

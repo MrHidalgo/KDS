@@ -1,0 +1,86 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-dimGray   		: return-value(color, dimGray);
+$c-summerSky 		: return-value(color, summerSky);
+
+///
+/// MAIN
+///
+.advantages {
+	min-height: 470px;
+
+
+	&__row {
+		height: 470px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	&__wrap {
+		display: inline-block;
+		padding-right: 10px;
+		width: (100 / 3) * 1%;
+	}
+
+
+	&__icon {
+		position: relative;
+		display: block;
+		@include retina-sprite($sp-i-triangle-gray-group);
+
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+		}
+
+		&:after {
+			bottom: -20px;
+			background-color: $c-summerSky;
+			@include mixinDimensions(16px, 5px);
+		}
+	}
+
+
+	&__text {
+		margin-top: 50px;
+		color: $c-dimGray;
+		font-size: 21px;
+		@include respond-to("medium") {
+			font-size: 17px;
+		}
+		@include respond-to("small-all") {
+			font-size: 15px;
+		}
+	}
+}
+
+
+@each $className, $imgName in
+	("speaker",   $sp-i-advantages-speaker-group),
+	("flow",      $sp-i-advantages-flow-group),
+	("reporter",  $sp-i-advantages-reporter-group)
+{
+	.advantages__wrap.#{$className} {
+		.advantages__icon{
+			&:before {
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				@include retina-sprite($imgName);
+			}
+		}
+	}
+}

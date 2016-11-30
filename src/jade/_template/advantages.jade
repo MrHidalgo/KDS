@@ -1,0 +1,19 @@
+-
+    var advantagesDataClass = [
+        "speaker",
+        "flow",
+        "reporter"
+    ];
+    var advantagesDataText = [
+        "2 топ спикера </br> из Европы и США",
+        "2 потока для </br> Бизнеса и разработчиков ",
+        "Более </br> 15 докладчиков"
+    ];
+
+.advantages
+    .container
+        .advantages__row
+            - for(var i = 0, advLen = advantagesDataClass.length; i < advLen; i++)
+                div(class="advantages__wrap " + advantagesDataClass[i])
+                    .advantages__icon
+                    p.advantages__text!= advantagesDataText[i]
