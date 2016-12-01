@@ -1,0 +1,145 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-dimGray   		    : return-value(color, dimGray);
+$c-summerSky 		    : return-value(color, summerSky);
+$c-whiteSmoke       : return-value(color, whiteSmoke);
+
+$f-GP_light         : return-value(fonts, GP_light);
+///
+/// MAIN
+///
+.footer {
+	position: relative;
+	min-height: 250px;
+	background-color: $c-whiteSmoke;
+	@include respond-to("small-all") {
+		min-height: 140px;
+	}
+
+
+	&__row {
+		min-height: 250px;
+		padding-bottom: 50px;
+		@include respond-to("small-all") {
+			min-height: 140px;
+			padding-bottom: 15px;
+		}
+	}
+
+
+	&__wrap {
+		position: absolute;
+		width: 280px;
+		height: 250px;
+		background-color: $c-summerSky;
+		box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
+	}
+
+
+	&__text-wrap {
+		position: absolute;
+		left: 50px;
+		top: 50%;
+		margin-top: -44px;
+		z-index: 11;
+		color: $c-white;
+	}
+
+
+	&__name {
+		font-size: 21px;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+
+
+	&__text {
+		position: relative;
+		font: {
+			size: 15px;
+			family: $f-GP_light;
+		}
+
+
+		&-main {
+			position: absolute;
+			left: 50px;
+			width: 200px;
+		}
+	}
+
+
+	&__icon {
+		float: left;
+		@include retina-sprite($sp-i-bottom-info-group);
+	}
+
+
+	&__left {
+		@include respond-to("small-all") {
+			display: none;
+		}
+	}
+
+
+	&__left,
+	&__right {
+		float: left;
+		width: 50%;
+		height: 100%;
+	}
+
+
+	&__right-wrap {
+		text-align: right;
+		position: absolute;
+		bottom: 50px;
+		right: 15px;
+		@include respond-to("small-all") {
+			width: 100%;
+			text-align: center;
+			bottom: 15px;
+		}
+	}
+
+
+	&__soc {
+		margin-bottom: 20px;
+	}
+
+
+	&__soc-icon {
+		width: 30px;
+		margin: 0 7.5px;
+		@include respond-to("small-all") {
+			width: 40px;
+		}
+	}
+
+
+	&__copyright {
+		color: $c-dimGray;
+		font-family: $f-GP_light;
+	}
+
+
+	&__line {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 2px;
+		height: 100%;
+		background-color: darken($c-whiteSmoke, 5%);
+		@include respond-to("medium") {
+			display: none;
+		}
+	}
+}

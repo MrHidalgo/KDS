@@ -1,0 +1,271 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-whiteSmoke  	    : return-value(color, whiteSmoke);
+$c-darkOrange  	    : return-value(color, darkOrange);
+$c-orange     	    : return-value(color, orange);
+$c-summerSky   	    : return-value(color, summerSky);
+$c-pelorous   	    : return-value(color, pelorous);
+$c-dimGray    	    : return-value(color, dimGray);
+
+$f-GP_black         : return-value(fonts, GP_black);
+$f-GP_regular       : return-value(fonts, GP_regular);
+$f-GP_medium        : return-value(fonts, GP_medium);
+///
+/// MAIN
+///
+.program {
+	position: relative;
+	padding: 100px 0 60px;
+
+
+	&__line {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		height: 85px;
+		width: $w-all;
+		background-color: $c-whiteSmoke;
+	}
+
+
+	&__left {
+		@include respond-to("medium-all") {
+			margin-bottom: 100px;
+		}
+		.program__block {
+			border: 3px solid $c-orange;
+			background-color: $c-darkOrange;
+
+
+			.icon-triangle-0 {
+				&:before {
+					@include retina-sprite($sp-i-triangle-y-0-group);
+					left: -40px;
+					top: 30px;
+				}
+				&:after {
+					@include retina-sprite($sp-i-triangle-y-1-group);
+					top: -30px;
+					right: -20px;
+				}
+			}
+			.icon-triangle-1 {
+				&:before {
+					@include retina-sprite($sp-i-triangle-y-2-group);
+					bottom: -60px;
+					right: -50px;
+				}
+			}
+
+
+			&-line {
+				background-color: $c-orange;
+			}
+		}
+
+
+		.program__desc {
+			&-time {
+				&:after {
+					@include retina-sprite($sp-i-desc-pr-tr-y-group);
+				}
+			}
+
+
+			&-text {
+				border-left: 3px solid $c-orange;
+			}
+		}
+	}
+
+
+	&__right {
+		.program__block {
+			border: 3px solid $c-summerSky;
+			background-color: $c-pelorous;
+
+
+			.icon-triangle-0 {
+				&:before {
+					@include retina-sprite($sp-i-triangle-b-0-group);
+					bottom: -50px;
+					left: -60px;
+				}
+				&:after {
+					@include retina-sprite($sp-i-triangle-b-1-group);
+					top: -50px;
+					left: 50px;
+				}
+			}
+			.icon-triangle-1 {
+				&:before {
+					@include retina-sprite($sp-i-triangle-b-2-group);
+					top: 60px;
+					right: -30px;
+				}
+			}
+
+			&-line {
+				background-color: $c-summerSky;
+			}
+		}
+
+
+		.program__desc {
+			&-time {
+				&:after {
+					@include retina-sprite($sp-i-desc-pr-tr-b-group);
+				}
+			}
+
+
+			&-text {
+				border-left: 3px solid $c-summerSky;
+			}
+		}
+	}
+
+
+	&__left,
+	&__right {
+		position: relative;
+		float: left;
+		width: 50%;
+		text-align: center;
+		@include respond-to("medium-all") {
+			float: none;
+			display: block;
+			width: $w-all;
+		}
+	}
+
+
+	&__block {
+		position: relative;
+		max-width: 500px;
+		min-height: 250px;
+		box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+		border-radius: 10px;
+		margin: 0 auto 80px;
+		padding: 15px;
+		color: $c-white;
+		@include respond-to("large") {
+			max-width: 380px;
+		}
+		@include respond-to("medium-all") {
+			width: 100%;
+			max-width: 100%;
+		}
+
+
+		.icon-triangle-0,
+		.icon-triangle-1 {
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+			}
+		}
+
+		.icon-triangle-1 {
+			&:after {
+				@include retina-sprite($sp-i-triangle-gray-group);
+				top: 20px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				opacity: 0.1;
+			}
+		}
+
+
+		&-line {
+			position: absolute;
+			left: 80px;
+			bottom: -83px;
+			width: 3px;
+			height: 80px;
+		}
+	}
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-GP_black;
+		}
+		padding: 25px 0;
+	}
+
+
+	&__text {
+		font-family: $f-GP_regular;
+		text-align: left;
+	}
+
+
+	&__title,
+	&__text {
+		position: relative;
+		z-index: 11;
+	}
+
+
+	&__desc {
+		position: relative;
+		max-width: 500px;
+		min-height: 80px;
+		margin: 0 auto;
+		text-align: left;
+		@include respond-to("large") {
+			max-width: 380px;
+		}
+		@include respond-to("medium-all") {
+			width: 100%;
+			max-width: 100%;
+		}
+
+
+		&-time {
+			position: absolute;
+			top: 5px;
+			width: 83px;
+			text-align: center;
+
+
+			&:after {
+				content: "";
+				background-color: $c-white;
+				position: absolute;
+				right: -10px;
+				top: 0;
+			}
+		}
+
+		&-text {
+			float: left;
+			min-height: 90px;
+			margin-left: 83px;
+			padding: 5px 0 5px 15px;
+			color: $c-dimGray;
+		}
+
+
+		&-name {
+			font-family: $f-GP_medium;
+			margin-bottom: 5px;
+		}
+
+
+		&-what {
+			font-family: $f-GP_regular;
+		}
+	}
+}

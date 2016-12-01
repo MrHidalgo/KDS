@@ -1,0 +1,41 @@
+mixin programDescr(textDescription)
+    .program__desc.clearfix
+        p.program__desc-time!= "9.00"
+        .program__desc-text
+            p.program__desc-name!= "Руслан Савчишин, MagneticOne Group"
+            p.program__desc-what!= textDescription
+
+
+
+.program
+
+    .program__line
+
+    .container.clearfix
+
+        .program__left
+            .program__block
+                p.program__title!= "BUSINESS STAGE"
+                p.program__text!= "Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе."
+                i.icon-triangle-0
+                i.icon-triangle-1
+
+                span.program__block-line
+
+            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт")
+            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт ")
+            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить...")
+            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт")
+
+
+        .program__right
+            .program__block
+                p.program__title!= "IT STAGE"
+                p.program__text!= "Поток для разработчиков и ученых, которые создают новые технологии."
+                i.icon-triangle-0
+                i.icon-triangle-1
+
+                span.program__block-line
+
+            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт")
+            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт")

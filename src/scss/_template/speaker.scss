@@ -1,0 +1,199 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-whiteSmoke  	    : return-value(color, whiteSmoke);
+$c-summerSky   	    : return-value(color, summerSky);
+$c-darkOrange  	    : return-value(color, darkOrange);
+$c-orange     	    : return-value(color, orange);
+$c-dimGray     	    : return-value(color, dimGray);
+
+$f-GP_bold          : return-value(fonts, GP_bold);
+$f-GP_regular       : return-value(fonts, GP_regular);
+///
+/// MAIN
+///
+.speaker {
+	padding-top: 40px;
+	padding-bottom: 80px;
+
+
+	&__main-row {
+		margin-bottom: 50px;
+	}
+
+
+	&__dop-row {}
+
+
+	&__main-row,
+	&__dop-row {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: space-between;
+		text-align: center;
+		cursor: pointer;
+		flex-wrap: wrap;
+	}
+
+
+	&__main-block {
+		position: relative;
+		width: 290px;
+		height: 500px;
+		border-radius: 10px;
+		border: 3px solid transparent;
+		transition-duration: .5s;
+		transition-timing-function: ease-in-out;
+		@include respond-to("large") {
+			width: 320px;
+		}
+
+
+		.wrap {
+			width: 270px;
+			margin: 0 auto;
+			padding: 25px 5px;
+		}
+
+
+		&:hover {
+			border: 3px solid $c-orange;
+			background-color: $c-darkOrange;
+			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+			transition-property: border, background-color, box-shadow;
+
+
+			.speaker__img {
+				box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+				transition-property: box-shadow;
+			}
+			.speaker__block-name,
+			.speaker__block-work {
+				color: $c-white;
+				transition-property: color;
+			}
+			.icon-speaker-0,
+			.icon-speaker-1 {
+				&:before,
+				&:after {
+					opacity: 1;
+					transition-property: opacity;
+				}
+			}
+		}
+	}
+
+
+	&__dop-block {
+		width: 170px;
+		@include respond-to("large") {
+			width: 300px;
+			margin-bottom: 20px;
+		}
+
+
+		.speaker__img {
+			margin-bottom: 15px;
+		}
+	}
+
+
+	&__img {
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+
+
+	&__block {
+		&-name {
+			position: relative;
+			margin-bottom: 30px;
+			font-size: 22px;
+
+
+			&:before {
+				top: -10px;
+			}
+
+
+			&:after {
+				bottom: -10px;
+			}
+
+
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				background-color: $c-white;
+				@include mixinDimensions(30px, 5px);
+			}
+		}
+
+
+		&-work {
+			font: {
+				size: 18px;
+				family: $f-GP_regular;
+			}
+		}
+
+
+		&-name,
+		&-work {
+			color: $c-dimGray;
+		}
+	}
+
+
+	&__dop-block {
+		.speaker__block-name,
+		.speaker__block-work {
+			font-size: 15px;
+		}
+	}
+}
+
+
+.icon-speaker {
+	&-0 {
+		&:before {
+			@include retina-sprite($sp-i-triangle-y-0-group);
+			left: -20px;
+			top: 150px;
+		}
+		&:after {
+			@include retina-sprite($sp-i-triangle-y-1-group);
+			top: -10px;
+			right: -30px;
+		}
+	}
+	&-1 {
+		&:before {
+			@include retina-sprite($sp-i-triangle-y-2-group);
+			bottom: 130px;
+			right: -20px;
+		}
+	}
+
+
+	&-0,
+	&-1 {
+		&:before,
+		&:after {
+			opacity: 0;
+			content: "";
+			position: absolute;
+		}
+	}
+}

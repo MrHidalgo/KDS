@@ -1,0 +1,71 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$c-whiteSmoke   : return-value(color, whiteSmoke);
+///
+/// MAIN
+///
+.partner {
+	margin-bottom: 100px;
+}
+
+
+.sponsor,
+.partner {
+	.main__title {
+		margin: 70px 0;
+	}
+
+
+	&__row {
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include respond-to("medium-all") {
+			height: 200px;
+		}
+
+		&:nth-child(n + 2) {
+			margin-top: 50px;
+		}
+	}
+
+
+	&__line {
+		height: 50px;
+		width:  2px;
+		background-color: $c-whiteSmoke;
+		@include respond-to("medium-all") {
+			margin-bottom: 50px;
+		}
+
+		&:nth-of-type(2) {
+			@include respond-to("medium-all") {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.img {
+	&-sponsorRarther {
+		max-width: 100%;
+		@include respond-to("small-all") {
+			max-width: 60%;
+		}
+	}
+
+	&__wrap {
+		@include respond-to("medium-all") {
+			width: 49%;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	}
+}

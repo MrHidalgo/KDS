@@ -1,0 +1,21 @@
+
+.speaker
+    p.main__title!= "НАШИ СПИКЕРЫ"
+
+    .container
+        .speaker__main-row
+            - for(var i = 0; i < 4; i++)
+                .speaker__main-block
+                    .wrap
+                        img(src="./img/img-speaker.png", class="speaker__img")
+                        p.speaker__block-name!= "Константинопольский </br> Николай"
+                        p.speaker__block-work!= "WebPromoExperts"
+                    i.icon-speaker-0
+                    i.icon-speaker-1
+
+        .speaker__dop-row
+            - for(var i = 0; i < 6; i++)
+                .speaker__dop-block
+                    img(src="./img/img-speaker-small.png", class="speaker__img")
+                    p.speaker__block-name!= "Константинопольский </br> Николай"
+                    p.speaker__block-work!= "WebPromoExperts"

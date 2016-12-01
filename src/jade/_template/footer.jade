@@ -1,0 +1,31 @@
+-
+    var socialBtn = [
+        "vk",
+        "fb",
+        "be"
+    ];
+
+
+
+.footer
+    .container.clearfix.footer__row
+
+        .footer__left
+            .footer__wrap.block_skew
+            .footer__text-wrap
+                p.footer__name!= "Организатор </br> конференции:"
+                p.footer__text
+                    i.footer__icon
+                    span.footer__text-main!= "Data-Driven Digital Agency Septa."
+
+        .footer__right
+            .footer__right-wrap
+                .footer__soc
+                    - for(var i = 0; i < 3; i++)
+                        a(href="javascript:void(0);", class="btn btn " + socialBtn[i])
+                            img(src="./img/i-" + socialBtn[i] + ".svg", class="footer__soc-icon")
+
+                p.footer__copyright!= "Copyright &copy; 2016. All rights reserved"
+
+
+        .footer__line.block_skew

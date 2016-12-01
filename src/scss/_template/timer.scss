@@ -13,7 +13,6 @@ $c-selectiveYellow  : return-value(color, selectiveYellow);
 $c-whiteSmoke       : return-value(color, whiteSmoke);
 
 $f-GP_light         : return-value(fonts, GP_light);
-
 ///
 /// MAIN
 ///
@@ -140,20 +139,20 @@ $f-GP_light         : return-value(fonts, GP_light);
 			&:last-of-type {
 				height: 13px;
 			}
-			//
-			//&:before {
-			//	content: attr(data-second);
-			//	top: 0;
-			//}
-			//
-			//&:after {
-			//	//content: attr(data-text);
-			//}
-			//
-			//&:before,
-			//&:after {
-			//	position: absolute;
-			//}
+
+			&:before {
+				//content: attr(data-second);
+				top: 0;
+			}
+
+			&:after {
+				//content: attr(data-text);
+			}
+
+			&:before,
+			&:after {
+				//position: absolute;
+			}
 		}
 	}
 }

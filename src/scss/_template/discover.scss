@@ -1,0 +1,79 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-whiteSmoke  	    : return-value(color, whiteSmoke);
+$c-summerSky   	    : return-value(color, summerSky);
+
+$f-GP_bold          : return-value(fonts, GP_bold);
+///
+/// MAIN
+///
+.discover {
+	min-height: 560px;
+	background: $c-whiteSmoke url("../img/img-bg-discover.png") left bottom repeat-x;
+
+
+	&__wrap {
+		width: 900px;
+		min-height: 560px;
+		background-color: $c-summerSky;
+		box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
+		@include respond-to("large") {
+			width: 700px;
+		}
+		@include respond-to("medium-all") {
+			width: 650px;
+			position: relative;
+			left: -100px;
+		}
+	}
+
+
+	&__row {
+		position: absolute;
+		top: 50%;
+		left: 140px;
+		color: $c-white;
+		margin-top: -118px;
+		@include respond-to("large") {
+			left: 130px;
+		}
+		@include respond-to("medium-all") {
+			left: 30px;
+		}
+	}
+
+
+	&__title {
+		font-size: 30px;
+		line-height: 1.5;
+		margin-bottom: 70px;
+		@include respond-to("small-all") {
+			font-size: 20px;
+			margin-bottom: 40px;
+		}
+	}
+
+
+	&__subtitle {
+		font-size: 22px;
+		@include respond-to("large") {
+			width: 400px;
+		}
+		@include respond-to("small-all") {
+			width: auto;
+			font-size: 18px;
+		}
+	}
+
+
+	&__title,
+	&__subtitle {
+		font-family: $f-GP_bold;
+	}
+}

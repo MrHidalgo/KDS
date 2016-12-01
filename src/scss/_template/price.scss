@@ -1,0 +1,121 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-darkOrange 	: return-value(color, darkOrange);
+$c-orange     	: return-value(color, orange);
+$c-dimGray 	    : return-value(color, dimGray);
+$c-whiteSmoke   : return-value(color, whiteSmoke);
+$c-darkPastelGreen: return-value(color, darkPastelGreen);
+$c-freeSpeechRed: return-value(color, freeSpeechRed);
+
+$f-GP_black     : return-value(fonts, GP_black);
+$f-GP_light     : return-value(fonts, GP_light);
+///
+/// MAIN
+///
+.price {
+	padding-top: 40px;
+	padding-bottom: 100px;
+
+
+	&__row {
+		height: 280px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		@include respond-to("small-all") {
+			height: auto;
+			flex-direction: column;
+		}
+	}
+
+
+	&__left {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background-color: $c-darkPastelGreen;
+
+
+		.price__text,
+		.price__sum {
+			color: $c-white;
+		}
+	}
+
+	&__right {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		background-color: $c-whiteSmoke;
+
+
+		.price__text {
+			font-size: 20px;
+
+			&_color {
+				font-size: 30px;
+				color: $c-freeSpeechRed;
+				@include respond-to("small-all") {
+					font-size: 25px;
+				}
+			}
+		}
+
+
+		.price__text,
+		.price__sum {
+			color: $c-dimGray;
+		}
+	}
+
+	&__left,
+	&__right {
+		position: relative;
+		width: 600px;
+		height: 100%;
+		text-align: center;
+		box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+		@include respond-to("small-all") {
+			width: 100%;
+			margin-bottom: 50px;
+			border-radius: 10px;
+		}
+
+
+		.price__text {
+			padding-top: 80px;
+			font-size: 20px;
+			@include respond-to("small-all") {
+				padding-top: 40px;
+				font-size: 16px;
+			}
+		}
+
+
+		.price__sum {
+			font: {
+				size: 25px;
+				family: $f-GP_light;
+			}
+			@include respond-to("small-all") {
+				padding-bottom: 40px;
+				font-size: 18px;
+			}
+
+			&_big {
+				font: {
+					size: 70px;
+					family: $f-GP_black;
+				}
+				@include respond-to("small-all") {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+}

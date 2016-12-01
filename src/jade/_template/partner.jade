@@ -1,0 +1,15 @@
+include ../_mixin/mixin
+
+-
+    var imgName = [
+        "img-sponsor-0.png",
+        "img-sponsor-1.png",
+        "img-sponsor-2.png",
+        "img-sponsor-3.png"
+    ];
+
+.partner
+    p.main__title!= "ПАРТНЕРЫ"
+
+    .container
+        +imgSponsorPartner(2, imgName)

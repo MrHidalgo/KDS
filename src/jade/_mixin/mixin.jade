@@ -16,3 +16,14 @@ mixin headSite(titleName, styleFile, arrFontName)
         //- LINK FONTS
         - for(var j = 0, arrFontNameLength = arrFontName.length; j < arrFontNameLength; j++)
             link(href= arrFontName[j], rel='stylesheet')
+
+
+//- SPONSOR/PARTNER
+mixin imgSponsorPartner(count, imgName)
+    - for(var i = 0; i < count; i++)
+        .partner__row
+            - for(var j = 0; j < 4; j++)
+                .img__wrap
+                    img(src="./img/" + imgName[j], class="img-sponsorRarther")
+                if(j < 3)
+                    i.sponsor__line.block_skew

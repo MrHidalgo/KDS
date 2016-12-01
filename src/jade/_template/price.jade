@@ -1,0 +1,18 @@
+
+mixin priceBlock(textBlock, priceBlock, textBtn, btnClassM)
+    p.price__text!= textBlock
+    p.price__sum!= priceBlock
+    a(href="javascript:void(0);", class="btn btn_big btn__price " + btnClassM)!= textBtn
+
+
+.price
+    p.main__title!= 'ЦЕНА'
+
+    .container
+        .price__row
+            .price__left
+                +priceBlock("АКТУАЛЬНАЯ ЦЕНА", "<span class='price__sum_big'>2700</span> грн", "КУПИТЬ СЕЙЧАС", "btn_orange")
+
+            .price__right
+                +priceBlock("ЦЕНА ЧЕРЕЗ <span class='price__text_color'>32</span> ДНЯ  ", "<span class='price__sum_big'>3200</span> грн", "КУПИТЬ ПОТОМ", "btn_gray")
+
