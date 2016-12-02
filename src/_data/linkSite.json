@@ -1,6 +1,11 @@
 {
-  "fontLink" : [
+  "styleLink" : [
     "./css/common.min.css",
+    "./css/fonts.min.css"
+  ],
+
+  "internalStyleLink" : [
+    "./css/internal.min.css",
     "./css/fonts.min.css"
   ],
 

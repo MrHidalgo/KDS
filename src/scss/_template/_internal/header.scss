@@ -1,0 +1,65 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// IMPORT TEMPLATE
+///
+@import "../header/logo";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white            : return-value(color, white);
+$c-whiteSmoke       : return-value(color, whiteSmoke);
+$c-dimGray	        : return-value(color, dimGray);
+$c-summerSky	      : return-value(color, summerSky);
+$c-darkOrange	      : return-value(color, darkOrange);
+
+$f-GP_regular       : return-value(fonts, GP_regular);
+$f-GP_bold          : return-value(fonts, GP_bold);
+///
+/// MAIN BLOCK
+///
+.header {
+	position: relative;
+	height: 560px;
+	background: $c-whiteSmoke url("../img/img-bg-discover.png") repeat-x left bottom;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include mixinDimensions($w-all);
+		background-color: rgba($c-whiteSmoke, .75);
+	}
+
+
+	&__title {
+		color: $c-dimGray;
+		font: {
+			size: 40px;
+			family: $f-GP_bold;
+		}
+		line-height: 1.2;
+		text-align: center;
+		position: relative;
+		top: -30px;
+
+
+		&-text {
+			color: $c-summerSky;
+			text-align: center;
+			margin-top: 30px;
+		}
+		&_yellow {
+			color: $c-darkOrange;
+		}
+		&_blue {
+			color: $c-summerSky;
+		}
+	}
+}
