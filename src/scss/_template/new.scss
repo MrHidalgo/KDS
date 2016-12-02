@@ -1,0 +1,13 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-dimGray   		    : return-value(color, dimGray);
+$c-orange           : return-value(color, orange);
+
+$f-GP_light         : return-value(fonts, GP_light);

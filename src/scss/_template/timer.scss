@@ -11,6 +11,7 @@ $c-dimGray   		    : return-value(color, dimGray);
 $c-summerSky 		    : return-value(color, summerSky);
 $c-selectiveYellow  : return-value(color, selectiveYellow);
 $c-whiteSmoke       : return-value(color, whiteSmoke);
+$c-orange           : return-value(color, orange);
 
 $f-GP_light         : return-value(fonts, GP_light);
 ///
@@ -132,7 +133,7 @@ $f-GP_light         : return-value(fonts, GP_light);
 			width: 1px;
 			height: 10px;
 			margin: 0 6px;
-			background-color: $c-dimGray;
+			background-color: $c-summerSky;
 			vertical-align: middle;
 
 			&:first-of-type,
@@ -141,17 +142,32 @@ $f-GP_light         : return-value(fonts, GP_light);
 			}
 
 			&:before {
-				//content: attr(data-second);
-				top: 0;
-			}
-
-			&:after {
-				//content: attr(data-text);
+				content: attr(data-second);
+				top: -18px;
+				margin-left: -10px;
+				text-align: center;
+				color: $c-orange;
+				font-size: 18px;
 			}
 
 			&:before,
 			&:after {
-				//position: absolute;
+				opacity: 0;
+				position: absolute;
+				width: 20px;
+				transition: all .3s ease-in-out;
+			}
+
+
+			&.current {
+				&:before {
+					opacity: 1;
+				}
+			}
+
+
+			&.prev {
+				background-color: $c-dimGray;
 			}
 		}
 	}

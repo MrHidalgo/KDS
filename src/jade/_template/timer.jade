@@ -1,10 +1,9 @@
 mixin secondsLine(num)
-    - var sec = 1;
     - for(var i = 0; i < num; i++)
         div(class="seconds__wrap")
             -for(var j = 0; j < 5; j++)
-                span(class="seconds__wrap-line", data-second= sec, data-text="секунд")
-                - sec++
+                span(class="seconds__wrap-line", data-second="")
+
 
 
 .timer
@@ -46,7 +45,7 @@ mixin secondsLine(num)
             i.timer__info-icon
             span.timer__info-text!= "<span class='timer__info-text_color'>Киев, ВДНХ</span> 11 марта 11:00"
 
-    .timer__btn
+    //.timer__btn
         .container
             a(href="javascript:void(0);", class="btn btn-timer", title="start")
                 div.btn_orange.btn_small.block_skew
