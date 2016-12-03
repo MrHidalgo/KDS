@@ -488,7 +488,7 @@ input {
   
   .bottom-info__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -723,7 +723,7 @@ input {
 .maps-arrow__icon {
   float: right;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -266px;
+  background-position: 0px -293px;
   width: 20px;
   height: 27px;
 }
@@ -732,7 +732,7 @@ input {
   
   .maps-arrow__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -815,7 +815,7 @@ input {
   position: relative;
   display: block;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -651px;
+  background-position: 0px -781px;
   width: 130px;
   height: 127px;
 }
@@ -824,7 +824,7 @@ input {
   
   .advantages__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -879,7 +879,7 @@ input {
   
   .advantages__wrap.speaker .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -898,7 +898,7 @@ input {
   
   .advantages__wrap.flow .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -917,7 +917,7 @@ input {
   
   .advantages__wrap.reporter .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1202,7 +1202,7 @@ input {
 .timer__info-icon {
   margin-right: 20px;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -298px;
+  background-position: 0px -325px;
   width: 20px;
   height: 26px;
 }
@@ -1211,7 +1211,7 @@ input {
   
   .timer__info-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1464,7 +1464,7 @@ input {
 
 .icon-speaker-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -783px;
+  background-position: 0px -913px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -1475,14 +1475,14 @@ input {
   
   .icon-speaker-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
 
 .icon-speaker-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -853px;
+  background-position: 0px -983px;
   width: 137px;
   height: 141px;
   top: -10px;
@@ -1493,14 +1493,14 @@ input {
   
   .icon-speaker-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
 
 .icon-speaker-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -999px;
+  background-position: 0px -1129px;
   width: 97px;
   height: 99px;
   bottom: 130px;
@@ -1511,7 +1511,7 @@ input {
   
   .icon-speaker-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1653,7 +1653,7 @@ input {
 
 .program__left .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -783px;
+  background-position: 0px -913px;
   width: 66px;
   height: 65px;
   left: -40px;
@@ -1664,14 +1664,14 @@ input {
   
   .program__left .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -853px;
+  background-position: 0px -983px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -1682,14 +1682,14 @@ input {
   
   .program__left .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -999px;
+  background-position: 0px -1129px;
   width: 97px;
   height: 99px;
   bottom: -60px;
@@ -1700,7 +1700,7 @@ input {
   
   .program__left .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1712,7 +1712,7 @@ input {
 
 .program__left .program__desc-time:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -243px;
+  background-position: 0px -270px;
   width: 18px;
   height: 18px;
 }
@@ -1721,7 +1721,7 @@ input {
   
   .program__left .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1739,7 +1739,7 @@ input {
 
 .program__right .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -329px;
+  background-position: 0px -459px;
   width: 109px;
   height: 113px;
   bottom: -50px;
@@ -1750,14 +1750,14 @@ input {
   
   .program__right .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -447px;
+  background-position: 0px -577px;
   width: 141px;
   height: 147px;
   top: -50px;
@@ -1768,14 +1768,14 @@ input {
   
   .program__right .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -599px;
+  background-position: 0px -729px;
   width: 48px;
   height: 47px;
   top: 60px;
@@ -1786,7 +1786,7 @@ input {
   
   .program__right .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1798,7 +1798,7 @@ input {
 
 .program__right .program__desc-time:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -220px;
+  background-position: 0px -247px;
   width: 18px;
   height: 18px;
 }
@@ -1807,7 +1807,7 @@ input {
   
   .program__right .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -1871,7 +1871,7 @@ input {
 
 .program__block .icon-triangle-1:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -651px;
+  background-position: 0px -781px;
   width: 130px;
   height: 127px;
   top: 20px;
@@ -1885,7 +1885,7 @@ input {
   
   .program__block .icon-triangle-1:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 
@@ -2448,7 +2448,7 @@ input[name="subscribe"]::placeholder {
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1098px;
+    background-size: 141px 1228px;
   }
 }
 

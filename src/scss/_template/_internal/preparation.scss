@@ -1,0 +1,92 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+@import "../../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white            : return-value(color, white);
+$c-dimGray	        : return-value(color, dimGray);
+$c-summerSky	      : return-value(color, summerSky);
+$c-darkPastelGreen  : return-value(color, darkPastelGreen);
+///
+/// MAIN BLOCK
+///
+.preparation {
+	padding: 150px 0 100px;
+
+
+	&__title {
+		text-align: center;
+		color: $c-dimGray;
+		font-size: 25px;
+		margin-bottom: 40px;
+
+
+		&_blue {
+			color: $c-summerSky;
+		}
+
+
+		&-icon {
+			display: inline-block;
+			position: relative;
+			top: -10px;
+			vertical-align: top;
+			@include retina-sprite($sp-i-cursor-group);
+		}
+	}
+
+
+	&__form {
+		position: relative;
+		width: $w-all;
+		min-height: 300px;
+		background-color: $c-darkPastelGreen;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: $c-white;
+		box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -20px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			@include retina-sprite($sp-i-preparation-triangle-group);
+		}
+
+
+		&-input {
+			margin-top: 30px;
+			@include mixinDimensions(500px, 56px);
+			border: 1px solid $c-white;
+			border-radius: 5px;
+			background-color: transparent;
+			padding: 0 30px;
+			color: $c-white;
+			font-size: 18px;
+		}
+
+
+		&-btn {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			bottom: -28px;
+			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+		}
+	}
+}

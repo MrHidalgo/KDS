@@ -35,13 +35,14 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 		left: 0;
 		@include mixinDimensions($w-all);
 		background-color: rgba($c-whiteSmoke, .75);
+		border-bottom: 2px solid #e8e8e8;
 	}
 
 
 	&__title {
 		color: $c-dimGray;
 		font: {
-			size: 40px;
+			size: 30px;
 			family: $f-GP_bold;
 		}
 		line-height: 1.2;
@@ -54,12 +55,23 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 			color: $c-summerSky;
 			text-align: center;
 			margin-top: 30px;
+			font-size: 20px;
 		}
 		&_yellow {
+			font-size: 40px;
 			color: $c-darkOrange;
 		}
 		&_blue {
 			color: $c-summerSky;
 		}
 	}
+}
+
+
+.img-headerI-triangle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -110px;
+	margin: auto;
 }

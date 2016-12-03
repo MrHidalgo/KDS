@@ -1,0 +1,18 @@
+
+.box
+    p.main__title!= "КЕЙСЫ"
+
+    .container
+        .box__row
+            - for(var i = 0; i < 3; i++)
+                .box__main-block
+                    .wrap
+                        img(src="./img/img-box.png", class="box__img")
+                        p.box-name!= "Название кейса"
+                        p.box-work!= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                    i.icon-box-0
+                    i.icon-box-1
+
+        .box__more
+            a(href="javascript:void(0);", class="btn btn__more")
+                | ХОЧУ ПОЛУЧИТЬ 7 ПОЛЕЗНЫХ КЕЙСОВ

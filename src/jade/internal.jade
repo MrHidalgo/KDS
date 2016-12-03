@@ -14,16 +14,22 @@ html(lang="en")
         block header
             include _template/_internal/header
 
+        block preparation
+            include _template/_internal/preparation
+
+        block box
+            include _template/_internal/box
+
         block subscribe
-            //include _template/subscribe
+            include _template/subscribe
 
         block maps
-            //include _template/maps
+            include _template/maps
 
         block footer
-            //include _template/footer
+            include _template/footer
 
 
-        //script(type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false")
-//        - for(var i = 0; i < linkSite.scriptLink.length; i++)
+        script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCIHSncEfszY7SQPvBPKwosLiYyzj0fSzQ")
+        - for(var i = 0; i < linkSite.scriptLink.length; i++)
             script(src= linkSite.scriptLink[i])

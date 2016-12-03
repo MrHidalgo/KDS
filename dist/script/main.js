@@ -6,8 +6,10 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+    var iconMarker = '../img/i-header-arrow-maps.png';
     marker = new google.maps.Marker({
         map: map,
+        icon: iconMarker,
         position: new google.maps.LatLng(50.440592, 30.49163599999997)
     });
     infowindow = new google.maps.InfoWindow({
@@ -69,7 +71,6 @@ function get_timer(string) {
         $(".seconds__wrap-line").removeClass('current');
         $(".seconds__wrap-line:gt(" + sec + ")").addClass('prev');
         $(".seconds__wrap-line:lt(" + sec + ")").removeClass('prev');
-        $(".seconds__wrap-line").eq(sec).addClass('prev');
         $(".seconds__wrap-line").eq(sec).attr("data-second", sec).addClass('current');
     } else {
         $(".timer__data-month .timer__data_value").text("00");
