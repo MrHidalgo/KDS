@@ -12,6 +12,7 @@ $c-dimGray 	    : return-value(color, dimGray);
 $c-whiteSmoke   : return-value(color, whiteSmoke);
 $c-gainsboro    : return-value(color, gainsboro);
 $c-whisper      : return-value(color, whisper);
+$c-summerSky    : return-value(color, summerSky);
 
 $f-GP_bold      : return-value(fonts, GP_bold);
 $f-GP_black     : return-value(fonts, GP_black);
@@ -180,4 +181,42 @@ $f-GP_black     : return-value(fonts, GP_black);
 			font-size: 30px;
 		}
 	}
+}
+
+
+.navigation {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	background-color: $c-white;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.3);
+
+
+	&_fixed {
+		display: none;
+	}
+
+
+	&__wrap {
+		position: absolute;
+		top: 0;
+		right: -250px;
+		width: 100%;
+		background-color: $c-summerSky;
+		height: 90px;
+	}
+
+
+	&__row {
+		float: right;
+	}
+}
+
+.img-logo-fixed {
+	float: left;
+	margin-top: 18px;
 }

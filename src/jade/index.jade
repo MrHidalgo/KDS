@@ -1,5 +1,12 @@
 include _mixin/mixin
 
+-
+    var linkText = [
+        "О конференции",
+        "Спикеры",
+        "Расписание"
+    ];
+
 
 doctype html
 html(lang="en")
@@ -11,21 +18,30 @@ html(lang="en")
     body
 
 
+        .navigation.navigation_fixed
+            .navigation__wrap.block_skew
+            .container.clearfix
+                img(src="./img/img-logo-fixed.png", class="img-logo-fixed")
+                .navigation__row
+                    -for(var i = 0; i < 3; i++)
+                        a(href="javascript:void(0);", class="nav__link", title="linkText[i]")!= linkText[i]
+
+
         // BLOCK HEADER [nav, bottomInfo, logo, slogan]
         block header
-            //include _template/header
+            include _template/header
 
         block advantages
-            //include _template/advantages
+            include _template/advantages
 
         block video
-            //include _template/video
+            include _template/video
 
         block timer
             //include _template/timer
 
         block new
-            include _template/new
+            //include _template/new
 
         block speaker
             //include _template/speaker

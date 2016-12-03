@@ -90,6 +90,29 @@ function getfrominputs() {
     }, 1000);
 }
 
+function scrollWindowNavigationFixedLarge() {
+    var countScroll     = $(window).scrollTop(),
+        navigationBlock = $('.navigation_fixed');
+
+    if (countScroll > 130 ) {
+        navigationBlock.slideDown(500);
+    }
+    else {
+        navigationBlock.slideUp(500);
+    }
+}
+
+function scrollWindowNavigationFixedMobile() {
+    var countScroll     = $(window).scrollTop(),
+        navigationBlock = $('.btn-mobile');
+
+    if (countScroll > 130 ) {
+        navigationBlock.addClass("btn_fixed");
+    }
+    else {
+        navigationBlock.removeClass("btn_fixed");
+    }
+}
 
 $(document).ready(function(){
     getfrominputs();
@@ -101,4 +124,13 @@ $(document).ready(function(){
         ).slideDown(400);
         $(this).hide();
     });
+});
+
+$(window).on("load resize ready scroll", function(){
+    if($(window).width() > '991') {
+        scrollWindowNavigationFixedLarge();
+    } else {
+        $('.navigation_fixed').slideUp(500);
+        scrollWindowNavigationFixedMobile();
+    }
 });

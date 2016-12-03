@@ -102,6 +102,12 @@ $f-GP_light   : return-value(fonts, GP_light);
 	}
 
 
+	&.btn_fixed {
+		position: fixed;
+		z-index: 100;
+	}
+
+
 	&__line {
 		position: absolute;
 		top: 50%;
