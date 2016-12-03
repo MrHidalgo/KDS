@@ -19,13 +19,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 /// MAIN
 ///
 .speaker {
+	overflow: hidden;
 	padding-top: 40px;
 	padding-bottom: 80px;
-
-
-	&__main-row {
-		margin-bottom: 50px;
-	}
 
 
 	&__main-row,
@@ -40,16 +36,40 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	}
 
 
+
+	&__main-row {
+		margin-bottom: 50px;
+		@include respond-to("small-all") {
+			margin-bottom: 0;
+		}
+	}
+
+
+	&__dop-row {
+		@include respond-to("small-all") {
+			display: none;
+		}
+
+		&.open {
+			display: block;
+		}
+	}
+
+
 	&__main-block {
 		position: relative;
 		width: 290px;
 		height: 500px;
 		border-radius: 10px;
 		border: 3px solid transparent;
-		transition-duration: .5s;
-		transition-timing-function: ease-in-out;
 		@include respond-to("large") {
 			width: 320px;
+		}
+		@include respond-to("small-all") {
+			pointer-events: none;
+			width: 50%;
+			height: auto;
+			border: none;
 		}
 
 
@@ -57,6 +77,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			width: 270px;
 			margin: 0 auto;
 			padding: 25px 5px;
+			@include respond-to("small-all") {
+				width: 100%;
+			}
 		}
 
 
@@ -64,16 +87,22 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			border: 3px solid $c-orange;
 			background-color: $c-darkOrange;
 			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+			transition-duration: .5s;
+			transition-timing-function: ease-in-out;
 			transition-property: border, background-color, box-shadow;
 
 
 			.speaker__img {
 				box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+				transition-duration: .5s;
+				transition-timing-function: ease-in-out;
 				transition-property: box-shadow;
 			}
 			.speaker__block-name,
 			.speaker__block-work {
 				color: $c-white;
+				transition-duration: .5s;
+				transition-timing-function: ease-in-out;
 				transition-property: color;
 			}
 			.icon-speaker-0,
@@ -81,6 +110,8 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 				&:before,
 				&:after {
 					opacity: 1;
+					transition-duration: .5s;
+					transition-timing-function: ease-in-out;
 					transition-property: opacity;
 				}
 			}
@@ -94,6 +125,15 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			width: 300px;
 			margin-bottom: 20px;
 		}
+		@include respond-to("medium") {
+			width: (100 / 3) * 1%;
+		}
+		@include respond-to("small-all") {
+			float: left;
+			width: 50%;
+			padding: 25px 5px;
+		}
+
 
 
 		.speaker__img {
@@ -105,6 +145,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	&__img {
 		max-width: 100%;
 		margin-bottom: 50px;
+		@include respond-to("small-all") {
+			margin-bottom: 0;
+		}
 	}
 
 
@@ -149,6 +192,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		&-name,
 		&-work {
 			color: $c-dimGray;
+			@include respond-to("small-all") {
+				display: none;
+			}
 		}
 	}
 
@@ -192,5 +238,20 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			content: "";
 			position: absolute;
 		}
+	}
+}
+
+
+.btn__more {
+	display: none;
+	@include respond-to("small-all") {
+		display: block;
+		border: 2px solid $c-orange;
+		border-radius: 5px;
+		width: $w-all;
+		height: 56px;
+		line-height: 56px;
+		text-align: center;
+		color: $c-orange;
 	}
 }

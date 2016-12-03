@@ -13,9 +13,11 @@
                     i.icon-speaker-0
                     i.icon-speaker-1
 
-        .speaker__dop-row
+        .speaker__dop-row.clearfix
             - for(var i = 0; i < 6; i++)
                 .speaker__dop-block
                     img(src="./img/img-speaker-small.png", class="speaker__img")
                     p.speaker__block-name!= "Константинопольский </br> Николай"
                     p.speaker__block-work!= "WebPromoExperts"
+
+        a(href="javascript:void(0);", class="btn__more")!= "ЕЩЕ СПИКЕРЫ"

@@ -21,6 +21,10 @@ $f-GP_light         : return-value(fonts, GP_light);
 	min-height: 840px;
 	padding-top: 150px;
 	padding-bottom: 30px;
+	@include respond-to("small-all") {
+		min-height: 530px;
+		padding-top: 50px;
+	}
 
 
 	&__seconds {
@@ -30,6 +34,10 @@ $f-GP_light         : return-value(fonts, GP_light);
 		background-color: $c-whiteSmoke;
 		margin-bottom: 40px;
 		box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.25);
+		@include respond-to("small-all") {
+			margin-left: 0;
+			height: 80px;
+		}
 
 
 		&-row {
@@ -60,6 +68,15 @@ $f-GP_light         : return-value(fonts, GP_light);
 			width: 2px;
 			height: 100px;
 			background-color: $c-whiteSmoke;
+			@include respond-to("medium") {
+				height: 80px;
+			}
+			@include respond-to("small") {
+				height: 30px;
+			}
+			@include respond-to("extra-small") {
+				height: 20px;
+			}
 		}
 
 
@@ -69,10 +86,22 @@ $f-GP_light         : return-value(fonts, GP_light);
 			}
 			color: $c-summerSky;
 			line-height: 1;
+			@include respond-to("medium") {
+				font-size: 80px;
+			}
+			@include respond-to("small") {
+				font-size: 50px;
+			}
+			@include respond-to("extra-small") {
+				font-size: 30px;
+			}
 		}
 		&_text {
 			font: {
 				size: 19px;
+			}
+			@include respond-to("extra-small") {
+				font-size: 12px;
 			}
 		}
 		&_value,
@@ -89,6 +118,9 @@ $f-GP_light         : return-value(fonts, GP_light);
 		margin-top: 15px;
 		margin-left: 25px;
 		background-color: $c-summerSky;
+		@include respond-to("small-all") {
+			margin-left: 0;
+		}
 	}
 
 
@@ -106,6 +138,9 @@ $f-GP_light         : return-value(fonts, GP_light);
 		&-text {
 			font-size: 20px;
 			color: $c-summerSky;
+			@include respond-to("extra-small") {
+				font-size: 16px;
+			}
 
 			&_color {
 				color: $c-selectiveYellow;
@@ -126,6 +161,10 @@ $f-GP_light         : return-value(fonts, GP_light);
 	&__wrap {
 		margin: 0 5px;
 		position: relative;
+		@include respond-to("extra-small") {
+			margin-left: 0;
+			margin-right: 0;
+		}
 
 
 		&-line {
@@ -135,6 +174,19 @@ $f-GP_light         : return-value(fonts, GP_light);
 			margin: 0 6px;
 			background-color: $c-summerSky;
 			vertical-align: middle;
+			@include respond-to("medium") {
+				margin-left: 4px;
+				margin-right: 4px;
+			}
+			@include respond-to("small") {
+				margin-left: 2px;
+				margin-right: 2px;
+			}
+			@include respond-to("extra-small") {
+				margin-left: 1.5px;
+				margin-right: 1.5px;
+			}
+
 
 			&:first-of-type,
 			&:last-of-type {
@@ -148,6 +200,12 @@ $f-GP_light         : return-value(fonts, GP_light);
 				text-align: center;
 				color: $c-orange;
 				font-size: 18px;
+				@include respond-to("medium") {
+					font-size: 16px;
+				}
+				@include respond-to("small-all") {
+					font-size: 14px;
+				}
 			}
 
 			&:before,

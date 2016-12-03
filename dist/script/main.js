@@ -93,4 +93,12 @@ function getfrominputs() {
 
 $(document).ready(function(){
     getfrominputs();
+
+    $(".btn__more").on("click", function(e){
+        e.preventDefault();
+        $('.speaker__dop-row').css(
+            "display","flex"
+        ).slideDown(400);
+        $(this).hide();
+    });
 });

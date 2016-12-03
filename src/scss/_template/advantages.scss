@@ -17,12 +17,17 @@ $c-summerSky 		: return-value(color, summerSky);
 	min-height: 470px;
 
 
+
 	&__row {
 		height: 470px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		@include respond-to("small-all") {
+			height: auto;
+			flex-direction: column;
+		}
 	}
 
 
@@ -30,6 +35,10 @@ $c-summerSky 		: return-value(color, summerSky);
 		display: inline-block;
 		padding-right: 10px;
 		width: (100 / 3) * 1%;
+		@include respond-to("small-all") {
+			width: $w-all;
+			margin-bottom: 15px;
+		}
 	}
 
 
@@ -37,6 +46,10 @@ $c-summerSky 		: return-value(color, summerSky);
 		position: relative;
 		display: block;
 		@include retina-sprite($sp-i-triangle-gray-group);
+		@include respond-to("small-all") {
+			float: left;
+			margin-right: 25px;
+		}
 
 
 		&:before,
@@ -50,6 +63,12 @@ $c-summerSky 		: return-value(color, summerSky);
 			bottom: -20px;
 			background-color: $c-summerSky;
 			@include mixinDimensions(16px, 5px);
+			@include respond-to("small-all") {
+				bottom: auto;
+				top: 35px;
+				right: -40px;
+				left: auto;
+			}
 		}
 	}
 
@@ -59,19 +78,19 @@ $c-summerSky 		: return-value(color, summerSky);
 		color: $c-dimGray;
 		font-size: 21px;
 		@include respond-to("medium") {
-			font-size: 17px;
+			font-size: 15px;
 		}
 		@include respond-to("small-all") {
-			font-size: 15px;
+			font-size: 13px;
 		}
 	}
 }
 
 
 @each $className, $imgName in
-	("speaker",   $sp-i-advantages-speaker-group),
-	("flow",      $sp-i-advantages-flow-group),
-	("reporter",  $sp-i-advantages-reporter-group)
+	("advantages_speaker",   $sp-i-advantages-speaker-group),
+	("advantages_flow",      $sp-i-advantages-flow-group),
+	("advantages_reporter",  $sp-i-advantages-reporter-group)
 {
 	.advantages__wrap.#{$className} {
 		.advantages__icon{

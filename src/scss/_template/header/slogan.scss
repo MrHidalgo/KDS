@@ -18,6 +18,11 @@ $f-GP_light : return-value(fonts, GP_light);
 	position: absolute;
 	z-index: 11;
 	top: 340px;  left: 15px;
+	@include respond-to("small-all") {
+		top: 216px;
+		left: 15px;
+	}
+
 
 	&__title {
 		font: {
@@ -29,6 +34,10 @@ $f-GP_light : return-value(fonts, GP_light);
 		@include respond-to("medium") {
 			font-size: 40px;
 		}
+		@include respond-to("small-all") {
+			font-size: 23px;
+			margin-bottom: 30px;
+		}
 	}
 
 
@@ -38,6 +47,10 @@ $f-GP_light : return-value(fonts, GP_light);
 			family: $f-GP_light;
 		}
 		width: 50%;
+		@include respond-to("small-all") {
+			font-size: 16px;
+			width: 100%;
+		}
 	}
 
 	&__title,

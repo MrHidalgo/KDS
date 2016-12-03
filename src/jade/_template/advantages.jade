@@ -1,8 +1,8 @@
 -
     var advantagesDataClass = [
-        "speaker",
-        "flow",
-        "reporter"
+        "advantages_speaker",
+        "advantages_flow",
+        "advantages_reporter"
     ];
     var advantagesDataText = [
         "2 топ спикера </br> из Европы и США",
@@ -14,6 +14,6 @@
     .container
         .advantages__row
             - for(var i = 0, advLen = advantagesDataClass.length; i < advLen; i++)
-                div(class="advantages__wrap " + advantagesDataClass[i])
+                div(class="advantages__wrap clearfix " + advantagesDataClass[i])
                     .advantages__icon
                     p.advantages__text!= advantagesDataText[i]

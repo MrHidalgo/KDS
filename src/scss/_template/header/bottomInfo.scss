@@ -21,18 +21,17 @@ $f-GP_light : return-value(fonts, GP_light);
 	position: absolute;
 	z-index: 11;
 	bottom: 0;  left: 0;
-
 	@include mixinDimensions($w-all, render-pixel(84px));
 	min-height: 84px;
 	line-height: 84px;
-
 	background-color: rgba(0,0,0,0.7);
 	color: $c-white;
 	text-align: center;
-	@include respond-to("small") {
+	@include respond-to("small-all") {
 		height: auto;
 		line-height: normal;
 		padding: 10px 0;
+		background-color: rgba(0,0,0,1ss);
 	}
 
 
@@ -48,7 +47,7 @@ $f-GP_light : return-value(fonts, GP_light);
 		margin: 0 15px 0 20px;
 		vertical-align: middle;
 		@include retina-sprite($sp-i-bottom-info-group);
-		@include respond-to("small") {
+		@include respond-to("small-all") {
 			margin: 10px auto;
 		}
 	}
@@ -65,7 +64,7 @@ $f-GP_light : return-value(fonts, GP_light);
 	&__title,
 	&__text {
 		vertical-align: top;
-		@include respond-to("small") {
+		@include respond-to("small-all") {
 			font-size: 14px;
 		}
 	}
@@ -75,7 +74,7 @@ $f-GP_light : return-value(fonts, GP_light);
 	&__icon,
 	&__text {
 		display: inline-block;
-		@include respond-to("small") {
+		@include respond-to("small-all") {
 			display: block;
 		}
 	}

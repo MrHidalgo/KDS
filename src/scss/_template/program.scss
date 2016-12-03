@@ -21,6 +21,7 @@ $f-GP_medium        : return-value(fonts, GP_medium);
 /// MAIN
 ///
 .program {
+	overflow: hidden;
 	position: relative;
 	padding: 100px 0 60px;
 

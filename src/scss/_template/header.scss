@@ -32,6 +32,9 @@ $f-GP_light   : return-value(fonts, GP_light);
 	min-height: render-pixel(925);
 	overflow: hidden;
 	background: $c-whiteSmoke;
+	@include respond-to("small-all") {
+		min-height: 680px;
+	}
 
 
 	&__wrap {
@@ -43,6 +46,9 @@ $f-GP_light   : return-value(fonts, GP_light);
 		left: 0;
 		@include respond-to("medium-all") {
 			min-width: $w-all;
+		}
+		@include respond-to("small-all") {
+			min-height: 680px;
 		}
 
 		&:after {
@@ -71,6 +77,10 @@ $f-GP_light   : return-value(fonts, GP_light);
 			box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
 			@include respond-to("medium") {
 				min-width: 800px;
+			}
+			@include respond-to("small-all") {
+				left: -220px;
+				min-width: 600px;
 			}
 		}
 	}

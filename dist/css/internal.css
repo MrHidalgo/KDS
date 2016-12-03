@@ -82,9 +82,23 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  
+  .btn-header {
+    bottom: 103px;
+  }
+}
+
 
 .btn-timer {
   top: -15px;
+}
+
+@media screen and (max-width: 479px) {
+  
+  .btn-timer {
+    width: 220px;
+  }
 }
 
 

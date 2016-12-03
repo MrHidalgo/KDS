@@ -14,6 +14,7 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 /// MAIN
 ///
 .discover {
+	overflow: hidden;
 	min-height: 560px;
 	background: $c-whiteSmoke url("../img/img-bg-discover.png") left bottom repeat-x;
 
