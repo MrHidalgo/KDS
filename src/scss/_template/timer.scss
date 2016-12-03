@@ -18,8 +18,8 @@ $f-GP_light         : return-value(fonts, GP_light);
 /// MAIN
 ///
 .timer {
-	min-height: 840px;
-	padding-top: 150px;
+	min-height: 790px;
+	padding-top: 100px;
 	padding-bottom: 30px;
 	@include respond-to("small-all") {
 		min-height: 530px;
@@ -29,13 +29,11 @@ $f-GP_light         : return-value(fonts, GP_light);
 
 	&__seconds {
 		width: 100%;
-		margin-left: 25px;
 		height: 108px;
 		background-color: $c-whiteSmoke;
 		margin-bottom: 40px;
 		box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.25);
 		@include respond-to("small-all") {
-			margin-left: 0;
 			height: 80px;
 		}
 
@@ -116,11 +114,7 @@ $f-GP_light         : return-value(fonts, GP_light);
 	&__btn {
 		height: 25px;
 		margin-top: 15px;
-		margin-left: 25px;
 		background-color: $c-summerSky;
-		@include respond-to("small-all") {
-			margin-left: 0;
-		}
 	}
 
 

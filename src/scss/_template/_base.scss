@@ -205,7 +205,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 		position: absolute;
 		top: 0;
 		right: -250px;
-		width: 100%;
+		width: 88%;
 		background-color: $c-summerSky;
 		height: 90px;
 	}
@@ -220,3 +220,6 @@ $f-GP_black     : return-value(fonts, GP_black);
 	float: left;
 	margin-top: 18px;
 }
+
+.hidden{opacity:0}
+.visibly{opacity:1}

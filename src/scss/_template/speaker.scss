@@ -22,6 +22,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	overflow: hidden;
 	padding-top: 40px;
 	padding-bottom: 80px;
+	@include respond-to("small-all") {
+		padding-bottom: 0px;
+	}
 
 
 	&__main-row,

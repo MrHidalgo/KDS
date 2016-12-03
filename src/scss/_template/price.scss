@@ -21,6 +21,9 @@ $f-GP_light     : return-value(fonts, GP_light);
 .price {
 	padding-top: 40px;
 	padding-bottom: 100px;
+	@include respond-to("small-all") {
+		padding-bottom: 0;
+	}
 
 
 	&__row {

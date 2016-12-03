@@ -280,7 +280,7 @@
   position: absolute;
   top: 0;
   right: -250px;
-  width: 100%;
+  width: 88%;
   background-color: #269ed8;
   height: 90px;
 }
@@ -294,6 +294,16 @@
 .img-logo-fixed {
   float: left;
   margin-top: 18px;
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+
+.visibly {
+  opacity: 1;
 }
 
 
@@ -1434,6 +1444,8 @@ input[name="subscribe"]::placeholder {
     width: 100%;
     text-align: center;
     bottom: 15px;
+    left: 0;
+    right: 0;
   }
 }
 

@@ -280,7 +280,7 @@
   position: absolute;
   top: 0;
   right: -250px;
-  width: 100%;
+  width: 88%;
   background-color: #269ed8;
   height: 90px;
 }
@@ -294,6 +294,16 @@
 .img-logo-fixed {
   float: left;
   margin-top: 18px;
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+
+.visibly {
+  opacity: 1;
 }
 
 
@@ -520,7 +530,7 @@ input {
     height: auto;
     line-height: normal;
     padding: 10px 0;
-    background-color: black;
+    background-color: #262626;
   }
 }
 
@@ -728,7 +738,7 @@ input {
   
   .header__wrap-row {
     left: -220px;
-    min-width: 600px;
+    min-width: 520px;
   }
 }
 
@@ -887,6 +897,13 @@ input {
 
 .advantages {
   min-height: 470px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .advantages {
+    min-height: 400px;
+  }
 }
 
 
@@ -1242,8 +1259,8 @@ input {
 
 
 .timer {
-  min-height: 840px;
-  padding-top: 150px;
+  min-height: 790px;
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 
@@ -1258,7 +1275,6 @@ input {
 
 .timer__seconds {
   width: 100%;
-  margin-left: 25px;
   height: 108px;
   background-color: #f3f3f3;
   margin-bottom: 40px;
@@ -1268,7 +1284,6 @@ input {
 @media screen and (max-width: 767px) {
   
   .timer__seconds {
-    margin-left: 0;
     height: 80px;
   }
 }
@@ -1399,15 +1414,7 @@ input {
 .timer__btn {
   height: 25px;
   margin-top: 15px;
-  margin-left: 25px;
   background-color: #269ed8;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .timer__btn {
-    margin-left: 0;
-  }
 }
 
 
@@ -2007,6 +2014,13 @@ input {
   overflow: hidden;
   padding-top: 40px;
   padding-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .speaker {
+    padding-bottom: 0px;
+  }
 }
 
 
@@ -2792,6 +2806,13 @@ input {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .price {
+    padding-bottom: 0;
+  }
+}
+
 
 .price__row {
   height: 280px;
@@ -2932,6 +2953,13 @@ input {
 
 .partner {
   margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .partner {
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -3288,6 +3316,8 @@ input[name="subscribe"]::placeholder {
     width: 100%;
     text-align: center;
     bottom: 15px;
+    left: 0;
+    right: 0;
   }
 }
 

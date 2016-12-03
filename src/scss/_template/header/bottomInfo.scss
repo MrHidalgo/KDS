@@ -31,7 +31,7 @@ $f-GP_light : return-value(fonts, GP_light);
 		height: auto;
 		line-height: normal;
 		padding: 10px 0;
-		background-color: rgba(0,0,0,1ss);
+		background-color: lighten(#000, 15%);
 	}
 
 

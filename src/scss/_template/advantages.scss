@@ -15,6 +15,9 @@ $c-summerSky 		: return-value(color, summerSky);
 ///
 .advantages {
 	min-height: 470px;
+	@include respond-to("small-all") {
+		min-height: 400px;
+	}
 
 
 

@@ -1,7 +1,8 @@
 {
   "styleLink" : [
     "./css/common.min.css",
-    "./css/fonts.min.css"
+    "./css/fonts.min.css",
+    "./css/animate.min.css"
   ],
 
   "internalStyleLink" : [
@@ -11,6 +12,7 @@
 
   "scriptLink" : [
     "./script/jquery-1.11.1.min.js",
-    "./script/main.min.js"
+    "./script/main.min.js",
+    "./script/jquery.viewportchecker.min.js"
   ]
 }
