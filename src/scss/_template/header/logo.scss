@@ -21,7 +21,7 @@
 .img-logo-mobile {
 	float: left;
 	margin-top: render-pixel(30px);
-	@include respond-to("small") {
+	@include respond-to("small-all") {
 		margin-top: 15px;
 	}
 
@@ -32,13 +32,13 @@
 	}
 
 	&_normal {
-		@include respond-to("small") {
+		@include respond-to("small-all") {
 			display: none;
 		}
 	}
 
 	&-mobile_normal {
-		@include respond-to("small") {
+		@include respond-to("small-all") {
 			display: block;
 		}
 	}

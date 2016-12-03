@@ -138,7 +138,7 @@ $f-GP_light         : return-value(fonts, GP_light);
 		width: 2px;
 		height: 100%;
 		background-color: darken($c-whiteSmoke, 5%);
-		@include respond-to("medium") {
+		@include respond-to("medium-all") {
 			display: none;
 		}
 	}

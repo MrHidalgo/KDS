@@ -75,7 +75,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 	&-discover {
 		bottom: 50px;
 		left: 120px;
-		@include respond-to("extra_small") {
+		@include respond-to("extra-small") {
 			left: 0;
 		}
 	}
@@ -96,9 +96,11 @@ $f-GP_black     : return-value(fonts, GP_black);
 		}
 		@include respond-to("medium") {
 			width: 220px;
+			font-size: 17px;
 		}
 		@include respond-to("small-all") {
 			width: 100%;
+			font-size: 16px;
 		}
 	}
 

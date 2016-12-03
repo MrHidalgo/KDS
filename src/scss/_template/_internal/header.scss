@@ -27,6 +27,10 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 	position: relative;
 	height: 560px;
 	background: $c-whiteSmoke url("../img/img-bg-discover.png") repeat-x left bottom;
+	@include respond-to("small-all") {
+		height: 470px;
+	}
+
 
 	&:before {
 		content: "";
@@ -49,6 +53,13 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 		text-align: center;
 		position: relative;
 		top: -30px;
+		@include respond-to("medium-all") {
+			position: static;
+			margin-top: 30px;
+		}
+		@include respond-to("small-all") {
+			font-size: 20px;
+		}
 
 
 		&-text {
@@ -56,10 +67,17 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 			text-align: center;
 			margin-top: 30px;
 			font-size: 20px;
+			@include respond-to("small-all") {
+				font-size: 18px;
+				margin-top: 60px;
+			}
 		}
 		&_yellow {
 			font-size: 40px;
 			color: $c-darkOrange;
+			@include respond-to("small-all") {
+				font-size: 25px;
+			}
 		}
 		&_blue {
 			color: $c-summerSky;
@@ -74,4 +92,13 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 	right: 0;
 	bottom: -110px;
 	margin: auto;
+	@include respond-to("small-all") {
+		max-width: 30%;
+	}
+	@include respond-to("small") {
+		bottom: -80px;
+	}
+	@include respond-to("extra-small") {
+		bottom: -55px;
+	}
 }

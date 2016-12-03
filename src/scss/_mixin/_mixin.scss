@@ -293,60 +293,81 @@
 ///     @include mixinRespond($text-medium) { @content };
 ///   }
 ///
-@mixin mixinRespond($media){
-  @if ($media == $text-mobile) {
-    @media only screen and (max-width: $media_phone) {
+@mixin respond-to($media){
+  @if ($media == 'extra-small') {
+    @media screen and (max-width: 479px) {
       @content
     }
   }
-  @else if $media == $text-tablet{
-    @media only screen and (max-width: $media_tablet - 1){
+  @else if ($media == 'small'){
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       @content
     }
   }
-  @else if ($media == $text-small) {
-    @media only screen and (min-width: $media_tablet) {
+  @else if ($media == 'small-all') {
+    @media screen and (max-width: 767px) {
       @content
     }
   }
-  @else if ($media == $text-medium) {
-    @media only screen and (min-width: $media_desktop) {
+  @else if ($media == 'medium') {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
       @content
     }
   }
-  @else if ($media == $text-large) {
-    @media only screen and (min-width: $media_large) {
+  @else if ($media == 'medium-all') {
+    @media screen and (max-width: 991px) {
       @content
     }
+  }
+  @else if ($media == 'large') {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content
+    }
+  }
+  @else if ($media == 'large-all') {
+    @media screen and (max-width: 1199px) {
+      @content
+    }
+  }
+  @else if ($media == 'extra-large') {
+    @media screen and (min-width: 1200px) {
+      @content
+    }
+  }
+  @else if ($media != 'extra-small'  or $media != 'small' or
+       $media != 'small-all'    or $media != 'medium' or
+       $media != 'medium-all'   or $media != 'large' or
+       $media != 'large-all'    or $media != 'extra-large') {
+    @warn "Unfortunately, no value could be retrieved from `#{$media}`. Please make sure it is defined...";
   }
 }
 
 
 
-
-$breakpoints: (
-	'extra_small'       : screen and (max-width: 479px),
-	'small'             : screen and (min-width: 480px) and (max-width:  767px),
-	'small-all'         : screen and (max-width: 767px),
-	'medium'            : screen and (min-width: 768px) and (max-width:  991px),
-	'medium-all'        : screen and (max-width: 991px),
-	'large'             : screen and (min-width: 992px) and (max-width: 1199px),
-	'large-all'         : screen and (max-width: 1199px),
-	'extra_large'       : screen and (min-width: 1200px)
-);
-
-@mixin respond-to($name) {
-	// If the key exists in the map
-	@if map-has-key($breakpoints, $name) {
-		// Prints a media query based on the value
-		@media #{inspect(map-get($breakpoints, $name))} {
-			@content;
-		}
-	}
-
-	// If the key doesn't exist in the map
-	@else {
-		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-			+ "Please make sure it is defined in `$breakpoints` map.";
-	}
-}
+//
+//$breakpoints: (
+//	'extraSmall'       : screen and (max-width: 479px),
+//	'small'            : screen and (min-width: 480px) and (max-width: 767px),
+//	'smallAll'         : screen and (min-width: 300px) and (max-width: 767px),
+//	'medium'           : screen and (min-width: 768px) and (max-width: 991px),
+//	'medium_all'       : screen and (min-width: 300px) and (max-width: 991px),
+//	'large'            : screen and (min-width: 992px) and (max-width: 1199px),
+//	'largeAll'         : screen and (min-width: 300px) and (max-width: 1199px),
+//	'extraLarge'       : screen and (min-width: 1200px)
+//);
+//
+//@mixin respond-to($name) {
+//	// If the key exists in the map
+//	@if map-has-key($breakpoints, $name) {
+//		// Prints a media query based on the value
+//		@media #{inspect(map-get($breakpoints, $name))} {
+//			@content;
+//		}
+//	}
+//
+//	// If the key doesn't exist in the map
+//	@else {
+//		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+//			+ "Please make sure it is defined in `$breakpoints` map.";
+//	}
+//}

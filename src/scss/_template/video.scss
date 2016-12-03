@@ -86,7 +86,7 @@ $f-GP_light     : return-value(fonts, GP_light);
 		@include respond-to("small-all") {
 			left: -80%;
 		}
-		@include respond-to("extra_small") {
+		@include respond-to("extra-small") {
 			left: -100%;
 		}
 	}
@@ -98,7 +98,7 @@ $f-GP_light     : return-value(fonts, GP_light);
 		@include respond-to("small-all") {
 			right: -80%;
 		}
-		@include respond-to("extra_small") {
+		@include respond-to("extra-small") {
 			right: -100%;
 		}
 	}

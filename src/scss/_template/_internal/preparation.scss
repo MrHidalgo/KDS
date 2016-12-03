@@ -18,6 +18,9 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 ///
 .preparation {
 	padding: 150px 0 100px;
+	@include respond-to("small-all") {
+		padding-top: 70px;
+	}
 
 
 	&__title {
@@ -25,6 +28,9 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 		color: $c-dimGray;
 		font-size: 25px;
 		margin-bottom: 40px;
+		@include respond-to("small-all") {
+			font-size: 20px;
+		}
 
 
 		&_blue {
@@ -68,6 +74,13 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 		}
 
 
+		&-title {
+			@include respond-to("extra-small") {
+				padding: 0 15px;
+			}
+		}
+
+
 		&-input {
 			margin-top: 30px;
 			@include mixinDimensions(500px, 56px);
@@ -77,6 +90,9 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 			padding: 0 30px;
 			color: $c-white;
 			font-size: 18px;
+			@include respond-to("small-all") {
+				width: 90%;
+			}
 		}
 
 
@@ -87,6 +103,9 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 			margin: auto;
 			bottom: -28px;
 			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+			@include respond-to("small-all") {
+				width: 90%;
+			}
 		}
 	}
 }

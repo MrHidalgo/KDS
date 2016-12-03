@@ -75,7 +75,7 @@
   bottom: 165px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .btn-header {
     left: 100px;
@@ -109,7 +109,7 @@
   font-family: "GothaProBol";
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .btn-header, .btn-timer, .btn-discover {
     max-width: 300px;
@@ -122,7 +122,7 @@
   left: 120px;
 }
 
-@media (max-width: 479px) {
+@media screen and (max-width: 479px) {
   
   .btn-discover {
     left: 0;
@@ -143,17 +143,19 @@
   font-family: "GothaProBol";
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .btn__submit {
     width: 220px;
+    font-size: 17px;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .btn__submit {
     width: 100%;
+    font-size: 16px;
   }
 }
 
@@ -179,7 +181,7 @@
   line-height: 60px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .btn_small {
     max-width: 250px;
@@ -199,7 +201,7 @@
   box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .btn_big {
     max-width: 250px;
@@ -217,7 +219,7 @@
   height: 100%;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .btn__text {
     line-height: 55px;
@@ -234,7 +236,7 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .main__title {
     font-size: 30px;
@@ -346,7 +348,7 @@ input {
   right: 15px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .nav {
     display: none;
@@ -384,7 +386,7 @@ input {
   margin-top: 1.875em;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .img-logo,
   .img-logo-mobile {
@@ -400,7 +402,7 @@ input {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .img-logo_normal,
   .img-logo-mobile_normal {
@@ -408,7 +410,7 @@ input {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .img-logo-mobile_normal,
   .img-logo-mobile-mobile_normal {
@@ -459,7 +461,7 @@ input {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   
   .bottom-info {
     height: auto;
@@ -492,7 +494,7 @@ input {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   
   .bottom-info__icon {
     margin: 10px auto;
@@ -510,7 +512,7 @@ input {
   vertical-align: top;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   
   .bottom-info__title, .bottom-info__text {
     font-size: 14px;
@@ -522,7 +524,7 @@ input {
   display: inline-block;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   
   .bottom-info__title, .bottom-info__icon, .bottom-info__text {
     display: block;
@@ -545,7 +547,7 @@ input {
   margin-bottom: 50px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .slogan__title {
     font-size: 40px;
@@ -582,7 +584,7 @@ input {
   left: 0;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .header__wrap {
     min-width: 100%;
@@ -600,7 +602,7 @@ input {
   background: url("../img/img-headerMap-desktop.png") no-repeat;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   
   .header__wrap:after {
     width: 600px;
@@ -623,7 +625,7 @@ input {
   box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .header__wrap-row {
     min-width: 800px;
@@ -644,7 +646,7 @@ input {
   box-shadow: 0 4px 15px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .btn-mobile {
     display: block;
@@ -694,7 +696,7 @@ input {
   font-family: "GothaProBol";
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .maps-arrow {
     right: 40px;
@@ -703,7 +705,7 @@ input {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .maps-arrow {
     right: 40px;
@@ -712,7 +714,7 @@ input {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .maps-arrow {
     display: none;
@@ -759,7 +761,7 @@ input {
   font-size: 35px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .maps-arrow__title, .maps-arrow__data {
     font-size: 20px;
@@ -850,14 +852,14 @@ input {
   font-size: 21px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .advantages__text {
     font-size: 17px;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .advantages__text {
     font-size: 15px;
@@ -929,21 +931,21 @@ input {
   overflow: hidden;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .video {
     height: auto;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .video {
     padding: 60px 0;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .video {
     padding: 30px 0;
@@ -967,7 +969,7 @@ input {
           align-items: center;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .video__row {
     -webkit-box-orient: vertical;
@@ -983,7 +985,7 @@ input {
   width: 570px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .video__row_present {
     width: 100%;
@@ -995,7 +997,7 @@ input {
   box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .video__row_present video {
     margin-bottom: 30px;
@@ -1008,7 +1010,7 @@ input {
   padding: 15px 30px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .video__row_static {
     width: 100%;
@@ -1035,14 +1037,14 @@ input {
   left: -58.82353%;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .video__skale-blue {
     left: -80%;
   }
 }
 
-@media (max-width: 479px) {
+@media screen and (max-width: 479px) {
   
   .video__skale-blue {
     left: -100%;
@@ -1055,14 +1057,14 @@ input {
   right: -76.92308%;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .video__skale-gray {
     right: -80%;
   }
 }
 
-@media (max-width: 479px) {
+@media screen and (max-width: 479px) {
   
   .video__skale-gray {
     right: -100%;
@@ -1344,7 +1346,7 @@ input {
           transition-timing-function: ease-in-out;
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .speaker__main-block {
     width: 320px;
@@ -1396,7 +1398,7 @@ input {
   width: 170px;
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .speaker__dop-block {
     width: 300px;
@@ -1536,14 +1538,14 @@ input {
   box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .discover__wrap {
     width: 700px;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .discover__wrap {
     width: 650px;
@@ -1561,14 +1563,14 @@ input {
   margin-top: -118px;
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .discover__row {
     left: 130px;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .discover__row {
     left: 30px;
@@ -1582,7 +1584,7 @@ input {
   margin-bottom: 70px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .discover__title {
     font-size: 20px;
@@ -1595,14 +1597,14 @@ input {
   font-size: 22px;
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .discover__subtitle {
     width: 400px;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .discover__subtitle {
     width: auto;
@@ -1637,7 +1639,7 @@ input {
   background-color: #f3f3f3;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .program__left {
     margin-bottom: 100px;
@@ -1824,7 +1826,7 @@ input {
   text-align: center;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .program__left, .program__right {
     float: none;
@@ -1845,14 +1847,14 @@ input {
   color: #fff;
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .program__block {
     max-width: 380px;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .program__block {
     width: 100%;
@@ -1926,14 +1928,14 @@ input {
   text-align: left;
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .program__desc {
     max-width: 380px;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .program__desc {
     width: 100%;
@@ -2006,7 +2008,7 @@ input {
           justify-content: center;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .price__row {
     height: auto;
@@ -2049,7 +2051,7 @@ input {
   color: #d70808;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .price__right .price__text_color {
     font-size: 25px;
@@ -2071,7 +2073,7 @@ input {
   box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .price__left, .price__right {
     width: 100%;
@@ -2086,7 +2088,7 @@ input {
   font-size: 20px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .price__left .price__text, .price__right .price__text {
     padding-top: 40px;
@@ -2100,7 +2102,7 @@ input {
   font-family: "GothaProLig";
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .price__left .price__sum, .price__right .price__sum {
     padding-bottom: 40px;
@@ -2114,7 +2116,7 @@ input {
   font-family: "GothaProBla";
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .price__left .price__sum_big, .price__right .price__sum_big {
     font-size: 50px;
@@ -2158,7 +2160,7 @@ input {
           flex-wrap: wrap;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .sponsor__row,
   .partner__row {
@@ -2180,7 +2182,7 @@ input {
   background-color: #f3f3f3;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .sponsor__line,
   .partner__line {
@@ -2188,7 +2190,7 @@ input {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .sponsor__line:nth-of-type(2),
   .partner__line:nth-of-type(2) {
@@ -2201,14 +2203,14 @@ input {
   max-width: 100%;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .img-sponsorRarther {
     max-width: 60%;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .img__wrap {
     width: 49%;
@@ -2256,7 +2258,7 @@ input {
           justify-content: space-between;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .subscribe__row {
     height: auto;
@@ -2275,14 +2277,14 @@ input {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .subscribe__title {
     font-size: 18px;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .subscribe__title {
     text-align: center;
@@ -2303,14 +2305,14 @@ input {
   font-family: "GothaProReg";
 }
 
-@media (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   
   .subscribe__input {
     width: 330px;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   
   .subscribe__input {
     width: 210px;
@@ -2319,7 +2321,7 @@ input {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .subscribe__input {
     margin: 30px 0;
@@ -2374,7 +2376,7 @@ input[name="subscribe"]::placeholder {
   background-color: #f3f3f3;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .footer {
     min-height: 140px;
@@ -2387,7 +2389,7 @@ input[name="subscribe"]::placeholder {
   padding-bottom: 50px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .footer__row {
     min-height: 140px;
@@ -2452,7 +2454,7 @@ input[name="subscribe"]::placeholder {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .footer__left {
     display: none;
@@ -2474,7 +2476,7 @@ input[name="subscribe"]::placeholder {
   right: 15px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .footer__right-wrap {
     width: 100%;
@@ -2494,7 +2496,7 @@ input[name="subscribe"]::placeholder {
   margin: 0 7.5px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
   .footer__soc-icon {
     width: 40px;
@@ -2518,7 +2520,7 @@ input[name="subscribe"]::placeholder {
   background-color: #e6e6e6;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .footer__line {
     display: none;

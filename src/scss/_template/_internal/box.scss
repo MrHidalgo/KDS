@@ -13,6 +13,8 @@ $c-white            : return-value(color, white);
 $c-dimGray	        : return-value(color, dimGray);
 $c-darkOrange  	    : return-value(color, darkOrange);
 $c-orange     	    : return-value(color, orange);
+$c-summerSky   	    : return-value(color, summerSky);
+$c-pelorous   	    : return-value(color, pelorous);
 
 $f-GP_regular       : return-value(fonts, GP_regular);
 ///
@@ -30,6 +32,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		text-align: center;
 		cursor: pointer;
 		flex-wrap: wrap;
+		@include respond-to("medium") {
+			flex-direction: column;
+		}
 	}
 
 
@@ -39,10 +44,29 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		height: 500px;
 		border-radius: 10px;
 		border: 3px solid transparent;
-		transition-duration: .5s;
-		transition-timing-function: ease-in-out;
 		@include respond-to("large") {
-			width: 320px;
+			width: 300px;
+		}
+		@include respond-to("medium-all") {
+			width: $w-all;
+			height: auto;
+			pointer-events: none;
+			margin-bottom:  60px;
+			border: 3px solid $c-orange;
+			background-color: $c-darkOrange;
+			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+		}
+		@include respond-to("medium") {
+			min-height: 250px;
+			padding: 25px 15px;
+		}
+
+
+		&:nth-of-type(even) {
+			@include respond-to("medium-all") {
+				border-color: $c-summerSky;
+				background-color: lighten($c-pelorous, 8%);
+			}
 		}
 
 
@@ -50,6 +74,37 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			width: 330px;
 			margin: 0 auto;
 			padding: 25px 5px;
+			@include respond-to("large") {
+				width: 280px;
+			}
+			@include respond-to("medium-all") {
+				width: $w-all;
+				padding: 25px;
+			}
+			@include respond-to("medium") {
+				padding: 0;
+			}
+
+
+			&-img {
+				@include respond-to("medium") {
+					width: 40%;
+				}
+			}
+			&-text {
+				@include respond-to("medium") {
+					width: 60%;
+					padding-left: 40px;
+					text-align: left;
+				}
+			}
+
+			&-img,
+			&-text {
+				@include respond-to("medium") {
+					float: left;
+				}
+			}
 		}
 
 
@@ -57,16 +112,22 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			border: 3px solid $c-orange;
 			background-color: $c-darkOrange;
 			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+			transition-duration: .5s;
+			transition-timing-function: ease-in-out;
 			transition-property: border, background-color, box-shadow;
 
 
 			.box__img {
 				box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+				transition-duration: .5s;
+				transition-timing-function: ease-in-out;
 				transition-property: box-shadow;
 			}
 			.box-name,
 			.box-work {
 				color: $c-white;
+				transition-duration: .5s;
+				transition-timing-function: ease-in-out;
 				transition-property: color;
 			}
 			.icon-box-0,
@@ -74,6 +135,8 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 				&:before,
 				&:after {
 					opacity: 1;
+					transition-duration: .5s;
+					transition-timing-function: ease-in-out;
 					transition-property: opacity;
 				}
 			}
@@ -84,6 +147,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	&__img {
 		max-width: 100%;
 		margin-bottom: 50px;
+		@include respond-to("medium-all") {
+			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+		}
 	}
 
 
@@ -91,6 +157,10 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		position: relative;
 		margin-bottom: 30px;
 		font-size: 22px;
+		@include respond-to("medium") {
+			font-size: 18px;
+			margin-top: 10px;
+		}
 
 
 		&:before {
@@ -112,6 +182,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			margin: auto;
 			background-color: $c-white;
 			@include mixinDimensions(30px, 5px);
+			@include respond-to("medium") {
+				margin: initial;
+			}
 		}
 	}
 
@@ -119,18 +192,27 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	&-work {
 		text-align: left;
 		font-family: $f-GP_regular;
+		@include respond-to("medium") {
+			font-size: 15px;
+		}
 	}
 
 
 	&-name,
 	&-work {
 		color: $c-dimGray;
+		@include respond-to("medium-all") {
+			color: $c-white;
+		}
 	}
 
 
 	&__more {
 		text-align: center;
-		margin-top: 30px;
+		margin-top: 60px;
+		@include respond-to("medium-all") {
+			margin-top: 30px;
+		}
 	}
 }
 
@@ -157,6 +239,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			@include retina-sprite($sp-i-triangle-y-1-group);
 			top: -30px;
 			right: -20px;
+			@include respond-to("medium") {
+				right: 50%;
+			}
 		}
 	}
 	&-1 {
@@ -164,6 +249,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			@include retina-sprite($sp-i-triangle-y-2-group);
 			top: 150px;
 			right: 10px;
+			@include respond-to("medium") {
+				right: 53%;
+			}
 		}
 	}
 
@@ -175,6 +263,37 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			opacity: 0;
 			content: "";
 			position: absolute;
+			@include respond-to("medium-all") {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.even {
+	.icon-box {
+		&-0 {
+			&:before {
+				@include respond-to("medium-all") {
+					@include retina-sprite($sp-i-triangle-b-0-group);
+					left: -45px;
+				}
+			}
+			&:after {
+				@include respond-to("medium-all") {
+					@include retina-sprite($sp-i-triangle-b-1-group);
+				}
+			}
+		}
+		&-1 {
+			&:before {
+				@include respond-to("medium-all") {
+					@include retina-sprite($sp-i-triangle-b-2-group);
+				}
+				@include respond-to("medium") {
+					right: 56%;
+				}
+			}
 		}
 	}
 }
