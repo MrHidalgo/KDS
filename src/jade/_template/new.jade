@@ -1,18 +1,4 @@
 
-//mixin blockWrap(i)
-//    img(src="./img/img-new-triangle.png", class="wrap__img-bg")
-//    .wrap.clearfix
-//        .wrap-img
-//            if(i == 2)
-//                -for(var j = 0; j < 12; j++)
-//                    //img(src="", class="icon__img-animation-" + j)
-//        .wrap-text
-//            p.new-name!= newTitle[i]
-//            p.new-work!= newText[i]
-//    i.icon-new-0
-//    i.icon-new-1
-
-
 .new
     .container
         .new__row
@@ -20,7 +6,8 @@
                 img(src="./img/img-new-triangle.png", class="wrap__img-bg")
                 .wrap.clearfix
                     .wrap-img
-
+                        i.icon__img-animation1-0
+                        i.icon__img-animation1-1.icon__img-hover
                     .wrap-text
                         p.new-name!= "НОВЫЕ ЗНАНИЯ"
                         p.new-work!= "Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных."
@@ -31,7 +18,8 @@
                 img(src="./img/img-new-triangle.png", class="wrap__img-bg")
                 .wrap.clearfix
                     .wrap-img
-
+                        i.icon__img-animation2-0
+                        i.icon__img-animation2-1.icon__img-hover
                     .wrap-text
                         p.new-name!= "КЕЙСЫ"
                         p.new-work!= "Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных."
@@ -42,19 +30,11 @@
                 img(src="./img/img-new-triangle.png", class="wrap__img-bg")
                 .wrap.clearfix
                     .wrap-img
-                        img(src="./img/animation-2/i-main-test.svg", class="icon__img-animation-0")
+                        i.icon__img-animation3-0
+                        i.icon__img-animation3-1.icon__img-hover
                     .wrap-text
                         p.new-name!= "НЕЙТВОРКИНГ"
                         p.new-work!= "Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных."
                 i.icon-new-0
                 i.icon-new-1
 
-
-
-            //- for(var i = 0; i < 3; i++)
-            //    if(i % 2)
-            //        .new__main-block.even
-            //            +blockWrap(i)
-            //    else
-            //        .new__main-block
-            //            +blockWrap(i)

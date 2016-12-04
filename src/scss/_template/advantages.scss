@@ -17,6 +17,8 @@ $c-summerSky 		: return-value(color, summerSky);
 	min-height: 470px;
 	@include respond-to("small-all") {
 		min-height: 400px;
+		padding-top: 30px;
+		padding-bottom: 20px;
 	}
 
 

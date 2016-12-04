@@ -48,6 +48,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	&__input {
 		width: 470px;
 		height: 56px;
+		line-height: 56px;
 		padding: 0 30px;
 		background-color: transparent;
 		border: 1px solid $c-white;

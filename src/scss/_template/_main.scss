@@ -41,6 +41,11 @@ body{
 	font-family: $f-GP_bold;
 
 	background-color: $c-white;
+
+
+	&.open-menu {
+		overflow: hidden;
+	}
 }
 
 * {

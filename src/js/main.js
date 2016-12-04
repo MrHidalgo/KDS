@@ -125,9 +125,11 @@ $(window).on("load resize ready scroll", function(){
 });
 
 $(document).ready(function(){
+    /* TIMER */
     getfrominputs();
 
 
+    /* BTN MORE MOBILE - SPEAKER */
     $(".btn__more").on("click", function(e){
         e.preventDefault();
         $('.speaker__dop-row').css(
@@ -137,6 +139,22 @@ $(document).ready(function(){
     });
 
 
+    /* BTN MOBILE MENU */
+    $(".btn-mobile").on("click", function(e) {
+        e.preventDefault();
+        $(".nav").addClass("animated flipInX");
+        $("body").addClass('open-menu');
+        $(this).hide();
+    });
+    $(".btn-mobile_close").on("click", function(e){
+        e.preventDefault();
+        $(".nav").removeClass("animated flipInX");
+        $("body").removeClass('open-menu');
+        $(".btn-mobile").show();
+    });
+
+
+    /* ANIMATION - VIEW PORT CHECK PAGE */
     if($(window).width() > '767') {
         $('.advantages').addClass('hidden').viewportChecker(
             {
@@ -145,16 +163,23 @@ $(document).ready(function(){
                 offset: 500
             }
         );
+        $('.new').addClass('hidden').viewportChecker(
+            {
+                classToAdd: 'visible animated slideInLeft',
+                classToRemove : 'hidden',
+                offset: 500
+            }
+        );
         $('.speaker').addClass('hidden').viewportChecker(
             {
-                classToAdd: 'visible animated lightSpeedIn',
+                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden',
                 offset: 500
             }
         );
         $('.price').addClass('hidden').viewportChecker(
             {
-                classToAdd: 'visible animated tada',
+                classToAdd: 'visible animated bounceInLeft',
                 classToRemove : 'hidden',
                 offset: 500
             }

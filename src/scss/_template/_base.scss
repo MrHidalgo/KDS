@@ -177,6 +177,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 		text-align: center;
 		line-height: 1;
 		margin-bottom: 40px;
+		padding-top: 5px;
 		@include respond-to("small-all") {
 			font-size: 30px;
 		}
@@ -223,3 +224,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 
 .hidden{opacity:0}
 .visibly{opacity:1}
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}

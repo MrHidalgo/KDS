@@ -248,6 +248,7 @@
   text-align: center;
   line-height: 1;
   margin-bottom: 40px;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -307,6 +308,14 @@
 }
 
 
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
 body,
 html {
   width: 100%;
@@ -328,6 +337,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "GothaProBol";
   background-color: #fff;
+}
+
+
+body.open-menu {
+  overflow: hidden;
 }
 
 
@@ -608,6 +622,8 @@ input {
   color: #676767;
   font-size: 25px;
   margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -639,6 +655,13 @@ input {
   .preparation__title-icon {
     background-image: url(../img/sprite_KDS@2x.png);
     background-size: 141px 1228px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  
+  .preparation__title-icon {
+    top: -3px;
   }
 }
 
@@ -746,6 +769,7 @@ input {
 
 .box {
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 
@@ -1037,6 +1061,14 @@ input {
   color: #ff8d0d;
 }
 
+@media screen and (max-width: 479px) {
+  
+  .btn__more {
+    line-height: inherit;
+    padding-top: 6px;
+  }
+}
+
 
 .icon-box-0:before {
   background-image: url(../img/sprite_KDS.png);
@@ -1246,6 +1278,7 @@ input {
 .subscribe__input {
   width: 470px;
   height: 56px;
+  line-height: 56px;
   padding: 0 30px;
   background-color: transparent;
   border: 1px solid #fff;

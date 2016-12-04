@@ -21,7 +21,11 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 /// MEIN
 ///
 .new {
+	overflow: hidden;
 	padding-bottom: 60px;
+	@include respond-to("small-all") {
+		padding: 50px 0 0;
+	}
 
 
 	&__row {
@@ -87,6 +91,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 
 
 			&-img {
+				position: relative;
+				margin-bottom: 30px;
+				height: 160px;
 				@include respond-to("medium") {
 					width: 40%;
 				}
@@ -139,6 +146,25 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 					transition-timing-function: ease-in-out;
 					transition-property: opacity;
 				}
+			}
+			.icon__img-hover {
+				z-index: 100;
+			}
+			.icon__img-animation1-0,
+			.icon__img-animation2-0,
+			.icon__img-animation3-0 {
+				opacity: 0;
+				transition-duration: .6s;
+				transition-timing-function: ease-in-out;
+				transition-property: opacity;
+			}
+			.icon__img-animation1-1,
+			.icon__img-animation2-1,
+			.icon__img-animation3-1 {
+				opacity: 1;
+				transition-duration: .4s;
+				transition-timing-function: ease-in-out;
+				transition-property: opacity;
 			}
 		}
 	}
@@ -293,42 +319,64 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 }
 
 
-/// ANIMATION 2
+/// ANIMATION
 .icon__img {
-	&-animation-0 {
-		max-width: 50%;
-		//@include mixinDimensions(270px, 279px);
+	&-animation1-0,
+	&-animation1-1,
+	&-animation2-0,
+	&-animation2-1,
+	&-animation3-0,
+	&-animation3-1 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
-	&-animation-1 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation2-0,
+	&-animation2-1,
+	&-animation3-0,
+	&-animation3-1 {
+		@include mixinDimensions(150px, 154px);
 	}
-	&-animation-2 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation1-0 {
+		background: url("../img/img-new1-0.png") no-repeat center;
+		@include mixinDimensions(153px, 154px);
+		@include respond-to("medium-all") {
+			opacity: 0;
+		}
 	}
-	&-animation-3 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation1-1 {
+		opacity: 0;
+		background: url("../img/img-new1-0_h.png") no-repeat center;
+		@include mixinDimensions(160px, 153px);
+		@include respond-to("medium-all") {
+			opacity: 1;
+		}
 	}
-	&-animation-4 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation2-0 {
+		background: url("../img/img-new2-0.png") no-repeat center;
+		@include respond-to("medium-all") {
+			opacity: 0;
+		}
 	}
-	&-animation-5 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation2-1 {
+		opacity: 0;
+		background: url("../img/img-new2-0_h.png") no-repeat center;
+		@include respond-to("medium-all") {
+			opacity: 1;
+		}
 	}
-	&-animation-6 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation3-0 {
+		background: url("../img/img-new3-0.png") no-repeat center;
+		@include respond-to("medium-all") {
+			opacity: 0;
+		}
 	}
-	&-animation-7 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
-	}
-	&-animation-8 {
-		//@include mixinDimensions();
-		//background: url("../img/animation-2/i-.png") no-repeat center;
+	&-animation3-1 {
+		opacity: 0;
+		background: url("../img/img-new3-0_h.png") no-repeat center;
+		@include respond-to("medium-all") {
+			opacity: 1;
+		}
 	}
 }

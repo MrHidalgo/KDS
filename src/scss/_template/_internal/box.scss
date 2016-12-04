@@ -22,6 +22,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 ///
 .box {
 	padding-bottom: 60px;
+	overflow: hidden;
 
 
 	&__row {
@@ -225,6 +226,10 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	line-height: 56px;
 	padding: 0 30px;
 	color: $c-darkOrange;
+	@include respond-to("extra-small") {
+		line-height: inherit;
+		padding-top: 6px;
+	}
 }
 
 

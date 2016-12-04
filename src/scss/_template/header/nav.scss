@@ -7,6 +7,7 @@
 /// DECLARATION VARIABLE
 ///
 $c-white    : return-value(color, white);
+$c-dimGray  : return-value(color, dimGray);
 
 $f-GP_bold  : return-value(fonts, GP_bold);
 
@@ -21,8 +22,22 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 	right: 15px;
 	@include respond-to("medium-all") {
 		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		z-index: 1000;
+		overflow: hidden;
+		padding: 50px 15px 15px;
+		text-align: center;
 	}
 
+
+	&.flipInX {
+		display: block;
+	}
 
 	&__link {
 		font: {
@@ -32,10 +47,44 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		color: $c-white;
 		margin-left: 100px;
 		text-transform: uppercase;
+		@include respond-to("medium-all") {
+			color: $c-dimGray;
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			margin: 10px 0;
+		}
 
 
 		&:first-of-type {
 			margin-left: 0;
 		}
+	}
+}
+
+.btn-mobile_close {
+	display: none;
+	@include respond-to("medium-all") {
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 5px;
+		@include mixinDimensions(40px);
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 40px;
+		background-color: $c-dimGray;
 	}
 }

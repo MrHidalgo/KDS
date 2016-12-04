@@ -93,6 +93,7 @@ $f-GP_light   : return-value(fonts, GP_light);
 	z-index: 11;
 	right: 15px;
 	top: 55px;
+	cursor: pointer;
 	@include mixinDimensions(55px);
 	border-radius: $w-all;
 	background-color: $c-summerSky;
@@ -104,7 +105,7 @@ $f-GP_light   : return-value(fonts, GP_light);
 
 	&.btn_fixed {
 		position: fixed;
-		z-index: 100;
+		z-index: 12;
 	}
 
 

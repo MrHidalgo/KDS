@@ -28,6 +28,8 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 		color: $c-dimGray;
 		font-size: 25px;
 		margin-bottom: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
 		@include respond-to("small-all") {
 			font-size: 20px;
 		}
@@ -44,6 +46,9 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 			top: -10px;
 			vertical-align: top;
 			@include retina-sprite($sp-i-cursor-group);
+			@include respond-to("extra-small") {
+				top: -3px;
+			}
 		}
 	}
 
