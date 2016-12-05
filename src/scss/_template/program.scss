@@ -42,7 +42,7 @@ $f-GP_medium        : return-value(fonts, GP_medium);
 		}
 		.program__block {
 			border: 3px solid $c-orange;
-			background-color: $c-darkOrange;
+			@include mixinGradient($c-orange, $c-darkOrange);
 
 
 			.icon-triangle-0 {
@@ -90,7 +90,7 @@ $f-GP_medium        : return-value(fonts, GP_medium);
 	&__right {
 		.program__block {
 			border: 3px solid $c-summerSky;
-			background-color: $c-pelorous;
+			@include mixinGradient($c-summerSky, $c-pelorous);
 
 
 			.icon-triangle-0 {

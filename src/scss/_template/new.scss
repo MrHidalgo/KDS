@@ -22,6 +22,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 ///
 .new {
 	overflow: hidden;
+	padding-top: 30px;
 	padding-bottom: 60px;
 	@include respond-to("small-all") {
 		padding: 50px 0 0;
@@ -57,7 +58,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			pointer-events: none;
 			margin-bottom:  60px;
 			border: 3px solid $c-orange;
-			background-color: $c-darkOrange;
+			@include mixinGradient($c-orange, $c-darkOrange);
 			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 		}
 		@include respond-to("medium") {
@@ -69,7 +70,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		&:nth-of-type(even) {
 			@include respond-to("medium-all") {
 				border-color: $c-summerSky;
-				background-color: lighten($c-pelorous, 8%);
+				@include mixinGradient($c-summerSky, lighten($c-pelorous, 8%));
 			}
 		}
 
@@ -117,11 +118,11 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 
 		&:hover {
 			border: 3px solid $c-orange;
-			background-color: $c-darkOrange;
+			@include mixinGradient($c-orange, $c-darkOrange);
 			box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 			transition-duration: .5s;
 			transition-timing-function: ease-in-out;
-			transition-property: border, background-color, box-shadow;
+			transition-property: border, background, box-shadow;
 
 
 			.new__img {

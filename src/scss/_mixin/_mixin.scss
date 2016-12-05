@@ -234,6 +234,17 @@
   background-image: linear-gradient($start_color, $end_color);
 }
 
+
+
+///
+@mixin mixinGradient($start_color, $end_color) {
+	background: $start_color;
+	background: -moz-linear-gradient(left,  $start_color 0%, $end_color 100%);
+	background: -webkit-linear-gradient(left,  $start_color 0%,$end_color 100%);
+	background: linear-gradient(to right,  $start_color 0%,$end_color 100%);
+}
+
+
 ///
 /// Mixin insert image [:after | :before]
 ///

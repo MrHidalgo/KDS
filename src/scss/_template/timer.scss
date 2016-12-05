@@ -20,7 +20,6 @@ $f-GP_light         : return-value(fonts, GP_light);
 .timer {
 	min-height: 790px;
 	padding-top: 100px;
-	padding-bottom: 30px;
 	@include respond-to("small-all") {
 		min-height: 530px;
 		padding-top: 50px;
