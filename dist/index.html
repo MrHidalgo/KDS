@@ -23,7 +23,7 @@
         <div class="logotype clearfix"><img src="./img/img-logotype.png" alt="logotype" title="logotype" class="img-logo img-logo_normal"><img src="./img/img-logotype@2x.png" alt="logotype" title="logotype" class="img-logo img-logo_retina"><img src="./img/img-logotype-mobile.png" alt="logotype" title="logotype" class="img-logo-mobile img-logo-mobile_normal"><img src="./img/img-logotype-mobile@2x.png" alt="logotype" title="logotype" class="img-logo-mobile img-logo-mobile_retina"></div>
         <div class="header__wrap">
           <div class="header__wrap-row block_skew"></div>
-          <div class="nav"><a href="javascript:void(0);" class="btn-mobile_close"></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link">О конференции</a><a href="javascript:void(0);" title="linkText[i]" class="nav__link">Спикеры</a><a href="javascript:void(0);" title="linkText[i]" class="nav__link">Расписание</a>
+          <div class="nav"><a href="javascript:void(0);" class="btn-mobile_close"></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">О конференции</span></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">Спикеры</span></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">Расписание</span></a>
           </div><a href="javascript:void(0);" title="burger button" class="btn-mobile"><span class="btn-mobile__line"></span></a>
           <div class="slogan">
             <h1 class="slogan__title">Одно из крупнейших </br> мероприятий про данные </br> в Восточной Европе</h1>
@@ -364,7 +364,8 @@
         <div class="subscribe__row">
           <p class="subscribe__title">Быть в кусре всего </br> что здесь происходит</p>
           <form action="" class="subscribe__form">
-            <input type="text" name="subscribe" placeholder="Введите вашу почту" class="subscribe__input">
+            <input type="text" id="subscribe" name="subscribe" placeholder="Введите вашу почту" class="subscribe__input">
+            <label for="subscribe" class="subscribe__label"><i class="icon__status"></i></label>
             <button type="submit" class="btn btn__submit subscribe__btn">ПОДПИСАТЬСЯ</button>
           </form>
         </div>

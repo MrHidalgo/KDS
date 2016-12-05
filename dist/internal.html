@@ -22,7 +22,10 @@
         <p class="preparation__title">Подготовтесь к <span class="preparation__title_blue">Kyiv Data Spring <i class="preparation__title-icon"></i></span><br>и узнайте про лучшие примеры использования данных в бизнесе.</p>
         <form action="" class="preparation__form">
           <p class="preparation__form-title">  Оставьте свою почту и получите<br>  наш сборник кейсов про данные и машинное обучение.</p>
-          <input type="text" class="preparation__form-input">
+          <div class="preparation__form-wrap">
+            <input type="text" id="preparation__form-input" class="preparation__form-input">
+            <label for="preparation__form-input" class="preparation__form-label"><i class="icon__status"></i></label>
+          </div>
           <button type="submit" class="preparation__form-btn btn__submit">ОТПРАВИТЬ</button>
         </form>
       </div>
@@ -67,7 +70,8 @@
         <div class="subscribe__row">
           <p class="subscribe__title">Быть в кусре всего </br> что здесь происходит</p>
           <form action="" class="subscribe__form">
-            <input type="text" name="subscribe" placeholder="Введите вашу почту" class="subscribe__input">
+            <input type="text" id="subscribe" name="subscribe" placeholder="Введите вашу почту" class="subscribe__input">
+            <label for="subscribe" class="subscribe__label"><i class="icon__status"></i></label>
             <button type="submit" class="btn btn__submit subscribe__btn">ПОДПИСАТЬСЯ</button>
           </form>
         </div>

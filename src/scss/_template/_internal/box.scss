@@ -220,7 +220,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 
 .btn__more {
 	display: inline-block;
-	border: 2px solid $c-darkOrange;
+	border: 2px solid $c-orange;
 	border-radius: 4px;
 	height: 56px;
 	line-height: 56px;
@@ -229,6 +229,14 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 	@include respond-to("extra-small") {
 		line-height: inherit;
 		padding-top: 6px;
+	}
+
+
+	&:hover,
+	&:active {
+		background-color: lighten($c-orange, 4%);
+		color: $c-white;
+		transition: all 0.3s linear;
 	}
 }
 

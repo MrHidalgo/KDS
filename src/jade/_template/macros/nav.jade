@@ -9,4 +9,5 @@
 .nav
     a(href="javascript:void(0);", class="btn-mobile_close")
     -for(var i = 0; i < 3; i++)
-        a(href="javascript:void(0);", class="nav__link", title="linkText[i]")!= linkText[i]
+        a(href="javascript:void(0);", class="nav__link", title="linkText[i]")
+            span.nav__link-text!= linkText[i]

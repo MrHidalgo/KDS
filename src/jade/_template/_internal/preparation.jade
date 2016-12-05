@@ -14,6 +14,9 @@
                 br
                 |   наш сборник кейсов про данные и машинное обучение.
 
-            input(type="text", class="preparation__form-input")
+            .preparation__form-wrap
+                input(type="text", id="preparation__form-input", class="preparation__form-input")
+                label(for="preparation__form-input", class="preparation__form-label")
+                    i.icon__status
 
             button(type="submit", class="preparation__form-btn btn__submit")!= "ОТПРАВИТЬ"

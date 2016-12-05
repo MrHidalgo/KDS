@@ -3,11 +3,13 @@
 ///
 @import "../../_mixin/mixin";
 @import "../../_function/function";
+@import "../../_variable/sprite_KDS";
 ///
 /// DECLARATION VARIABLE
 ///
 $c-white    : return-value(color, white);
 $c-dimGray  : return-value(color, dimGray);
+$c-summerSky: return-value(color, summerSky);
 
 $f-GP_bold  : return-value(fonts, GP_bold);
 
@@ -27,7 +29,7 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #fff;
+		background-color: $c-summerSky;
 		z-index: 1000;
 		overflow: hidden;
 		padding: 50px 15px 15px;
@@ -39,7 +41,9 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		display: block;
 	}
 
+
 	&__link {
+		position: relative;
 		font: {
 			size: 15px;
 			family: $f-GP_bold;
@@ -48,7 +52,6 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		margin-left: 100px;
 		text-transform: uppercase;
 		@include respond-to("medium-all") {
-			color: $c-dimGray;
 			display: block;
 			height: 40px;
 			line-height: 40px;
@@ -56,20 +59,68 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		}
 
 
+		&-text {
+			position: relative;
+			z-index: 11;
+		}
+
+
+		&.active {
+			&:after {
+				opacity: 1;
+				@include retina-sprite($sp-i-nav-active-group);
+				transition-duration: .3s;
+				transition-timing-function: ease-in-out;
+				transition-property: opacity;
+			}
+		}
+
+
+		&:before,
+		&:after {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			z-index: 10;
+			top: -24.5px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			@include respond-to("medium-all") {
+				top: -13.5px;
+			}
+		}
+
+
 		&:first-of-type {
 			margin-left: 0;
+		}
+
+
+		&:hover {
+			&:before {
+				opacity: 1;
+				@include retina-sprite($sp-i-nav-hover-group);
+				transition-duration: .3s;
+				transition-timing-function: ease-in-out;
+				transition-property: opacity;
+			}
 		}
 	}
 }
 
 .btn-mobile_close {
 	display: none;
+	@include mixinDimensions(55px);
+	border-radius: 100%;
+	background-color: $c-summerSky;
+	box-shadow: 0 4px 15px 4px rgba(0,0,0,0.2);
 	@include respond-to("medium-all") {
 		display: block;
 		position: absolute;
 		right: 15px;
 		top: 5px;
-		@include mixinDimensions(40px);
+		@include mixinDimensions(55px);
 	}
 
 	&:before {
@@ -83,8 +134,9 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 	&:after {
 		content: "";
 		position: absolute;
-		width: 3px;
-		height: 40px;
-		background-color: $c-dimGray;
+		top: 15px;
+		width: 2px;
+		height: 25px;
+		background-color: $c-white;
 	}
 }

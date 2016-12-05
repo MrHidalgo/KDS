@@ -330,6 +330,11 @@
       @content
     }
   }
+  @else if ($media == 'medium-min') {
+    @media screen and (min-width: 991px) {
+      @content
+    }
+  }
   @else if ($media == 'large') {
     @media screen and (min-width: 992px) and (max-width: 1199px) {
       @content

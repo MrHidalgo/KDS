@@ -186,6 +186,7 @@ $f-GP_light         : return-value(fonts, GP_light);
 				height: 13px;
 			}
 
+
 			&:before {
 				content: attr(data-second);
 				top: -18px;
@@ -206,7 +207,7 @@ $f-GP_light         : return-value(fonts, GP_light);
 				opacity: 0;
 				position: absolute;
 				width: 20px;
-				transition: all .3s ease-in-out;
+				transition: all .1s ease-in-out;
 			}
 
 

@@ -1,5 +1,6 @@
 @import "../_mixin/mixin";
 @import "../_function/function";
+@import "../_variable/sprite_KDS";
 ///
 /// DECLARATION VARIABLE
 ///
@@ -17,6 +18,29 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 .subscribe {
 	min-height: 115px;
 	background-color: $c-summerSky;
+
+
+	&__form {
+		position: relative;
+
+
+		.icon__status {
+			position: absolute;
+			top: 17px;
+			right: 15px;
+		}
+
+		&.error {
+			.icon__status {
+				@include retina-sprite($sp-i-error-group);
+			}
+		}
+		&.done {
+			.icon__status {
+				@include retina-sprite($sp-i-done-group);
+			}
+		}
+	}
 
 
 	&__row {
@@ -69,6 +93,32 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		}
 		@include respond-to("small-all") {
 			margin: 30px 0;
+			width: 100%;
+		}
+
+
+		&:focus,
+		&:hover {
+			background-color: rgba($c-white, .1);
+			transition: all .2s linear;
+		}
+	}
+
+
+	&__label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 470px;
+		height: 56px;
+		line-height: 56px;
+		@include respond-to("large") {
+			width: 330px;
+		}
+		@include respond-to("medium") {
+			width: 210px;
+		}
+		@include respond-to("small-all") {
 			width: 100%;
 		}
 	}

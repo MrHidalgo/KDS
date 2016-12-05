@@ -68,6 +68,24 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 		box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 
 
+		.icon__status {
+			position: absolute;
+			top: 17px;
+			right: 15px;
+		}
+
+		&.error {
+			.icon__status {
+				@include retina-sprite($sp-i-error-group);
+			}
+		}
+		&.done {
+			.icon__status {
+				@include retina-sprite($sp-i-done-group);
+			}
+		}
+
+
 		&:before {
 			content: "";
 			position: absolute;
@@ -95,6 +113,30 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 			padding: 0 30px;
 			color: $c-white;
 			font-size: 18px;
+			@include respond-to("small-all") {
+				width: 90%;
+			}
+
+
+			&:focus,
+			&:hover {
+				background-color: rgba($c-white, .1);
+				transition: all .2s linear;
+			}
+		}
+
+
+		&-wrap {
+			position: relative;
+		}
+
+
+		&-label {
+			margin-top: 30px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include mixinDimensions(500px, 56px);
 			@include respond-to("small-all") {
 				width: 90%;
 			}

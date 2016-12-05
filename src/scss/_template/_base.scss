@@ -13,6 +13,7 @@ $c-whiteSmoke   : return-value(color, whiteSmoke);
 $c-gainsboro    : return-value(color, gainsboro);
 $c-whisper      : return-value(color, whisper);
 $c-summerSky    : return-value(color, summerSky);
+$c-darkPastelGreen: return-value(color, darkPastelGreen);
 
 $f-GP_bold      : return-value(fonts, GP_bold);
 $f-GP_black     : return-value(fonts, GP_black);
@@ -88,12 +89,32 @@ $f-GP_black     : return-value(fonts, GP_black);
 	}
 
 
+	&-timer,
+	&-header,
+	&-discover {
+		&:hover,
+		&:active {
+			.block_skew {
+				transform: skewX(0deg);
+				transition: all .3s linear;
+			}
+		}
+
+
+		&:active {
+			.btn_orange {
+				@include mixinGradient(lighten($c-orange, 3%), lighten($c-darkOrange, 3%));
+			}
+		}
+	}
+
+
 	&__submit {
 		padding: 0;
 		width: 280px;
 		height: 56px;
 		line-height: 56px;
-		background-color: $c-darkOrange;
+		@include mixinGradient($c-orange, $c-darkOrange);
 		border: 2px solid $c-orange;
 		border-radius: 4px;
 		color: $c-white;
@@ -109,19 +130,39 @@ $f-GP_black     : return-value(fonts, GP_black);
 			width: 100%;
 			font-size: 16px;
 		}
+
+
+		&:hover {
+			@include mixinGradient($c-orange, $c-orange);
+		}
+
+
+		&:active {
+			@include mixinGradient($c-orange, $c-darkOrange);
+		}
 	}
 
 
 	&_orange {
-		background-color: $c-darkOrange;
-		border: 4px solid $c-orange;
+		@include mixinGradient($c-orange, $c-darkOrange);
+		border: 2px solid $c-orange;
 		color: $c-white;
+
+
+		&:hover {
+
+		}
+
+
+		&:active {
+
+		}
 	}
 
 
 	&_gray {
-		background-color: $c-whisper;
-		border: 4px solid $c-gainsboro;
+		@include mixinGradient(#ebebeb, #e0e0e0);
+		border: 2px solid #e0e0e0;
 		color: $c-dimGray;
 	}
 
@@ -164,6 +205,49 @@ $f-GP_black     : return-value(fonts, GP_black);
 			line-height: 55px;
 		}
 	}
+
+
+
+	&__price{
+		&.btn_orange {
+			&:hover {
+				border-color: $c-darkPastelGreen;
+				@include mixinGradient($c-darkPastelGreen, darken($c-darkPastelGreen, 8%));
+			}
+
+
+			&:active {
+				border-color: darken($c-darkPastelGreen, 5%);
+				@include mixinGradient(lighten($c-darkPastelGreen, 8%), darken($c-darkPastelGreen, 5%));
+			}
+
+
+			&:hover,
+			&:active {
+				transition: all .3s linear;
+			}
+		}
+
+
+		&.btn_gray {
+			&:hover {
+				border-color: #ebebeb;
+				@include mixinGradient(#ebebeb, #fddede);
+			}
+
+
+			&:active {
+				border-color: #e0e0e0;
+				@include mixinGradient(lighten(#ebebeb, 4%), lighten(#fddede, 2%));
+			}
+
+
+			&:hover,
+			&:active {
+				transition: all .3s linear;
+			}
+		}
+	}
 }
 
 
@@ -178,8 +262,11 @@ $f-GP_black     : return-value(fonts, GP_black);
 		line-height: 1;
 		margin-bottom: 40px;
 		padding-top: 5px;
+		@include respond-to("medium") {
+			font-size: 35px;
+		}
 		@include respond-to("small-all") {
-			font-size: 30px;
+			font-size: 20px;
 		}
 	}
 }

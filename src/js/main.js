@@ -135,7 +135,7 @@ $(document).ready(function(){
         $('.speaker__dop-row').css(
             "display","flex"
         ).slideDown(400);
-        $(this).hide();
+        // $(this).hide();
     });
 
 
@@ -154,48 +154,50 @@ $(document).ready(function(){
     });
 
 
+    /* NAV LINK */
+    $(".nav__link").on("click", function(e){
+        e.preventDefault();
+        $(".nav__link").removeClass("active");
+        $(this).addClass("active");
+    });
+
+
     /* ANIMATION - VIEW PORT CHECK PAGE */
     if($(window).width() > '767') {
         $('.advantages').addClass('hidden').viewportChecker(
             {
                 classToAdd: 'visible animated fadeInRight',
-                classToRemove : 'hidden',
-                offset: 500
+                classToRemove : 'hidden'
             }
         );
         $('.new').addClass('hidden').viewportChecker(
             {
                 classToAdd: 'visible animated slideInLeft',
-                classToRemove : 'hidden',
-                offset: 500
+                classToRemove : 'hidden'
             }
         );
         $('.speaker').addClass('hidden').viewportChecker(
             {
                 classToAdd: 'visible animated slideInUp',
-                classToRemove : 'hidden',
-                offset: 500
+                classToRemove : 'hidden'
             }
         );
         $('.price').addClass('hidden').viewportChecker(
             {
                 classToAdd: 'visible animated bounceInLeft',
-                classToRemove : 'hidden',
-                offset: 500
+                classToRemove : 'hidden'
             }
         );
         $('.program__left').addClass('hidden').viewportChecker(
             {
                 classToAdd: 'visible animated slideInLeft',
-                classToRemove : 'hidden',
-                offset: 500
+                classToRemove : 'hidden'
             }
         );
         $('.program__right').addClass('hidden').viewportChecker(
             {
                 classToAdd: 'visible animated slideInRight',
-                classToRemove : 'hidden',
-                offset: 500
+                classToRemove : 'hidden'
             }
         );
     }
