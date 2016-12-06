@@ -124,6 +124,15 @@ $(window).on("load resize ready scroll", function(){
     }
 });
 
+
+/* MAIN HEADER REMOVE ACTIVE CLASS AFTER SCROLL TOP*/
+$(window).on("scroll", function() {
+    if($("body").scrollTop() === 0 ) {
+        $('.nav__link').removeClass('active');
+    }
+});
+
+
 $(document).ready(function(){
     /* TIMER */
     getfrominputs();
@@ -210,7 +219,6 @@ $(document).ready(function(){
 
     /* NOIZE */
     var strClass = ".header__wrap-row, " +
-        ".btn_orange, .btn_gray, .btn__submit, .subscribe__btn " +
         ".video__skale-blue, .video__skale-white, .video__skale-gray, " +
         ".navigation__wrap, " +
         ".timer__seconds, .timer__btn, " +

@@ -51,6 +51,7 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		color: $c-white;
 		margin-left: 100px;
 		text-transform: uppercase;
+		white-space: nowrap;
 		@include respond-to("medium-all") {
 			display: block;
 			height: 40px;

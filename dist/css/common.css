@@ -549,6 +549,7 @@ input {
   color: #fff;
   margin-left: 100px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 991px) {
