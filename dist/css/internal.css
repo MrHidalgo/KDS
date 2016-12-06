@@ -369,7 +369,7 @@
   top: 0;
   right: -250px;
   width: 88%;
-  background-color: #269ed8;
+  background-color: #1b89be;
   height: 90px;
 }
 
@@ -382,6 +382,7 @@
 .img-logo-fixed {
   float: left;
   margin-top: 18px;
+  cursor: pointer;
 }
 
 

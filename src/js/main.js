@@ -129,6 +129,14 @@ $(document).ready(function(){
     getfrominputs();
 
 
+    /* BODY CLICK */
+    $('body').on('click', function (e) {
+        if (!$(e.target).closest('.nav__link').length) {
+            $('.nav__link').removeClass('active');
+        }
+    });
+
+
     /* BTN MORE MOBILE - SPEAKER */
     $(".btn__more").on("click", function(e){
         e.preventDefault();
@@ -144,22 +152,85 @@ $(document).ready(function(){
         e.preventDefault();
         $(".nav").addClass("animated flipInX");
         $("body").addClass('open-menu');
-        $(this).hide();
+        $(this).css(
+            "opacity" , "0"
+        );
     });
     $(".btn-mobile_close").on("click", function(e){
         e.preventDefault();
         $(".nav").removeClass("animated flipInX");
         $("body").removeClass('open-menu');
-        $(".btn-mobile").show();
+        $(".btn-mobile").css(
+            "opacity" , "1"
+        );
     });
 
 
     /* NAV LINK */
     $(".nav__link").on("click", function(e){
         e.preventDefault();
+
+        var id  = $(this).attr('href');
+
         $(".nav__link").removeClass("active");
-        $(this).addClass("active");
+        $("a[href=" + id + "]").addClass("active");
+
+        $(".nav").removeClass("animated flipInX");
+        $("body").removeClass('open-menu');
+        $(".btn-mobile").css(
+            "opacity" , "1"
+        );
     });
+
+
+    /* SMOOTH SCROLL */
+    $(".nav, .navigation__row").on("click", "a", function (e) {
+        e.preventDefault();
+
+        var id          = $(this).attr('href'),
+            navHeight   = $(".navigation").outerHeight(),
+            top         = $(id).offset().top - navHeight;
+
+        $('body, html').animate(
+            {
+                scrollTop: top
+            }, 1000);
+    });
+
+
+    /* LOGO CLICK SCROLL TO TOP */
+    $(".img-logo-fixed").on("click", function(e) {
+        $('body,html').animate(
+            {
+                scrollTop: 0
+            }, 1000
+        );
+    });
+
+
+    /* NOIZE */
+    var strClass = ".header__wrap-row, " +
+        ".btn_orange, .btn_gray, .btn__submit, .subscribe__btn " +
+        ".video__skale-blue, .video__skale-white, .video__skale-gray, " +
+        ".navigation__wrap, " +
+        ".timer__seconds, .timer__btn, " +
+        ".price__left, .price__right, " +
+        ".discover__wrap, " +
+        ".program__left, .program__right, " +
+        ".subscribe, " +
+        ".footer__wrap, " +
+        ".preparation__form";
+
+    $(strClass).noisy(
+        {
+            intensity: 0.2,
+            size: 200,
+            opacity: 0.3,
+            fallback: '',
+            randomColors: false, // true by default
+            color: '#e6e6e6'
+        }
+    );
 
 
     /* ANIMATION - VIEW PORT CHECK PAGE */

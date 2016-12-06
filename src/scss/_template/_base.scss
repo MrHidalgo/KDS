@@ -13,6 +13,7 @@ $c-whiteSmoke   : return-value(color, whiteSmoke);
 $c-gainsboro    : return-value(color, gainsboro);
 $c-whisper      : return-value(color, whisper);
 $c-summerSky    : return-value(color, summerSky);
+$c-pelorous     : return-value(color, pelorous );
 $c-darkPastelGreen: return-value(color, darkPastelGreen);
 
 $f-GP_bold      : return-value(fonts, GP_bold);
@@ -294,7 +295,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 		top: 0;
 		right: -250px;
 		width: 88%;
-		background-color: $c-summerSky;
+		background-color: $c-pelorous;
 		height: 90px;
 	}
 
@@ -307,6 +308,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 .img-logo-fixed {
 	float: left;
 	margin-top: 18px;
+	cursor: pointer;
 }
 
 .hidden{opacity:0}

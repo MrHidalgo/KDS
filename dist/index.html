@@ -13,7 +13,7 @@
     <div class="navigation navigation_fixed">
       <div class="navigation__wrap block_skew"></div>
       <div class="container clearfix"><img src="./img/img-logo-fixed.png" class="img-logo-fixed">
-        <div class="navigation__row"><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">О конференции</span></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">Спикеры</span></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">Расписание</span></a>
+        <div class="navigation__row"><a href="#video" title="О конференции" class="nav__link"><span class="nav__link-text">О конференции</span></a><a href="#speaker" title="Спикеры" class="nav__link"><span class="nav__link-text">Спикеры</span></a><a href="#program" title="Расписание" class="nav__link"><span class="nav__link-text">Расписание</span></a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <div class="logotype clearfix"><img src="./img/img-logotype.png" alt="logotype" title="logotype" class="img-logo img-logo_normal"><img src="./img/img-logotype@2x.png" alt="logotype" title="logotype" class="img-logo img-logo_retina"><img src="./img/img-logotype-mobile.png" alt="logotype" title="logotype" class="img-logo-mobile img-logo-mobile_normal"><img src="./img/img-logotype-mobile@2x.png" alt="logotype" title="logotype" class="img-logo-mobile img-logo-mobile_retina"></div>
         <div class="header__wrap">
           <div class="header__wrap-row block_skew"></div>
-          <div class="nav"><a href="javascript:void(0);" class="btn-mobile_close"></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">О конференции</span></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">Спикеры</span></a><a href="javascript:void(0);" title="linkText[i]" class="nav__link"><span class="nav__link-text">Расписание</span></a>
+          <div class="nav"><a href="javascript:void(0);" class="btn-mobile_close"></a><a href="#video" title="О конференции" class="nav__link"><span class="nav__link-text">О конференции</span></a><a href="#speaker" title="Спикеры" class="nav__link"><span class="nav__link-text">Спикеры</span></a><a href="#program" title="Расписание" class="nav__link"><span class="nav__link-text">Расписание</span></a>
           </div><a href="javascript:void(0);" title="burger button" class="btn-mobile"><span class="btn-mobile__line"></span></a>
           <div class="slogan">
             <h1 class="slogan__title">Одно из крупнейших </br> мероприятий про данные </br> в Восточной Европе</h1>
@@ -62,13 +62,13 @@
         </div>
       </div>
     </div>
-    <div class="video">
+    <div id="video" class="video">
       <div class="video__skale-blue block_skew"></div>
       <div class="video__skale-white block_skew"></div>
       <div class="video__skale-gray block_skew"></div>
       <div class="container video__row">
         <div class="video__row_present">
-          <video id="video" width="100%" height="100%" controls>
+          <video width="100%" height="100%" controls>
             <source src="">
           </video>
         </div>
@@ -174,7 +174,7 @@
         </div>
       </div>
     </div>
-    <div class="speaker">
+    <div id="speaker" class="speaker">
       <p class="main__title">НАШИ СПИКЕРЫ</p>
       <div class="container">
         <div class="speaker__main-row">
@@ -257,7 +257,7 @@
           <p class="btn__text">УЗНАТЬ</p></a>
       </div>
     </div>
-    <div class="program">
+    <div id="program" class="program">
       <div class="program__line"></div>
       <div class="container clearfix">
         <div class="program__left">
@@ -397,5 +397,6 @@
     <script src="./script/jquery-1.11.1.min.js"></script>
     <script src="./script/main.min.js"></script>
     <script src="./script/jquery.viewportchecker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"></script>
   </body>
 </html>

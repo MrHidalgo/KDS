@@ -6,6 +6,11 @@ include _mixin/mixin
         "Спикеры",
         "Расписание"
     ];
+    var linkHref = [
+        "#video",
+        "#speaker",
+        "#program"
+    ];
 
 
 doctype html
@@ -24,7 +29,7 @@ html(lang="en")
                 img(src="./img/img-logo-fixed.png", class="img-logo-fixed")
                 .navigation__row
                     -for(var i = 0; i < 3; i++)
-                        a(href="javascript:void(0);", class="nav__link", title="linkText[i]")
+                        a(href= linkHref[i], class="nav__link", title= linkText[i])
                             span.nav__link-text!= linkText[i]
 
 

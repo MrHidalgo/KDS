@@ -369,7 +369,7 @@
   top: 0;
   right: -250px;
   width: 88%;
-  background-color: #269ed8;
+  background-color: #1b89be;
   height: 90px;
 }
 
@@ -382,6 +382,7 @@
 .img-logo-fixed {
   float: left;
   margin-top: 18px;
+  cursor: pointer;
 }
 
 
@@ -971,7 +972,7 @@ input {
   z-index: 10;
   top: 0;
   left: -80px;
-  background: #269ed8;
+  background: #1b89be;
   min-width: 930px;
   min-height: 925px;
   box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
@@ -1447,7 +1448,7 @@ input {
 
 
 .video__skale-blue {
-  background-color: #269ed8;
+  background-color: #1b89be;
   left: -58.82353%;
 }
 
@@ -2587,6 +2588,7 @@ input {
   
   .speaker__dop-block {
     width: 33.33333%;
+    padding: 10px 0;
   }
 }
 
@@ -2595,7 +2597,7 @@ input {
   .speaker__dop-block {
     float: left;
     width: 50%;
-    padding: 25px 5px;
+    padding: 25px 5px 0;
   }
 }
 
