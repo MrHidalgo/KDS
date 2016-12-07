@@ -1,6 +1,6 @@
-mixin programDescr(textDescription)
+mixin programDescr(programTime, textDescription)
     .program__desc.clearfix
-        p.program__desc-time!= "9.00"
+        p.program__desc-time!= programTime
         .program__desc-text
             p.program__desc-name!= "Руслан Савчишин, MagneticOne Group"
             p.program__desc-what!= textDescription
@@ -22,10 +22,10 @@ mixin programDescr(textDescription)
 
                 span.program__block-line
 
-            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт")
-            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт ")
-            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить...")
-            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт")
+            +programDescr("9-00", "Как начать работать с данными? Первые шаги и инструменты")
+            +programDescr("10-00", "Как машинное обучение меняет маркетинг и продажи")
+            +programDescr("11-00", "Chief Data Officer – кто это?")
+            +programDescr("12-19", "И еще более 5 уникальных докладов")
 
 
         .program__right
@@ -37,5 +37,7 @@ mixin programDescr(textDescription)
 
                 span.program__block-line
 
-            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт")
-            +programDescr("Value Based Pricing: как определить цену на свой SaaS продукт Value Based Pricing: как определить цену на свой SaaS продукт")
+            +programDescr("9-00", "Старт-апы в области data.Какие перспективы?")
+            +programDescr("10-00", "Как разработчику стать data scientist?")
+            +programDescr("11-00", "Искусственный интеллект – насколько мы близки к нему?")
+            +programDescr("12-19", "И еще более 5 уникальных докладов")

@@ -34,6 +34,14 @@ $f-GP_light     : return-value(fonts, GP_light);
 
 	$width : 1170px;
 	$widthRowVideo : 570px;
+	&__img {
+		box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+		max-width: 100%;
+		height: auto;
+		@include respond-to("medium-all") {
+			margin-bottom: 30px;
+		}
+	}
 	&__row {
 		display: flex;
 		flex-direction: row;
@@ -47,6 +55,7 @@ $f-GP_light     : return-value(fonts, GP_light);
 			width:  $widthRowVideo;
 			@include respond-to("medium-all") {
 				width: $w-all;
+				text-align: center;
 			}
 
 			video {
@@ -72,6 +81,9 @@ $f-GP_light     : return-value(fonts, GP_light);
 		color: $c-dimGray;
 		font-size: 16px;
 		font-family: $f-GP_light;
+		@include respond-to("medium-all") {
+			color: #333;
+		}
 
 		&_bold {
 			color: lighten($c-black, 10%);

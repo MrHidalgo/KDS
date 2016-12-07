@@ -1,8 +1,9 @@
 function initialize() {
+
     var myOptions = {
-        zoom: 14,
+        zoom: 15,
         scrollwheel: false,
-        center: new google.maps.LatLng(50.440592, 30.49163599999997),
+        center: new google.maps.LatLng(50.3778063, 30.4773671),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
@@ -10,10 +11,10 @@ function initialize() {
     marker = new google.maps.Marker({
         map: map,
         icon: iconMarker,
-        position: new google.maps.LatLng(50.440592, 30.49163599999997)
+        position: new google.maps.LatLng(50.3778063, 30.4773671)
     });
     infowindow = new google.maps.InfoWindow({
-        content: "<b>KDS</b><br/>Vokzalna St, 1, Kyiv, <br/>02000 Kiev"
+        content: "<b>Kyiv Data Spring</b><br/>проспект Академіка Глушкова, 1<br/>Київ, 03680"
     });
     google.maps.event.addListener(marker, "click", function() {
         infowindow.open(map, marker);
@@ -81,7 +82,7 @@ function get_timer(string) {
 }
 
 function getfrominputs() {
-    string = "03/11/2017 00:00";
+    string = "03/11/2017 11:00";
 
     get_timer(string);
 

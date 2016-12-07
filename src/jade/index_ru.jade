@@ -1,0 +1,70 @@
+include _mixin/mixin
+
+-
+    var linkText = [
+        "О конференции",
+        //"Спикеры",
+        "Расписание"
+    ];
+    var linkHref = [
+        "#video",
+        //"#speaker",
+        "#program"
+    ];
+
+
+doctype html
+html(lang="en")
+
+
+    +headSite("KDS", linkSite.styleLinkRu, "")
+
+
+    body
+
+
+        .navigation.navigation_fixed
+            .navigation__wrap.block_skew
+            .container.clearfix
+                img(src="./img/img-logo-fixed.png", class="img-logo-fixed")
+                .navigation__row
+                    -for(var i = 0; i < 3; i++)
+                        a(href= linkHref[i], class="nav__link", title= linkText[i])
+                            span.nav__link-text!= linkText[i]
+
+
+        // BLOCK HEADER [nav, bottomInfo, logo, slogan]
+        block header
+            include _template/header
+
+        block advantages
+            include _template/advantages
+
+        block video
+            include _template/video
+
+        block timer
+            include _template/timer
+
+        block new
+            include _template/new
+
+        block program
+            include _template/program
+
+        block price
+            include _template/price
+
+        block subscribe
+            include _template/subscribe
+
+        block maps
+            include _template/maps
+
+        block footer
+            include _template/footer
+
+
+        script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCIHSncEfszY7SQPvBPKwosLiYyzj0fSzQ")
+        - for(var i = 0; i < linkSite.scriptLink.length; i++)
+            script(src= linkSite.scriptLink[i])

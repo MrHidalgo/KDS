@@ -1,18 +1,29 @@
 -
     var linkText = [
         "О конференции",
-        "Спикеры",
+        //"Спикеры",
         "Расписание"
+    ];
+    var linkTextEn = [
+        "",
+        //"",
+        ""
     ];
     var linkHref = [
         "#video",
-        "#speaker",
+        //"#speaker",
         "#program"
     ];
 
 
+mixin btn(textLang)
+    a(href= textLang[i], class="nav__link", title= textLang[i])
+        span.nav__link-text!= textLang[i]
+
 .nav
     a(href="javascript:void(0);", class="btn-mobile_close")
-    -for(var i = 0; i < 3; i++)
-        a(href= linkHref[i], class="nav__link", title= linkText[i])
-            span.nav__link-text!= linkText[i]
+    -for(var i = 0; i < linkText.length; i++)
+        if(!EN)
+            +btn(linkText)
+        else
+            +btn(linkTextEn)

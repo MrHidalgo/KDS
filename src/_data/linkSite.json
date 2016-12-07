@@ -5,6 +5,18 @@
     "./css/animate.min.css"
   ],
 
+  "styleLinkRu" : [
+    "./css/commonRu.min.css",
+    "./css/fonts.min.css",
+    "./css/animate.min.css"
+  ],
+
+  "styleLinkEn" : [
+    "./css/commonEn.min.css",
+    "./css/fonts.min.css",
+    "./css/animate.min.css"
+  ],
+
   "internalStyleLink" : [
     "./css/internal.min.css",
     "./css/fonts.min.css"

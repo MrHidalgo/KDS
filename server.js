@@ -8,6 +8,14 @@ app.set('port',	(process.env.PORT	||	1111));
 app.use('/',	        express.static('./dist/', {
         'index' : 'index.html'
 }));
+// MAIN PAGE SMALL LANGUAGE RU
+app.use('/ru',	        express.static('./dist/', {
+        'index' : 'index_ru.html'
+}));
+// MAIN PAGE SMALL LANGUAGE EN
+app.use('/en',	        express.static('./dist/', {
+        'index' : 'index_en.html'
+}));
 // INTERNAL PAGE
 app.use('/internal',	        express.static('./dist/', {
         'index' : 'internal.html'
