@@ -1,3 +1,18 @@
+-
+    var priceTitle1_ru  = "АКТУАЛЬНАЯ ЦЕНА",
+        priceTitle1_en  = "",
+        priceCurr1_ru   = "<span class='price__sum_big'>2700</span> грн",
+        priceCurr1_en   = "",
+        priceBtn1_ru    = "КУПИТЬ СЕЙЧАС",
+        priceBtn1_en    = "",
+        priceTitle2_ru  = "ЦЕНА ЧЕРЕЗ <span class='price__text_color'>32</span> ДНЯ",
+        priceTitle2_en  = "",
+        priceCurr2_ru   = "<span class='price__sum_big'>3200</span> грн",
+        priceCurr2_en   = "",
+        priceBtn2_ru    = "КУПИТЬ ПОТОМ",
+        priceBtn2_en    = "";
+
+
 
 mixin priceBlock(textBlock, priceBlock, textBtn, btnClassM)
     p.price__text!= textBlock
@@ -6,13 +21,19 @@ mixin priceBlock(textBlock, priceBlock, textBtn, btnClassM)
 
 
 .price
-    p.main__title!= 'ЦЕНА'
+    p.main__title!= !EN ? 'ЦЕНА' : ""
 
     .container
         .price__row
             .price__left
-                +priceBlock("АКТУАЛЬНАЯ ЦЕНА", "<span class='price__sum_big'>2700</span> грн", "КУПИТЬ СЕЙЧАС", "btn_orange")
+                if(!EN)
+                    +priceBlock(priceTitle1_ru, priceCurr1_ru, priceBtn1_ru, "btn_orange")
+                else
+                    +priceBlock(priceTitle1_en, priceCurr1_en, priceBtn1_en, "btn_orange")
 
             .price__right
-                +priceBlock("ЦЕНА ЧЕРЕЗ <span class='price__text_color'>32</span> ДНЯ  ", "<span class='price__sum_big'>3200</span> грн", "КУПИТЬ ПОТОМ", "btn_gray")
+                if(!EN)
+                    +priceBlock(priceTitle2_ru, priceCurr2_ru, priceBtn2_ru, "btn_gray")
+                else
+                    +priceBlock(priceTitle2_en, priceCurr2_en, priceBtn2_en, "btn_gray")
 

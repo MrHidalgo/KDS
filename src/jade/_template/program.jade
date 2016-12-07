@@ -1,3 +1,27 @@
+-
+    var programText1Ru = "Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе.",
+        programText1En = "",
+        programText2Ru = "Поток для разработчиков и ученых, которые создают новые технологии.",
+        programText2En = "";
+
+    var programmDescLeft1_ru = "Как начать работать с данными? Первые шаги и инструменты",
+        programmDescLeft2_ru = "Как машинное обучение меняет маркетинг и продажи",
+        programmDescLeft3_ru = "Chief Data Officer – кто это?",
+        programmDescLeft4_ru = "И еще более 5 уникальных докладов",
+        programmDescLeft1_en = "",
+        programmDescLeft2_en = "",
+        programmDescLeft3_en = "",
+        programmDescLeft4_en = "",
+        programmDescRight1_ru = "Старт-апы в области data.Какие перспективы?",
+        programmDescRight2_ru = "Как разработчику стать data scientist?",
+        programmDescRight3_ru = "Искусственный интеллект – насколько мы близки к нему?",
+        programmDescRight4_ru = "И еще более 5 уникальных докладов",
+        programmDescRight1_en = "",
+        programmDescRight2_en = "",
+        programmDescRight3_en = "",
+        programmDescRight4_en = "";
+
+
 mixin programDescr(programTime, textDescription)
     .program__desc.clearfix
         p.program__desc-time!= programTime
@@ -16,28 +40,41 @@ mixin programDescr(programTime, textDescription)
         .program__left
             .program__block
                 p.program__title!= "BUSINESS STAGE"
-                p.program__text!= "Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе."
+                p.program__text!= !EN ? programText1Ru : programText1En
                 i.icon-triangle-0
                 i.icon-triangle-1
 
                 span.program__block-line
 
-            +programDescr("9-00", "Как начать работать с данными? Первые шаги и инструменты")
-            +programDescr("10-00", "Как машинное обучение меняет маркетинг и продажи")
-            +programDescr("11-00", "Chief Data Officer – кто это?")
-            +programDescr("12-19", "И еще более 5 уникальных докладов")
+            if(!EN)
+                +programDescr("9-00",  programmDescLeft1_ru)
+                +programDescr("10-00", programmDescLeft2_ru)
+                +programDescr("11-00", programmDescLeft3_ru)
+                +programDescr("12-19", programmDescLeft4_ru)
+            else
+                +programDescr("9-00",  programmDescLeft1_en)
+                +programDescr("10-00", programmDescLeft2_en)
+                +programDescr("11-00", programmDescLeft3_en)
+                +programDescr("12-19", programmDescLeft4_en)
+
 
 
         .program__right
             .program__block
                 p.program__title!= "IT STAGE"
-                p.program__text!= "Поток для разработчиков и ученых, которые создают новые технологии."
+                p.program__text!= !EN ? programText2Ru : programText2En
                 i.icon-triangle-0
                 i.icon-triangle-1
 
                 span.program__block-line
 
-            +programDescr("9-00", "Старт-апы в области data.Какие перспективы?")
-            +programDescr("10-00", "Как разработчику стать data scientist?")
-            +programDescr("11-00", "Искусственный интеллект – насколько мы близки к нему?")
-            +programDescr("12-19", "И еще более 5 уникальных докладов")
+            if(!EN)
+                +programDescr("9-00",  programmDescRight1_ru)
+                +programDescr("10-00", programmDescRight2_ru)
+                +programDescr("11-00", programmDescRight3_ru)
+                +programDescr("12-19", programmDescRight4_ru)
+            else
+                +programDescr("9-00",  programmDescRight1_en)
+                +programDescr("10-00", programmDescRight2_en)
+                +programDescr("11-00", programmDescRight3_en)
+                +programDescr("12-19", programmDescRight4_en)

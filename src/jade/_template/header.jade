@@ -16,24 +16,18 @@
 
             .maps-arrow
                 i.maps-arrow__icon
-                if(!EN)
-                    p.maps-arrow__title!= "Киев"
-                else
-                    p.maps-arrow__title!= "Kyiv"
+
+                p.maps-arrow__title!= !EN ? "Киев" : "Kyiv"
+
                 p.maps-arrow__data
                     span.maps-arrow__num!= 11
-                    if(!EN)
-                        span.maps-arrow__month!= " марта"
-                    else
-                        span.maps-arrow__month!= " march"
 
+                    span.maps-arrow__month!= !EN ? " марта" : " march"
 
             a(href="javascript:void(0);", class="btn btn-header", title="start")
                 div.btn_orange.btn_small.block_skew
-                if(!EN)
-                    p.btn__text!= "СТАРТ"
-                else
-                    p.btn__text!= "START"
+
+                p.btn__text!= !EN ? "СТАРТ" : "START"
 
 
     include macros/bottomInfo

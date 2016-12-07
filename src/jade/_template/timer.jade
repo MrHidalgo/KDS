@@ -7,7 +7,7 @@ mixin secondsLine(num)
 
 
 .timer
-    h2.main__title!= "НАЧАЛО ЧЕРЕЗ"
+    h2.main__title!= !EN ? "НАЧАЛО ЧЕРЕЗ" : ""
 
     .timer__seconds
         .container
@@ -18,36 +18,38 @@ mixin secondsLine(num)
         .timer__data
             div.timer__data-month.timer__data-time
                 p.timer__data_value!= "4"
-                p.timer__data_text!= "месяца"
+                p.timer__data_text!= !EN ? "месяца" : ""
 
             div.timer__data-line.block_skew
 
             div.timer__data-day.timer__data-time
                 p.timer__data_value!= "14"
-                p.timer__data_text!= "дней"
+                p.timer__data_text!= !EN ? "дней" : ""
 
             div.timer__data-line.block_skew
 
             div.timer__data-hour.timer__data-time
                 p.timer__data_value!= "22"
-                p.timer__data_text!= "часа"
+                p.timer__data_text!= !EN ? "часа" : ""
 
             div.timer__data-line.block_skew
 
             div.timer__data-minute.timer__data-time
                 p.timer__data_value!= "10"
-                p.timer__data_text!= "минут"
+                p.timer__data_text!= !EN ? "минут" : ""
 
 
-        h3.main__title!= "ГДЕ?"
+        h3.main__title!= !EN ? "ГДЕ?" : ""
 
         .timer__info
             i.timer__info-icon
-            span.timer__info-text!= "<span class='timer__info-text_color'>Киев, ВДНХ</span> 11 марта 11:00"
+            span.timer__info-text
+                span.timer__info-text_color!= !EN ? "Киев, ВДНХ " : "Kyiv, "
+                span!= !EN ? "11 марта 11:00" : ""
 
     .timer__btn
         .container
             a(href="javascript:void(0);", class="btn btn-timer", title="start")
                 div.btn_orange.btn_small.block_skew
-                p.btn__text!= "СТАРТ"
+                p.btn__text!= !EN ? "СТАРТ" : "START"
 
