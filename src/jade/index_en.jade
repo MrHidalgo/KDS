@@ -5,23 +5,25 @@ include _mixin/mixin
         "О конференции",
         //"Спикеры",
         "Расписание"
-    ];
-    var linkTextEn = [
+    ],
+    linkTextEn = [
         "",
         //"",
         ""
-    ];
-    var linkHref = [
+    ],
+    linkHref = [
         "#video",
         //"#speaker",
         "#program"
-    ];
-    var EN = true;
+    ],
+    EN = true,
+    navBool = true;
 
 
 mixin btn(textLang)
-    a(href= textLang[i], class="nav__link", title= textLang[i])
+    a(href= linkHref[i], class="nav__link", title= textLang[i])
         span.nav__link-text!= textLang[i]
+
 
 doctype html
 html(lang="en")

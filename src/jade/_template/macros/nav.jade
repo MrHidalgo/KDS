@@ -1,29 +1,34 @@
 -
-    var linkText = [
-        "О конференции",
-        //"Спикеры",
-        "Расписание"
-    ];
-    var linkTextEn = [
-        "",
-        //"",
-        ""
-    ];
-    var linkHref = [
-        "#video",
-        //"#speaker",
-        "#program"
-    ];
+    var linkText    = ["О конференции", "Спикеры", "Расписание"],
+        linkTextEn  = ["", "", ""],
+        linkHref    = ["#video", "#speaker", "#program"],
+        linkText_lang    = ["О конференции", "Расписание"],
+        linkTextEn_lang  = ["", ""],
+        linkHref_lang    = ["#video", "#program"];
 
 
 mixin btn(textLang)
-    a(href= textLang[i], class="nav__link", title= textLang[i])
+    a(href= linkHref[i], class="nav__link", title= textLang[i])
         span.nav__link-text!= textLang[i]
 
-.nav
-    a(href="javascript:void(0);", class="btn-mobile_close")
-    -for(var i = 0; i < linkText.length; i++)
-        if(!EN)
-            +btn(linkText)
-        else
-            +btn(linkTextEn)
+mixin btnLang(textLang)
+    a(href= linkHref_lang[i], class="nav__link", title= textLang[i])
+        span.nav__link-text!= textLang[i]
+
+
+if(navBool)
+    .nav
+        a(href="javascript:void(0);", class="btn-mobile_close")
+        -for(var i = 0; i < linkText.length; i++)
+            if(!EN)
+                +btnLang(linkText_lang)
+            else
+                +btnLang(linkTextEn_lang)
+else
+    .nav
+        a(href="javascript:void(0);", class="btn-mobile_close")
+        -for(var i = 0; i < linkText.length; i++)
+            if(!EN)
+                +btn(linkText)
+            else
+                +btn(linkTextEn)

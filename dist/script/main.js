@@ -14,7 +14,7 @@ function initialize() {
         position: new google.maps.LatLng(50.3778063, 30.4773671)
     });
     infowindow = new google.maps.InfoWindow({
-        content: "<b>Kyiv Data Spring</b><br/>проспект Академіка Глушкова, 1<br/>Київ, 03680"
+        content: "<b>Kyiv Data Spring</b><br/>Akademika Hlushkova Ave, 1<br/>Kyiv, 03680"
     });
     google.maps.event.addListener(marker, "click", function() {
         infowindow.open(map, marker);
