@@ -219,8 +219,7 @@ $(document).ready(function(){
 
 
     /* NOIZE */
-    var strClass = ".header__wrap-row, " +
-        ".btn-mobile" +
+    var strClass = ".header__wrap-row, .btn-mobile, " +
         ".video__skale-blue, .video__skale-white, .video__skale-gray, " +
         ".navigation__wrap, " +
         ".timer__seconds, .timer__btn, " +
