@@ -40,9 +40,12 @@ $c-summerSky 		: return-value(color, summerSky);
 		display: inline-block;
 		padding-right: 10px;
 		width: (100 / 3) * 1%;
+		margin: auto;
+		height: 240px;
 		@include respond-to("small-all") {
 			width: $w-all;
 			margin-bottom: 15px;
+			height: auto;
 		}
 	}
 

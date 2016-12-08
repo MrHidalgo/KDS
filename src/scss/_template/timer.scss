@@ -125,6 +125,10 @@ $f-GP_light         : return-value(fonts, GP_light);
 		&-icon {
 			margin-right: 20px;
 			@include retina-sprite($sp-i-info-group);
+			@include respond-to("small-all") {
+				margin-right:	0;
+				margin-bottom: 5px;
+			}
 		}
 
 

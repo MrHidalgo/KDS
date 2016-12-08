@@ -1,16 +1,16 @@
 -
     var priceTitle1_ru  = "АКТУАЛЬНАЯ ЦЕНА",
-        priceTitle1_en  = "",
+        priceTitle1_en  = "ACTUAL PRICE",
         priceCurr1_ru   = "<span class='price__sum_big'>2700</span> грн",
-        priceCurr1_en   = "",
+        priceCurr1_en   = "<span class='price__sum_big'>2700</span> UAN",
         priceBtn1_ru    = "КУПИТЬ СЕЙЧАС",
-        priceBtn1_en    = "",
+        priceBtn1_en    = "BUY NOW",
         priceTitle2_ru  = "ЦЕНА ЧЕРЕЗ <span class='price__text_color'>32</span> ДНЯ",
-        priceTitle2_en  = "",
+        priceTitle2_en  = "BY PRICE <span class='price__text_color'>32</span> DAY",
         priceCurr2_ru   = "<span class='price__sum_big'>3200</span> грн",
-        priceCurr2_en   = "",
+        priceCurr2_en   = "<span class='price__sum_big'>3200</span> UAN",
         priceBtn2_ru    = "КУПИТЬ ПОТОМ",
-        priceBtn2_en    = "";
+        priceBtn2_en    = "BUY LATER";
 
 
 
@@ -21,7 +21,7 @@ mixin priceBlock(textBlock, priceBlock, textBtn, btnClassM)
 
 
 .price
-    p.main__title!= !EN ? 'ЦЕНА' : ""
+    p.main__title!= !EN ? 'ЦЕНА' : "PRICE"
 
     .container
         .price__row

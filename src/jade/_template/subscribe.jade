@@ -2,10 +2,10 @@
 .subscribe
     .container
         .subscribe__row
-            p.subscribe__title!= !EN ? "Быть в кусре всего </br> что здесь происходит" : ""
+            p.subscribe__title!= !EN ? "Быть в кусре всего </br> что здесь происходит" : "Stay tuned"
 
             form(action="", class="subscribe__form")
-                input(type="text", id="subscribe", name="subscribe", class="subscribe__input", placeholder= !EN ? "Введите вашу почту" : "")
+                input(type="text", id="subscribe", name="subscribe", class="subscribe__input", placeholder= !EN ? "Введите вашу почту" : "Email Address")
                 label(for="subscribe", class="subscribe__label")
                     i.icon__status
-                button(type="submit", class="btn btn__submit subscribe__btn")!= !EN ? "ПОДПИСАТЬСЯ" : ""
+                button(type="submit", class="btn btn__submit subscribe__btn")!= !EN ? "ПОДПИСАТЬСЯ" : "SUBSCRIBE"

@@ -1200,6 +1200,8 @@ input {
   display: inline-block;
   padding-right: 10px;
   width: 33.33333%;
+  margin: auto;
+  height: 240px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1207,6 +1209,7 @@ input {
   .advantages__wrap {
     width: 100%;
     margin-bottom: 15px;
+    height: auto;
   }
 }
 
@@ -1713,6 +1716,14 @@ input {
   .timer__info-icon {
     background-image: url(../img/sprite_KDS@2x.png);
     background-size: 141px 1430px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .timer__info-icon {
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 }
 

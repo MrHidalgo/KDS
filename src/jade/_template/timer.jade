@@ -7,7 +7,7 @@ mixin secondsLine(num)
 
 
 .timer
-    h2.main__title!= !EN ? "НАЧАЛО ЧЕРЕЗ" : ""
+    h2.main__title!= !EN ? "НАЧАЛО ЧЕРЕЗ" : "STARTS IN"
 
     .timer__seconds
         .container
@@ -18,34 +18,34 @@ mixin secondsLine(num)
         .timer__data
             div.timer__data-month.timer__data-time
                 p.timer__data_value!= "4"
-                p.timer__data_text!= !EN ? "месяца" : ""
+                p.timer__data_text!= !EN ? "месяца" : "months"
 
             div.timer__data-line.block_skew
 
             div.timer__data-day.timer__data-time
                 p.timer__data_value!= "14"
-                p.timer__data_text!= !EN ? "дней" : ""
+                p.timer__data_text!= !EN ? "дней" : "days"
 
             div.timer__data-line.block_skew
 
             div.timer__data-hour.timer__data-time
                 p.timer__data_value!= "22"
-                p.timer__data_text!= !EN ? "часа" : ""
+                p.timer__data_text!= !EN ? "часа" : "hours"
 
             div.timer__data-line.block_skew
 
             div.timer__data-minute.timer__data-time
                 p.timer__data_value!= "10"
-                p.timer__data_text!= !EN ? "минут" : ""
+                p.timer__data_text!= !EN ? "минут" : "minutes"
 
 
-        h3.main__title!= !EN ? "ГДЕ?" : ""
+        h3.main__title!= !EN ? "ГДЕ?" : "WHERE?"
 
         .timer__info
             i.timer__info-icon
             span.timer__info-text
-                span.timer__info-text_color!= !EN ? "Киев, ВДНХ " : "Kyiv, "
-                span!= !EN ? "11 марта 11:00" : ""
+                span.timer__info-text_color!= !EN ? "Киев, ВДНХ " : "Kyiv, VDNG (Expocenter of Ukraine) "
+                span!= !EN ? "11 марта 11:00" : "March, 11 2016 at 11:00 a.m."
 
     .timer__btn
         .container
