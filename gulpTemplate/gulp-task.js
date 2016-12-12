@@ -84,19 +84,19 @@ function mainScriptTask(taskName) {
             .pipe(
                 gulp.dest(dist)
             )
-            // .pipe(
-            //     notify(
-            //         {
-            //             message : 'SCRIPT file complete ... ',
-            //             onLast  : true
-            //         })
-            // )
-            // .pipe(uglify())
-            // .pipe(rename(
-            //     {
-            //         suffix : '.min'
-            //     })
-            // )
+            .pipe(
+                notify(
+                    {
+                        message : 'SCRIPT file complete ... ',
+                        onLast  : true
+                    })
+            )
+            .pipe(uglify())
+            .pipe(rename(
+                {
+                    suffix : '.min'
+                })
+            )
             .pipe(
                 gulp.dest(dist)
             )

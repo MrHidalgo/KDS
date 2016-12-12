@@ -24,8 +24,8 @@
 
   "scriptLink" : [
     "./script/jquery-1.11.1.min.js",
-    "./script/main.min.js",
+    "//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js",
     "./script/jquery.viewportchecker.min.js",
-    "//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"
+    "./script/main.min.js"
   ]
 }
