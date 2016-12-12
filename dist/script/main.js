@@ -26,68 +26,80 @@ function initialize() {
     });
     infowindow.open(map, marker);
 }
-if($("#gmap_canvas").length > 0) {
+if(!$("#gmap_canvas").length > 0) {
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 
 
-function get_timer(string) {
-    var date_new = string;
-    var date_t = new Date(date_new);
-    var date = new Date();
-    var timer = date_t - date;
+function dateDiff( date2 ) {
+    var date1 = new Date(),
+        date2 = new Date( date2 );
 
-    if (date_t > date) {
-        var month = parseInt(timer / (60 * 60 * 60 * 1000 * 12));
-        if (month < 10) {
-            month = "0" + month;
-        }
-        month = month.toString();
-        var day = parseInt(timer / (60 * 60 * 1000 * 24));
-        if (day < 10) {
-            day = "0" + day;
-        }
-        day = day.toString();
-        var hour = parseInt(timer / (60 * 60 * 1000)) % 24;
-        if (hour < 10) {
-            hour = "0" + hour;
-        }
-        hour = hour.toString();
-        var min = parseInt(timer / (1000 * 60)) % 60;
-        if (min < 10) {
-            min = "0" + min;
-        }
-        min = min.toString();
-        var sec = parseInt(timer / 1000) % 60;
-        if (sec < 10) {
-            sec = "0" + sec;
-        }
-        sec = sec.toString();
-        timethis = month + " : " + day + " : " + hour + " : " + min + " : " + sec;
-        $(".timer__data-month .timer__data_value").text(month);
-        $(".timer__data-day .timer__data_value").text(day);
-        $(".timer__data-hour .timer__data_value").text(hour);
-        $(".timer__data-minute .timer__data_value").text(min);
-
-        $(".seconds__wrap-line").removeClass('current');
-        $(".seconds__wrap-line:gt(" + sec + ")").addClass('prev');
-        $(".seconds__wrap-line:lt(" + sec + ")").removeClass('prev');
-        $(".seconds__wrap-line").eq(sec).attr("data-second", sec).addClass('current');
-    } else {
-        $(".timer__data-month .timer__data_value").text("00");
-        $(".timer__data-day .timer__data_value").text("00");
-        $(".timer__data-hour .timer__data_value").text("00");
-        $(".timer__data-minute .timer__data_value").text("00");
+    var seconds = date2.getSeconds() - date1.getSeconds();
+    if ( seconds < 0 ) {
+        seconds += 60;
+        date2.setMinutes( date2.getMinutes() - 1 );
     }
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    $(".seconds__wrap-line").removeClass('current');
+    $(".seconds__wrap-line:gt(" + seconds + ")").addClass('prev');
+    $(".seconds__wrap-line:lt(" + seconds + ")").removeClass('prev');
+    $(".seconds__wrap-line").eq(seconds).attr("data-second", seconds).addClass('current');
+
+    var minutes = date2.getMinutes() - date1.getMinutes();
+    if ( minutes < 0 ) {
+        minutes += 60;
+        date2.setHours( date2.getHours() - 1 );
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    $(".timer__data-minute .timer__data_value").text(minutes);
+
+    var hours = date2.getHours() - date1.getHours();
+    if ( hours < 0 ) {
+        hours += 24;
+        date2.setDate( date2.getDate() - 1 );
+    }
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    $(".timer__data-hour .timer__data_value").text(hours);
+
+    var days = date2.getDate() - date1.getDate();
+    if ( days < 0 ) {
+        days += new Date( date2.getFullYear(), date2.getMonth() - 1, 0 ).getDate() + 1;
+        date2.setMonth( date2.getMonth() - 1 );
+    }
+    if (days < 10) {
+        days = "0" + days;
+    }
+    $(".timer__data-day .timer__data_value").text(days);
+
+    var months = date2.getMonth() - date1.getMonth();
+    if ( months < 0 ) {
+        months += 12;
+        date2.setFullYear( date2.getFullYear() - 1 );
+    }
+    if (months < 10) {
+        months = "0" + months;
+    }
+    $(".timer__data-month .timer__data_value").text(months);
+
+    // var years = date2.getFullYear() - date1.getFullYear();
+    // return [ years, months, days, hours, minutes, seconds ];
 }
 
-function getfrominputs() {
-    string = "03/11/2017 11:00";
 
-    get_timer(string);
+function getfrominputs() {
+    var string = "March 11,2017 11:00";
+
+    dateDiff(string);
 
     setInterval(function() {
-        get_timer(string);
+        dateDiff(string);
     }, 1000);
 }
 
@@ -219,8 +231,7 @@ $(document).ready(function(){
 
 
     /* NOIZE */
-    var strClass = ".header__wrap-row, " +
-        ".btn-mobile" +
+    var strClass = ".header__wrap-row, .btn-mobile, " +
         ".video__skale-blue, .video__skale-white, .video__skale-gray, " +
         ".navigation__wrap, " +
         ".timer__seconds, .timer__btn, " +

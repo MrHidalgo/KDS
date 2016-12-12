@@ -91,12 +91,12 @@ function mainScriptTask(taskName) {
             //             onLast  : true
             //         })
             // )
-            .pipe(uglify())
-            .pipe(rename(
-                {
-                    suffix : '.min'
-                })
-            )
+            // .pipe(uglify())
+            // .pipe(rename(
+            //     {
+            //         suffix : '.min'
+            //     })
+            // )
             .pipe(
                 gulp.dest(dist)
             )
