@@ -1,5 +1,4 @@
 function initialize() {
-
     var myOptions = {
         zoom: 15,
         scrollwheel: false,
@@ -26,7 +25,7 @@ function initialize() {
     });
     infowindow.open(map, marker);
 }
-if(!$("#gmap_canvas").length > 0) {
+if($("#gmap_canvas").length > 0) {
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 

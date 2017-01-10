@@ -1,5 +1,4 @@
 function initialize() {
-
     var myOptions = {
         zoom: 15,
         scrollwheel: false,
@@ -26,7 +25,7 @@ function initialize() {
     });
     infowindow.open(map, marker);
 }
-if(!$("#gmap_canvas").length > 0) {
+if($("#gmap_canvas").length > 0) {
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 
@@ -87,6 +86,7 @@ function dateDiff( date2 ) {
         months = "0" + months;
     }
     $(".timer__data-month .timer__data_value").text(months);
+
 
     // var years = date2.getFullYear() - date1.getFullYear();
     // return [ years, months, days, hours, minutes, seconds ];
@@ -242,8 +242,7 @@ $(document).ready(function(){
         ".footer__wrap, " +
         ".preparation__form";
 
-    $(strClass).noisy(
-        {
+    $(strClass).noisy({
             intensity: 0.2,
             size: 200,
             opacity: 0.3,
@@ -256,38 +255,32 @@ $(document).ready(function(){
 
     /* ANIMATION - VIEW PORT CHECK PAGE */
     if($(window).width() > '767') {
-        $('.advantages').addClass('hidden').viewportChecker(
-            {
+        $('.advantages').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated fadeInRight',
                 classToRemove : 'hidden'
             }
         );
-        $('.new').addClass('hidden').viewportChecker(
-            {
+        $('.new').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInLeft',
                 classToRemove : 'hidden'
             }
         );
-        $('.speaker').addClass('hidden').viewportChecker(
-            {
+        $('.speaker').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden'
             }
         );
-        $('.price').addClass('hidden').viewportChecker(
-            {
+        $('.price').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated bounceInLeft',
                 classToRemove : 'hidden'
             }
         );
-        $('.program__left').addClass('hidden').viewportChecker(
-            {
+        $('.program__left').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInLeft',
                 classToRemove : 'hidden'
             }
         );
-        $('.program__right').addClass('hidden').viewportChecker(
-            {
+        $('.program__right').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInRight',
                 classToRemove : 'hidden'
             }
