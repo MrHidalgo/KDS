@@ -80,6 +80,28 @@ $f-GP_black     : return-value(fonts, GP_black);
 	}
 
 
+	&-thank {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 320px;
+		height: 60px;
+		line-height: 60px;
+		text-transform: uppercase;
+		color: $c-white;
+		box-shadow: 0 21px 28px 0 rgba(1,2,2,0.23);
+		font: {
+			size: 20px;
+			family: $f-GP_bold;
+		}
+
+
+		&:active {
+			@include mixinGradient(lighten($c-orange, 3%), lighten($c-darkOrange, 3%));
+		}
+	}
+
+
 
 	&-discover {
 		bottom: 50px;

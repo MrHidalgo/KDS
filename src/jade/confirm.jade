@@ -1,0 +1,21 @@
+include _mixin/mixin
+
+
+doctype html
+html(lang="en")
+
+
+    +headSite("KDS confirm", linkSite.confirmStyleLink, "")
+
+
+    body
+
+
+        block logo
+            include _template/macros/logo
+
+        block thank
+            include _template/thank
+
+        block footer
+            include _template/footer

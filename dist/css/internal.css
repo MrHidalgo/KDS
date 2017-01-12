@@ -131,6 +131,28 @@
 }
 
 
+.btn-thank {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+  font-size: 20px;
+  font-family: "GothaProBol";
+}
+
+
+.btn-thank:active {
+  background: #ffb20f;
+  background: -webkit-linear-gradient(left, #ffb20f 0%, #ff941c 100%);
+  background: linear-gradient(to right, #ffb20f 0%, #ff941c 100%);
+}
+
+
 .btn-discover {
   bottom: 50px;
   left: 120px;
@@ -497,6 +519,26 @@ input {
 
 .clearfix {
   zoom: 1;
+}
+
+
+.logotype_center {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .logotype_center {
+    margin-bottom: 50px;
+  }
+}
+
+
+.logotype .img-logo, .logotype .img-logo-mobile {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

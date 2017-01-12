@@ -3,12 +3,28 @@
 ///
 @import "../../_mixin/mixin";
 @import "../../_function/function";
-
-
-
 ///
 /// MAIN
 ///
+.logotype {
+	&_center {
+		text-align: center;
+		margin-bottom: 100px;
+		@include respond-to(small-all) {
+			margin-bottom: 50px;
+		}
+	}
+
+
+	.img {
+		&-logo,
+		&-logo-mobile {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
 .img-logo {
 	width: 172px;
 }

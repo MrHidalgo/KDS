@@ -20,6 +20,10 @@ app.use('/en',	        express.static('./dist/', {
 app.use('/internal',	        express.static('./dist/', {
         'index' : 'internal.html'
 }));
+// CONFIRM PAGE
+app.use('/confirm',	        express.static('./dist/', {
+        'index' : 'confirm.html'
+}));
 
 
 app.listen(app.get('port'),	function()	{

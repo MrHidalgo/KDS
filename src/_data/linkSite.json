@@ -22,6 +22,11 @@
     "./css/fonts.min.css"
   ],
 
+  "confirmStyleLink" : [
+    "./css/confirm.min.css",
+    "./css/fonts.min.css"
+  ],
+
   "scriptLink" : [
     "./script/jquery-1.11.1.min.js",
     "//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js",

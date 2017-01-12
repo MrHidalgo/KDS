@@ -1,0 +1,14 @@
+-
+    var thankTitle = "Спасибо!</br>ваши данные отправленны";
+    var thankSubTitle = "Этот фестиваль – главная площадка, где встречаются и делятся знаниями люди,</br>заинтересованные в развитии больших данных и машинного обучения.";
+
+.thank
+    .container
+        h1.thank__title!= thankTitle
+        p.thank__title-sub!= thankSubTitle
+
+        a(
+            href="javascript:void(0);",
+            class="btn btn-thank btn_orange",
+            title="go main"
+        )!= "на главную"
