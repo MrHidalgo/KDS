@@ -46,6 +46,22 @@ body{
 	&.open-menu {
 		overflow: hidden;
 	}
+
+
+	&.open-popup {
+		overflow: hidden;
+
+
+		&:before {
+			content: "";
+			position: fixed;
+			z-index: 100;
+			top: 0;
+			left: 0;
+			@include mixinDimensions($w-all);
+			background-color: rgba(0,0,0,.8);
+		}
+	}
 }
 
 * {

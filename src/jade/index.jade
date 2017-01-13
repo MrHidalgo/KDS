@@ -20,7 +20,7 @@ html(lang="en")
     +headSite("KDS", linkSite.styleLink, "")
 
 
-    body
+    body.open-popup
 
 
         .navigation.navigation_fixed
@@ -28,9 +28,12 @@ html(lang="en")
             .container.clearfix
                 img(src="./img/img-logo-fixed.png", class="img-logo-fixed")
                 .navigation__row
-                    -for(var i = 0; i < 3; i++)
+                    -for(var i = 0; i < linkText.length; i++)
                         a(href= linkHref[i], class="nav__link", title= linkText[i])
                             span.nav__link-text!= linkText[i]
+
+                    a(href="javascript:void(0);", class="nav__reservations")
+                        span.nav__link-text!= "Забронировать"
 
 
         // BLOCK HEADER [nav, bottomInfo, logo, slogan]
@@ -78,6 +81,10 @@ html(lang="en")
 
         block footer
             include _template/footer
+
+
+        .modal
+
 
 
         script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCIHSncEfszY7SQPvBPKwosLiYyzj0fSzQ")

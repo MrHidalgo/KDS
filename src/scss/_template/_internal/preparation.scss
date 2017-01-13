@@ -11,13 +11,13 @@ $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
 $c-dimGray	        : return-value(color, dimGray);
-$c-summerSky	      : return-value(color, summerSky);
+$c-summerSky	    : return-value(color, summerSky);
 $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 ///
 /// MAIN BLOCK
 ///
 .preparation {
-	padding: 150px 0 100px;
+	padding: 100px 0;
 	@include respond-to("small-all") {
 		padding-top: 70px;
 	}

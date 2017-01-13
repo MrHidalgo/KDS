@@ -15,8 +15,9 @@ $w-all              : return-value(dimension, all);
 $c-white            : return-value(color, white);
 $c-whiteSmoke       : return-value(color, whiteSmoke);
 $c-dimGray	        : return-value(color, dimGray);
-$c-summerSky	      : return-value(color, summerSky);
-$c-darkOrange	      : return-value(color, darkOrange);
+$c-summerSky        : return-value(color, summerSky);
+$c-darkOrange       : return-value(color, darkOrange);
+$c-nobel	        : return-value(color, nobel);
 
 $f-GP_regular       : return-value(fonts, GP_regular);
 $f-GP_bold          : return-value(fonts, GP_bold);
@@ -26,35 +27,33 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 .header {
 	position: relative;
 	height: 560px;
-	background: $c-whiteSmoke url("../img/img-bg-discover.png") repeat-x left bottom;
 	@include respond-to("small-all") {
 		height: 470px;
 	}
 
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		@include mixinDimensions($w-all);
-		background-color: rgba($c-whiteSmoke, .75);
-		border-bottom: 2px solid #e8e8e8;
+	&__container {
+		height: auto !important;
+	}
+
+
+	&__row {
+		margin-top: 20px;
+		border-top: 10px solid $c-darkOrange;
+		background-color: #f0f0f0;
+		padding-bottom: 90px;
 	}
 
 
 	&__title {
+		margin-top: 20px;
 		color: $c-dimGray;
 		font: {
 			size: 30px;
 			family: $f-GP_bold;
 		}
 		line-height: 1.2;
-		text-align: center;
-		position: relative;
-		top: -30px;
 		@include respond-to("medium-all") {
-			position: static;
 			margin-top: 30px;
 		}
 		@include respond-to("small-all") {
@@ -64,8 +63,7 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 
 		&-text {
 			color: $c-summerSky;
-			text-align: center;
-			margin-top: 30px;
+			margin-top: 60px;
 			font-size: 20px;
 			@include respond-to("small-all") {
 				font-size: 18px;
@@ -83,22 +81,11 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 			color: $c-summerSky;
 		}
 	}
-}
 
 
-.img-headerI-triangle {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -110px;
-	margin: auto;
-	@include respond-to("small-all") {
-		max-width: 30%;
-	}
-	@include respond-to("small") {
-		bottom: -80px;
-	}
-	@include respond-to("extra-small") {
-		bottom: -55px;
+	&__book {
+		position: absolute;
+		right: -250px;
+		top: -290px;
 	}
 }

@@ -146,16 +146,24 @@
 }
 
 
+.btn-thank:hover {
+  background: #ffad00;
+  background: -webkit-linear-gradient(left, #ffad00 0%, #ffad00 100%);
+  background: linear-gradient(to right, #ffad00 0%, #ffad00 100%);
+}
+
+
 .btn-thank:active {
-  background: #ffb20f;
-  background: -webkit-linear-gradient(left, #ffb20f 0%, #ff941c 100%);
-  background: linear-gradient(to right, #ffb20f 0%, #ff941c 100%);
+  background: #ffad00;
+  background: -webkit-linear-gradient(left, #ffad00 0%, #ff8d0d 100%);
+  background: linear-gradient(to right, #ffad00 0%, #ff8d0d 100%);
 }
 
 
 .btn-discover {
-  bottom: 50px;
-  left: 120px;
+  bottom: -135px;
+  left: -10px;
+  margin: initial;
 }
 
 @media screen and (max-width: 479px) {
@@ -378,6 +386,7 @@
   line-height: 90px;
   background-color: #fff;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 
@@ -395,9 +404,44 @@
   height: 90px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .navigation__wrap {
+    right: -50px;
+  }
+}
+
 
 .navigation__row {
   float: right;
+}
+
+
+.nav__reservations {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: "GothaProBol";
+  color: #fff;
+  margin-left: 70px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ff8d0d;
+  border: 2px solid #ffad00;
+  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+}
+
+
+.nav__reservations:hover {
+  background: #ffad00;
+  background: -webkit-linear-gradient(left, #ffad00 0%, #ffad00 100%);
+  background: linear-gradient(to right, #ffad00 0%, #ffad00 100%);
+}
+
+
+.nav__reservations:active {
+  background: #ffad00;
+  background: -webkit-linear-gradient(left, #ffad00 0%, #ff8d0d 100%);
+  background: linear-gradient(to right, #ffad00 0%, #ff8d0d 100%);
 }
 
 
@@ -405,6 +449,19 @@
   float: left;
   margin-top: 18px;
   cursor: pointer;
+}
+
+
+.modal {
+  position: absolute;
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  width: 430px;
+  height: 546px;
+  margin-top: -273px;
+  margin-left: -215px;
+  background-color: #fff;
 }
 
 
@@ -452,6 +509,23 @@ body {
 
 body.open-menu {
   overflow: hidden;
+}
+
+
+body.open-popup {
+  overflow: hidden;
+}
+
+
+body.open-popup:before {
+  content: "";
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -569,7 +643,7 @@ input {
   font-size: 15px;
   font-family: "GothaProBol";
   color: #fff;
-  margin-left: 100px;
+  margin-left: 70px;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -2852,63 +2926,25 @@ input {
 
 
 .discover {
-  overflow: hidden;
-  min-height: 560px;
-  background: #f3f3f3 url("../img/img-bg-discover.png") left bottom repeat-x;
+  margin: 150px 0;
+  min-height: 390px;
+  border-top: 10px solid #ff8d0d;
+  background-color: #f0f0f0;
 }
 
 
-.discover__wrap {
-  width: 900px;
-  min-height: 560px;
-  background-color: #269ed8;
-  box-shadow: inset 0 5px 40px 0 rgba(0, 0, 0, 0.35);
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  
-  .discover__wrap {
-    width: 700px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  
-  .discover__wrap {
-    width: 650px;
-    position: relative;
-    left: -100px;
-  }
-}
-
-
-.discover__row {
+.discover__book {
   position: absolute;
-  top: 50%;
-  left: 140px;
-  color: #fff;
-  margin-top: -118px;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  
-  .discover__row {
-    left: 130px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  
-  .discover__row {
-    left: 30px;
-  }
+  right: -300px;
+  top: -290px;
 }
 
 
 .discover__title {
   font-size: 30px;
   line-height: 1.5;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -2924,23 +2960,17 @@ input {
   font-size: 22px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  
-  .discover__subtitle {
-    width: 400px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   
   .discover__subtitle {
-    width: auto;
     font-size: 18px;
   }
 }
 
 
 .discover__title, .discover__subtitle {
+  text-transform: uppercase;
+  color: #269ed8;
   font-family: "GothaProBol";
 }
 

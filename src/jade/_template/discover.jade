@@ -2,13 +2,18 @@
 
 .discover
     .container
-        .discover__wrap.block_skew
 
-        .discover__row
-            h3.discover__title!= "Хотите узнать, как большие данные </br> и машинное обучение уже </br> приносят пользу бизнесу?"
-            p.discover__subtitle!= "Мы собрали 10 самых интересных кейсов об этом."
+        h3.discover__title!= "Хотите узнать, как большие данные </br> и машинное обучение уже </br> приносят пользу бизнесу?"
+        p.discover__subtitle!= "Мы собрали 10 самых интересных кейсов об этом."
 
         a(href="javascript:void(0);", class="btn btn-discover", title="УЗНАТЬ")
-            div.btn_orange.btn_small.block_skew
+            div.btn_orange.btn_small
             p.btn__text!= "УЗНАТЬ"
 
+
+        img(
+            src="./img/img-book.png"
+            title=""
+            alt=""
+            class="discover__book"
+        )
