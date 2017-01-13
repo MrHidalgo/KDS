@@ -13,15 +13,15 @@
 		@include respond-to(small-all) {
 			margin-bottom: 50px;
 		}
-	}
 
 
-	.img {
-		&-logo,
-		&-logo-mobile {
-			float: none;
-			margin-left: auto;
-			margin-right: auto;
+		.img {
+			&-logo,
+			&-logo-mobile {
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 }
@@ -59,6 +59,21 @@
 		}
 	}
 }
+
+.modal {
+	.img-logo-mobile {
+		&_normal {
+			display: block;
+		}
+
+
+		&_normal,
+		&_retina {
+			margin-top: 0;
+			float: left;
+		}
+	}
+}
 ///
 /// RETINA DISPLAY
 ///
@@ -75,7 +90,7 @@
 		.img-logo,
 		.img-logo-mobile {
 			&_normal{
-				display: none;
+				display: none !important;
 			}
 		}
 	}

@@ -1,0 +1,182 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-black				: return-value(color, black);
+$c-dimGray   		: return-value(color, dimGray);
+$c-summerSky 		: return-value(color, summerSky);
+$c-pelorous  		: return-value(color, pelorous);
+$c-whiteSmoke		: return-value(color, whiteSmoke);
+
+$f-GP_light     : return-value(fonts, GP_light);
+$f-GP_bold      : return-value(fonts, GP_bold);
+///
+/// MAIN
+///
+.modal {
+	display: none;
+	content: "";
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	@include mixinDimensions($w-all);
+	background-color: rgba(0,0,0,.8);
+
+
+	&__container {
+		position: absolute;
+		z-index: 1001;
+		top: 50%;
+		left: 50%;
+		max-width: 430px;
+		min-height: 526px;
+		margin-top: -273px;
+		margin-left: -215px;
+		background-color: $c-white;
+		padding: 15px 25px;
+	}
+
+
+	&__header,
+	&__section {
+		margin-bottom: 30px;
+	}
+
+
+	&__logo {
+		float: left;
+	}
+
+
+	&__close {
+		float: right;
+		position: relative;
+		@include mixinDimensions(30px);
+
+
+		&:before {
+			transform: rotate(-45deg);
+		}
+
+
+		&:after {
+			transform: rotate(45deg);
+		}
+
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 13px;
+			left: 0;
+			@include mixinDimensions($w-all, 3px);
+			background-color: $c-summerSky;
+			border-radius: 3px;
+		}
+	}
+
+
+	&__input {
+		border: {
+			width: 1px;
+			color: rgb(215, 215, 215);
+			style: solid;
+			radius: 3px;
+		}
+		font: {
+			size: 14px;
+		}
+		color: $c-dimGray;
+		width: $w-all;
+		height: 54px;
+		line-height: 54px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+
+
+	&__text {
+		text-transform: uppercase;
+		color: $c-summerSky;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		font: {
+			size: 18px;
+			family: $f-GP_bold;
+		}
+		@include respond-to(small-all) {
+			font-size: 16px;
+		}
+	}
+
+
+	&__checkbox {
+		&-wrap {
+			position: relative;
+			float: left;
+			width: 50%;
+			@include respond-to(small-all) {
+				float: none;
+				width: $w-all;
+				margin-bottom: 10px;
+			}
+		}
+
+
+		&-label {
+			color: $c-dimGray;
+			font: {
+				size: 18px;
+				family: $f-GP_bold;
+			}
+			@include respond-to(small-all) {
+				font-size: 16px;
+			}
+		}
+	}
+
+
+	.checkbox__btn {
+		&-icon {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+			@include retina-sprite($sp-i-checkbox-group);
+		}
+
+
+		&.active {
+			.checkbox__btn-icon {
+				@include retina-sprite($sp-i-checkbox-active-group);
+			}
+		}
+	}
+
+
+	&__form {
+		position: relative;
+	}
+
+
+	.btn-modal {
+		position: absolute;
+		width: 320px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: -85px;
+		@include respond-to(medium) {
+			bottom: -80px;
+		}
+	}
+}

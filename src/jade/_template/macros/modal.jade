@@ -1,0 +1,72 @@
+
+.modal
+    .modal__container
+        .modal__header.clearfix
+            .logotype.clearfix.modal__logo
+                img(src="./img/img-logotype-mobile.png", alt="logotype", title="logotype", class="img-logo-mobile img-logo-mobile_normal")
+                img(src="./img/img-logotype-mobile@2x.png", alt="logotype", title="logotype", class="img-logo-mobile img-logo-mobile_retina")
+
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="modal__close"
+            )
+
+        .modal__section.clearfix
+            form(action="", class="modal__form")
+                input(
+                    type="text"
+                    name="first_name"
+                    class="modal__input modal__input-name"
+                    placeholder="Ваше имя"
+                )
+                input(
+                    type="text"
+                    name="tel"
+                    class="modal__input modal__input-tel"
+                    placeholder="Телефон"
+                )
+                input(
+                    type="text"
+                    name="email"
+                    class="modal__input modal__input-email"
+                    placeholder="E-mail"
+                )
+
+
+                p.modal__text!= "Какой поток интереснее?"
+
+                .modal__radio.clearfix
+                    .modal__checkbox-wrap.checkbox__btn
+                        input(
+                            type="checkbox"
+                            name="checkbox"
+                            class="modal__checkbox modal__checkbox-business"
+                            checked="checked"
+                            id="checkbox-0"
+                        )
+                        label(
+                            for="checkbox-0"
+                            class="modal__checkbox-label"
+                        )
+                            i.checkbox__btn-icon
+                            | Business stage
+
+                    .modal__checkbox-wrap.checkbox__btn
+                        input(
+                            type="checkbox"
+                            name="checkbox"
+                            class="modal__checkbox modal__checkbox-it"
+                            id="checkbox-1"
+                        )
+                        label(
+                            for="checkbox-1"
+                            class="modal__checkbox-label"
+                        )
+                            i.checkbox__btn-icon
+                            | IT stage
+
+                a(href="javascript:void(0);", class="btn btn-modal", title="modal send")
+                    div.btn_orange.btn_small
+
+                    p.btn__text!= "Отправить"

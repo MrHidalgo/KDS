@@ -50,17 +50,19 @@ body{
 
 	&.open-popup {
 		overflow: hidden;
-
-
-		&:before {
-			content: "";
-			position: fixed;
-			z-index: 100;
-			top: 0;
-			left: 0;
-			@include mixinDimensions($w-all);
-			background-color: rgba(0,0,0,.8);
-		}
+		//position: fixed;
+		//@include mixinDimensions($w-all);
+		//
+		//
+		//&:before {
+		//	content: "";
+		//	position: fixed;
+		//	z-index: 1000;
+		//	top: 0;
+		//	left: 0;
+		//	@include mixinDimensions($w-all);
+		//	background-color: rgba(0,0,0,.8);
+		//}
 	}
 }
 
@@ -103,10 +105,27 @@ a{
 
 input{
 	outline: none;
+}
+
+
+input[type="text"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-o-appearance: none;
 	appearance: none;
+}
+input[type=radio],
+input[type=checkbox] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	border: none;
+	margin: 0;
+	padding: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	outline: 0;
 }
 
 

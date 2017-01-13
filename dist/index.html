@@ -10,7 +10,7 @@
     <link href="./css/fonts.min.css" rel="stylesheet"/>
     <link href="./css/animate.min.css" rel="stylesheet"/>
   </head>
-  <body class="open-popup">
+  <body>
     <div class="navigation navigation_fixed">
       <div class="navigation__wrap block_skew"></div>
       <div class="container clearfix"><img src="./img/img-logo-fixed.png" class="img-logo-fixed">
@@ -407,7 +407,33 @@
         <div class="footer__line block_skew"></div>
       </div>
     </div>
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__header clearfix">
+          <div class="logotype clearfix modal__logo"><img src="./img/img-logotype-mobile.png" alt="logotype" title="logotype" class="img-logo-mobile img-logo-mobile_normal"><img src="./img/img-logotype-mobile@2x.png" alt="logotype" title="logotype" class="img-logo-mobile img-logo-mobile_retina"></div><a href="javascript:void(0);" title="" class="modal__close"></a>
+        </div>
+        <div class="modal__section clearfix">
+          <form action="" class="modal__form">
+            <input type="text" name="first_name" placeholder="Ваше имя" class="modal__input modal__input-name">
+            <input type="text" name="tel" placeholder="Телефон" class="modal__input modal__input-tel">
+            <input type="text" name="email" placeholder="E-mail" class="modal__input modal__input-email">
+            <p class="modal__text">Какой поток интереснее?</p>
+            <div class="modal__radio clearfix">
+              <div class="modal__checkbox-wrap checkbox__btn">
+                <input type="checkbox" name="checkbox" checked="checked" id="checkbox-0" class="modal__checkbox modal__checkbox-business">
+                <label for="checkbox-0" class="modal__checkbox-label"><i class="checkbox__btn-icon"></i>Business stage</label>
+              </div>
+              <div class="modal__checkbox-wrap checkbox__btn">
+                <input type="checkbox" name="checkbox" id="checkbox-1" class="modal__checkbox modal__checkbox-it">
+                <label for="checkbox-1" class="modal__checkbox-label"><i class="checkbox__btn-icon"></i>IT stage</label>
+              </div>
+            </div><a href="javascript:void(0);" title="modal send" class="btn btn-modal">
+              <div class="btn_orange btn_small"></div>
+              <p class="btn__text">Отправить</p></a>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyCIHSncEfszY7SQPvBPKwosLiYyzj0fSzQ"></script>
     <script src="./script/jquery-1.11.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"></script>

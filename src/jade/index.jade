@@ -20,7 +20,7 @@ html(lang="en")
     +headSite("KDS", linkSite.styleLink, "")
 
 
-    body.open-popup
+    body
 
 
         .navigation.navigation_fixed
@@ -83,8 +83,7 @@ html(lang="en")
             include _template/footer
 
 
-        .modal
-
+        include _template/macros/modal
 
 
         script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCIHSncEfszY7SQPvBPKwosLiYyzj0fSzQ")

@@ -18,6 +18,12 @@ $c-darkPastelGreen  : return-value(color, darkPastelGreen);
 ///
 .preparation {
 	padding: 100px 0;
+	@include respond-to(large) {
+		padding-top: 150px;
+	}
+	@include respond-to(medium-all) {
+		padding-top: 60px;
+	}
 	@include respond-to("small-all") {
 		padding-top: 70px;
 	}

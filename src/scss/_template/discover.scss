@@ -16,15 +16,30 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 ///
 .discover {
 	margin: 150px 0;
+	padding-bottom: 30px;
 	min-height: 390px;
 	border-top: 10px solid $c-darkOrange;
 	background-color: #f0f0f0;
+	@include respond-to(large) {
+		min-height: 510px;
+	}
+	@include respond-to("small-all") {
+		min-height: 465px;
+		padding-bottom: 0;
+		margin: 60px 0;
+	}
 
 
 	&__book {
 		position: absolute;
 		right: -300px;
 		top: -290px;
+		@include respond-to(large) {
+			top: -210px;
+		}
+		@include respond-to(medium-all) {
+			display: none;
+		}
 	}
 
 
@@ -33,6 +48,10 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 		line-height: 1.5;
 		margin-top: 50px;
 		margin-bottom: 60px;
+		@include respond-to(large) {
+			font-size: 28px;
+			margin-bottom: 40px;
+		}
 		@include respond-to("small-all") {
 			font-size: 20px;
 			margin-bottom: 40px;
@@ -53,5 +72,8 @@ $f-GP_bold          : return-value(fonts, GP_bold);
 		text-transform: uppercase;
 		color: $c-summerSky;
 		font-family: $f-GP_bold;
+		@include respond-to(large) {
+			width: 50%;
+		}
 	}
 }

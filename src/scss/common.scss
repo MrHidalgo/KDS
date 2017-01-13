@@ -1,7 +1,3 @@
-@import "_template/_grid";
-@import "_template/_base";
-@import "_template/_main";
-
 @import "_template/header";
 @import "_template/advantages";
 @import "_template/video";
@@ -14,4 +10,9 @@
 @import "_template/sponsorPartner";
 @import "_template/maps";
 @import "_template/subscribe";
+@import "_template/modal";
 @import "_template/footer";
+
+@import "_template/_grid";
+@import "_template/_base";
+@import "_template/_main";

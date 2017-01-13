@@ -12,7 +12,7 @@
 }
 
 
-.logotype .img-logo, .logotype .img-logo-mobile {
+.logotype_center .img-logo, .logotype_center .img-logo-mobile {
   float: none;
   margin-left: auto;
   margin-right: auto;
@@ -67,11 +67,22 @@
   }
 }
 
+
+.modal .img-logo-mobile_normal {
+  display: block;
+}
+
+
+.modal .img-logo-mobile_normal, .modal .img-logo-mobile_retina {
+  margin-top: 0;
+  float: left;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 300px), (min--moz-device-pixel-ratio: 2) and (min-width: 300px), (min-device-pixel-ratio: 2) and (min-width: 300px), (min-resolution: 192dpi) and (min-width: 300px), (min-resolution: 2dppx) and (min-width: 300px) {
   
   .img-logo_normal,
   .img-logo-mobile_normal {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -112,7 +123,7 @@
   margin-top: 20px;
   border-top: 10px solid #ff8d0d;
   background-color: #f0f0f0;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 
@@ -122,6 +133,14 @@
   font-size: 30px;
   font-family: "GothaProBol";
   line-height: 1.2;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .header__title {
+    width: 50%;
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -143,6 +162,13 @@
   color: #269ed8;
   margin-top: 60px;
   font-size: 20px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .header__title-text {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -178,6 +204,21 @@
   top: -290px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .header__book {
+    right: -260px;
+    top: -240px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .header__book {
+    display: none;
+  }
+}
+
 
 
 
@@ -187,6 +228,20 @@
 
 .preparation {
   padding: 100px 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .preparation {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .preparation {
+    padding-top: 60px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -225,7 +280,7 @@
   top: -10px;
   vertical-align: top;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -220px;
+  background-position: 0px -264px;
   width: 22px;
   height: 22px;
 }
@@ -234,7 +289,7 @@
   
   .preparation__title-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -284,7 +339,7 @@
 
 .preparation__form.error .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -319px;
+  background-position: 0px -363px;
   width: 21px;
   height: 21px;
 }
@@ -293,14 +348,14 @@
   
   .preparation__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
 
 .preparation__form.done .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -293px;
+  background-position: 0px -337px;
   width: 21px;
   height: 21px;
 }
@@ -309,7 +364,7 @@
   
   .preparation__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -322,7 +377,7 @@
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -558px;
+  background-position: 0px -602px;
   width: 103px;
   height: 98px;
 }
@@ -331,7 +386,7 @@
   
   .preparation__form:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -734,7 +789,7 @@
 
 .icon-box-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1115px;
+  background-position: 0px -1159px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -745,14 +800,14 @@
   
   .icon-box-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
 
 .icon-box-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1185px;
+  background-position: 0px -1229px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -763,7 +818,7 @@
   
   .icon-box-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -777,7 +832,7 @@
 
 .icon-box-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1331px;
+  background-position: 0px -1375px;
   width: 97px;
   height: 99px;
   top: 150px;
@@ -788,7 +843,7 @@
   
   .icon-box-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -817,7 +872,7 @@
   
   .even .icon-box-0:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -661px;
+    background-position: 0px -705px;
     width: 109px;
     height: 113px;
     left: -45px;
@@ -828,7 +883,7 @@
   
   .even .icon-box-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -836,7 +891,7 @@
   
   .even .icon-box-0:after {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -779px;
+    background-position: 0px -823px;
     width: 141px;
     height: 147px;
   }
@@ -846,7 +901,7 @@
   
   .even .icon-box-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -854,7 +909,7 @@
   
   .even .icon-box-1:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -931px;
+    background-position: 0px -975px;
     width: 48px;
     height: 47px;
   }
@@ -864,7 +919,7 @@
   
   .even .icon-box-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -902,7 +957,7 @@
 
 .subscribe__form.error .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -319px;
+  background-position: 0px -363px;
   width: 21px;
   height: 21px;
 }
@@ -911,14 +966,14 @@
   
   .subscribe__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
 
 .subscribe__form.done .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -293px;
+  background-position: 0px -337px;
   width: 21px;
   height: 21px;
 }
@@ -927,7 +982,7 @@
   
   .subscribe__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -1195,7 +1250,7 @@ input[name="subscribe"]::placeholder {
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1430px;
+    background-size: 141px 1474px;
   }
 }
 
@@ -1361,7 +1416,7 @@ input[name="subscribe"]::placeholder {
 @media screen and (max-width: 767px) {
   
   .btn-header {
-    bottom: 103px;
+    bottom: 123px;
   }
 }
 
@@ -1393,13 +1448,13 @@ input[name="subscribe"]::placeholder {
   left: 0;
   right: 0;
   margin: auto;
-  max-width: 310px;
+  max-width: 320px;
   color: #fff;
   font-size: 20px;
   font-family: "GothaProBol";
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .btn-header, .btn-timer, .btn-discover {
     max-width: 300px;
@@ -1407,7 +1462,8 @@ input[name="subscribe"]::placeholder {
 }
 
 
-.btn-thank {
+.btn-thank, .btn-modal {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1421,15 +1477,23 @@ input[name="subscribe"]::placeholder {
   font-family: "GothaProBol";
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+  .btn-thank, .btn-modal {
+    height: 55px;
+    line-height: 55px;
+  }
+}
 
-.btn-thank:hover {
+
+.btn-thank:hover, .btn-modal:hover {
   background: #ffad00;
   background: -webkit-linear-gradient(left, #ffad00 0%, #ffad00 100%);
   background: linear-gradient(to right, #ffad00 0%, #ffad00 100%);
 }
 
 
-.btn-thank:active {
+.btn-thank:active, .btn-modal:active {
   background: #ffad00;
   background: -webkit-linear-gradient(left, #ffad00 0%, #ff8d0d 100%);
   background: linear-gradient(to right, #ffad00 0%, #ff8d0d 100%);
@@ -1438,15 +1502,8 @@ input[name="subscribe"]::placeholder {
 
 .btn-discover {
   bottom: -135px;
-  left: -10px;
+  left: 15px;
   margin: initial;
-}
-
-@media screen and (max-width: 479px) {
-  
-  .btn-discover {
-    left: 0;
-  }
 }
 
 
@@ -1532,15 +1589,13 @@ input[name="subscribe"]::placeholder {
 
 .btn_small {
   margin: auto;
-  max-width: 260px;
   height: 60px;
   line-height: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .btn_small {
-    max-width: 250px;
     height: 55px;
     line-height: 55px;
   }
@@ -1575,7 +1630,7 @@ input[name="subscribe"]::placeholder {
   height: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   
   .btn__text {
     line-height: 55px;
@@ -1728,19 +1783,6 @@ input[name="subscribe"]::placeholder {
 }
 
 
-.modal {
-  position: absolute;
-  z-index: 101;
-  top: 50%;
-  left: 50%;
-  width: 430px;
-  height: 546px;
-  margin-top: -273px;
-  margin-left: -215px;
-  background-color: #fff;
-}
-
-
 .hidden {
   opacity: 0;
 }
@@ -1793,18 +1835,6 @@ body.open-popup {
 }
 
 
-body.open-popup:before {
-  content: "";
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
 * {
   box-sizing: border-box;
 }
@@ -1846,10 +1876,29 @@ a:hover, a:focus {
 
 input {
   outline: none;
+}
+
+
+input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
+}
+
+
+input[type=radio],
+input[type=checkbox] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  outline: 0;
 }
 
 
