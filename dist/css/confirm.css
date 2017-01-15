@@ -495,12 +495,10 @@
 }
 
 
-.btn-timer:hover .block_skew, .btn-timer:active .block_skew, .btn-header:hover .block_skew, .btn-header:active .block_skew, .btn-discover:hover .block_skew, .btn-discover:active .block_skew {
-  -webkit-transform: skewX(0deg);
-      -ms-transform: skewX(0deg);
-          transform: skewX(0deg);
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+.btn-timer:hover .btn_orange, .btn-header:hover .btn_orange, .btn-discover:hover .btn_orange {
+  background: #ffad00;
+  background: -webkit-linear-gradient(left, #ffad00 0%, #ffad00 100%);
+  background: linear-gradient(to right, #ffad00 0%, #ffad00 100%);
 }
 
 
@@ -627,18 +625,16 @@
 
 
 .btn__price.btn_orange:hover {
-  border-color: #10bc2c;
-  background: #10bc2c;
-  background: -webkit-linear-gradient(left, #10bc2c 0%, #0d9623 100%);
-  background: linear-gradient(to right, #10bc2c 0%, #0d9623 100%);
+  background: #ffad00;
+  background: -webkit-linear-gradient(left, #ffad00 0%, #ffad00 100%);
+  background: linear-gradient(to right, #ffad00 0%, #ffad00 100%);
 }
 
 
 .btn__price.btn_orange:active {
-  border-color: #0ea527;
-  background: #13e235;
-  background: -webkit-linear-gradient(left, #13e235 0%, #0ea527 100%);
-  background: linear-gradient(to right, #13e235 0%, #0ea527 100%);
+  background: #ffb20f;
+  background: -webkit-linear-gradient(left, #ffb20f 0%, #ff941c 100%);
+  background: linear-gradient(to right, #ffb20f 0%, #ff941c 100%);
 }
 
 
@@ -797,6 +793,7 @@ html {
 
 html {
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 
