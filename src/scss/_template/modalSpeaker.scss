@@ -20,16 +20,10 @@ $f-GP_regular   : return-value(fonts, GP_regular);
 ///
 /// MAIN
 ///
-.modal {
-	//display: none;
-}
-
-
 .modal__speaker {
 	overflow-y: auto;
-	//display: block !important;
 
-
+	
 	.modal__wrap {
 		position: absolute;
 		z-index: 1001;
