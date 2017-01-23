@@ -1,0 +1,53 @@
+-
+    var modalText = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\"";
+
+
+.modal.modal__speaker
+
+    .modal__wrap.clearfix
+
+        a(
+            href="javascript:void(0);"
+            title=""
+            class="modal__close"
+        )
+
+        .modal__left
+            .modal__img-wrap
+                img(
+                    src="./img/img-speaker.png"
+                    title=""
+                    alt=""
+                    class="modal__img"
+                )
+
+            .modal__social-wrap
+                a(
+                    href="javascript:void(0);"
+                    title=""
+                    class="modal__ln"
+                )
+
+                a(
+                    href="javascript:void(0);"
+                    title=""
+                    class="modal__fb"
+                )
+
+            p.modal__theme-title!= "Тема доклада на KDS:"
+
+            p.modal__theme-title-sub!= "Как большие данные уже сегодня меняют маркетинг и продажи"
+
+
+        .modal__right
+            p.modal__title-speaker!= "Константинопольский </br> Николай"
+            p.modal__title-speaker-sub!= "Старший специалист Web PromoExperts"
+
+            p.modal__text-speaker!= modalText
+            p.modal__text-speaker!= modalText
+
+        .modal__bottom
+            a(href="javascript:void(0);", class="btn btn-modal btn-main", title="modal main")
+                div.btn_orange.btn_small
+
+                p.btn__text!= "На главную"

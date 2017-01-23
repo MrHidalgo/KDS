@@ -1,0 +1,238 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$w-all          : return-value(dimension, all);
+
+$c-white				: return-value(color, white);
+$c-black				: return-value(color, black);
+$c-dimGray   		: return-value(color, dimGray);
+$c-summerSky 		: return-value(color, summerSky);
+$c-pelorous  		: return-value(color, pelorous);
+$c-whiteSmoke		: return-value(color, whiteSmoke);
+$c-orange   		: return-value(color, orange);
+
+$f-GP_light     : return-value(fonts, GP_light);
+$f-GP_bold      : return-value(fonts, GP_bold);
+$f-GP_regular   : return-value(fonts, GP_regular);
+///
+/// MAIN
+///
+.modal {
+	//display: none;
+}
+
+
+.modal__speaker {
+	overflow-y: auto;
+	//display: block !important;
+
+
+	.modal__wrap {
+		position: absolute;
+		z-index: 1001;
+		top: 50%;
+		left: 50%;
+		max-width: 830px;
+		min-height: 644px;
+		margin-left: -(830 / 2) * 1px;
+		margin-top: -(644 / 2) * 1px;
+		background-color: $c-white;
+		padding: 30px;
+		@include respond-to(medium-all) {
+			top: 40px;
+			margin-top: 0;
+			left: 0;
+			right: 0;
+			width: 95%;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include respond-to(small-all) {
+			padding-top: 40px;
+		}
+		@include respond-to(extra-small) {
+			width: 100%;
+			top: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+
+	.modal__close {
+		cursor: pointer;
+		position: absolute;
+		z-index: 11;
+		right: 30px;
+		top: 30px;
+		@include mixinDimensions(30px);
+		@include respond-to(small-all) {
+			right: 5px;
+			top: 5px;
+		}
+
+
+		&:before {
+			transform: rotate(-45deg);
+		}
+
+
+		&:after {
+			transform: rotate(45deg);
+		}
+
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 13px;
+			left: 0;
+			@include mixinDimensions($w-all, 3px);
+			background-color: $c-summerSky;
+			border-radius: 3px;
+		}
+	}
+
+
+	.modal__left {
+		float: left;
+		width: 270px;
+	}
+
+
+	.modal__right {
+		float: right;
+		padding-left: 30px;
+		width:  calc(100% - 270px);
+	}
+
+
+	.modal__left,
+	.modal__right {
+		height: $w-all;
+		@include respond-to(small-all) {
+			width: 100%;
+			padding-left: 0;
+			float: none;
+		}
+	}
+
+	.modal__img {
+		margin-bottom: 30px;
+
+		&-wrap {
+			@include respond-to(small-all) {
+				text-align: center;
+			}
+		}
+	}
+
+
+	.modal__social-wrap {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+
+	.modal__ln {
+		@include retina-sprite($sp-i-ln-group);
+	}
+	.modal__fb {
+		@include retina-sprite($sp-i-fb-group);
+	}
+
+
+	.modal__ln,
+	.modal__fb {
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+
+	.modal__theme-title {
+		font: {
+			size: 22px;
+			family: $f-GP_bold;
+		}
+		color: $c-orange;
+		line-height: 1;
+		padding-bottom: 20px;
+		@include respond-to(small-all) {
+			font-size: 20px;
+		}
+
+
+		&-sub {
+			font: {
+				size: 20px;
+				family: $f-GP_bold;
+			}
+			color: $c-dimGray;
+			padding-bottom: 20px;
+			@include respond-to(small-all) {
+				font-size: 18px;
+			}
+		}
+	}
+
+
+	.modal__title-speaker {
+		font: {
+			size: 22px;
+			family: $f-GP_bold;
+		}
+		color: $c-dimGray;
+		padding-right: 100px;
+		padding-bottom: 40px;
+		position: relative;
+		@include respond-to(small-all) {
+			font-size: 20px;
+		}
+
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 20px;
+			@include mixinDimensions(30px, 5px);
+			background-color: $c-orange;
+		}
+
+
+		&-sub {
+			font: {
+				size: 18px;
+				family: $f-GP_regular;
+			}
+			color: $c-dimGray;
+			padding-bottom: 30px;
+			@include respond-to(small-all) {
+				font-size: 16px;
+			}
+		}
+	}
+
+
+	.modal__text-speaker {
+		font: {
+			family: $f-GP_regular;
+		}
+		color: $c-dimGray;
+		padding-bottom: 30px;
+		@include respond-to(small-all) {
+			font-size: 14px;
+		}
+	}
+
+
+	.btn-modal {
+		bottom: -30px;
+	}
+}

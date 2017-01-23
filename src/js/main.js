@@ -174,7 +174,7 @@ $(document).ready(function(){
 
     /* BODY CLICK */
     $('body').on('click', function (e) {
-        if (!$(e.target).closest('.nav__link, .modal, .btn-header, .nav__reservations, .btn-timer, .btn-discover').length) {
+        if (!$(e.target).closest('.nav__link, .modal, .btn-header, .nav__reservations, .btn-timer, .btn-discover, .speaker__main-block, .speaker__dop-block').length) {
             $('.nav__link').removeClass('active');
             $("body").removeClass("open-popup");
             $(".modal").fadeOut();
@@ -257,13 +257,20 @@ $(document).ready(function(){
         e.preventDefault();
 
         $("body").addClass("open-popup");
-        $(".modal").fadeIn();
+        $(".modal__main").fadeIn();
     });
-    $(".modal__close").on("click", function(e) {
+    $(".speaker__main-block, .speaker__dop-block").on("click", function(e) {
+        e.preventDefault();
+
+        $("body").addClass("open-popup");
+        $(".modal__speaker").fadeIn();
+    });
+
+    $(".modal__close, .btn-main").on("click", function(e) {
         e.preventDefault();
 
         $("body").removeClass("open-popup");
-        $(".modal").fadeOut();
+        $(this).closest(".modal").fadeOut();
     });
 
 

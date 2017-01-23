@@ -659,7 +659,7 @@ input[type=checkbox] {
 .nav__link.active:after {
   opacity: 1;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -452px;
+  background-position: 0px -519px;
   width: 71px;
   height: 70px;
   -webkit-transition-duration: .3s;
@@ -674,7 +674,7 @@ input[type=checkbox] {
   
   .nav__link.active:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -706,7 +706,7 @@ input[type=checkbox] {
 .nav__link:hover:before {
   opacity: 1;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -527px;
+  background-position: 0px -594px;
   width: 71px;
   height: 70px;
   -webkit-transition-duration: .3s;
@@ -721,7 +721,7 @@ input[type=checkbox] {
   
   .nav__link:hover:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -924,7 +924,7 @@ input[type=checkbox] {
   
   .bottom-info__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -1212,7 +1212,7 @@ input[type=checkbox] {
 .maps-arrow__icon {
   float: right;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -389px;
+  background-position: 0px -423px;
   width: 20px;
   height: 27px;
 }
@@ -1221,7 +1221,7 @@ input[type=checkbox] {
   
   .maps-arrow__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -1336,7 +1336,7 @@ input[type=checkbox] {
   position: relative;
   display: block;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1027px;
+  background-position: 0px -1094px;
   width: 130px;
   height: 127px;
 }
@@ -1345,7 +1345,7 @@ input[type=checkbox] {
   
   .advantages__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -1418,7 +1418,7 @@ input[type=checkbox] {
   
   .advantages__wrap.advantages_speaker .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -1437,7 +1437,7 @@ input[type=checkbox] {
   
   .advantages__wrap.advantages_flow .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -1456,7 +1456,7 @@ input[type=checkbox] {
   
   .advantages__wrap.advantages_reporter .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -1824,7 +1824,7 @@ input[type=checkbox] {
 .timer__info-icon {
   margin-right: 20px;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -421px;
+  background-position: 0px -455px;
   width: 20px;
   height: 26px;
 }
@@ -1833,7 +1833,7 @@ input[type=checkbox] {
   
   .timer__info-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2315,7 +2315,7 @@ input[type=checkbox] {
 
 .icon-new-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1159px;
+  background-position: 0px -1226px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -2326,14 +2326,14 @@ input[type=checkbox] {
   
   .icon-new-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
 
 .icon-new-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1229px;
+  background-position: 0px -1296px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -2344,7 +2344,7 @@ input[type=checkbox] {
   
   .icon-new-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2358,7 +2358,7 @@ input[type=checkbox] {
 
 .icon-new-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1375px;
+  background-position: 0px -1442px;
   width: 97px;
   height: 99px;
   top: 150px;
@@ -2369,7 +2369,7 @@ input[type=checkbox] {
   
   .icon-new-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2398,7 +2398,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -705px;
+    background-position: 0px -772px;
     width: 109px;
     height: 113px;
     left: -45px;
@@ -2409,7 +2409,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2417,7 +2417,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:after {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -823px;
+    background-position: 0px -890px;
     width: 141px;
     height: 147px;
   }
@@ -2427,7 +2427,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2435,7 +2435,7 @@ input[type=checkbox] {
   
   .even .icon-new-1:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -975px;
+    background-position: 0px -1042px;
     width: 48px;
     height: 47px;
   }
@@ -2445,7 +2445,7 @@ input[type=checkbox] {
   
   .even .icon-new-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2590,7 +2590,7 @@ input[type=checkbox] {
 
 .program__left .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1159px;
+  background-position: 0px -1226px;
   width: 66px;
   height: 65px;
   left: -40px;
@@ -2601,14 +2601,14 @@ input[type=checkbox] {
   
   .program__left .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1229px;
+  background-position: 0px -1296px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -2619,14 +2619,14 @@ input[type=checkbox] {
   
   .program__left .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1375px;
+  background-position: 0px -1442px;
   width: 97px;
   height: 99px;
   bottom: -60px;
@@ -2637,7 +2637,7 @@ input[type=checkbox] {
   
   .program__left .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2658,7 +2658,7 @@ input[type=checkbox] {
   
   .program__left .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2678,7 +2678,7 @@ input[type=checkbox] {
 
 .program__right .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -705px;
+  background-position: 0px -772px;
   width: 109px;
   height: 113px;
   bottom: -50px;
@@ -2689,14 +2689,14 @@ input[type=checkbox] {
   
   .program__right .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -823px;
+  background-position: 0px -890px;
   width: 141px;
   height: 147px;
   top: -50px;
@@ -2707,14 +2707,14 @@ input[type=checkbox] {
   
   .program__right .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -975px;
+  background-position: 0px -1042px;
   width: 48px;
   height: 47px;
   top: 60px;
@@ -2725,7 +2725,7 @@ input[type=checkbox] {
   
   .program__right .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2746,7 +2746,7 @@ input[type=checkbox] {
   
   .program__right .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -2810,7 +2810,7 @@ input[type=checkbox] {
 
 .program__block .icon-triangle-1:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1027px;
+  background-position: 0px -1094px;
   width: 130px;
   height: 127px;
   top: 20px;
@@ -2824,7 +2824,7 @@ input[type=checkbox] {
   
   .program__block .icon-triangle-1:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -3116,7 +3116,7 @@ input[type=checkbox] {
   
   .subscribe__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -3132,7 +3132,7 @@ input[type=checkbox] {
   
   .subscribe__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
@@ -3389,7 +3389,7 @@ input[name="subscribe"]::placeholder {
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1474px;
+    background-size: 141px 1541px;
   }
 }
 
