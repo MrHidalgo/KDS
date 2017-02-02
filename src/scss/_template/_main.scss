@@ -55,19 +55,6 @@ body{
 
 	&.open-popup {
 		overflow: hidden;
-		//position: fixed;
-		//@include mixinDimensions($w-all);
-		//
-		//
-		//&:before {
-		//	content: "";
-		//	position: fixed;
-		//	z-index: 1000;
-		//	top: 0;
-		//	left: 0;
-		//	@include mixinDimensions($w-all);
-		//	background-color: rgba(0,0,0,.8);
-		//}
 	}
 }
 

@@ -24,12 +24,23 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 	z-index: 1000;
 	top: 0;
 	left: 0;
-	@include mixinDimensions($w-all);
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	//@include mixinDimensions($w-all);
 	background-color: rgba(0,0,0,.8);
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+
+
+	.open-popup & {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
 
 
 	&__container {
-		position: absolute;
+		position: relative;
 		z-index: 1001;
 		top: 50%;
 		left: 50%;
@@ -39,6 +50,16 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 		margin-left: -215px;
 		background-color: $c-white;
 		padding: 15px 25px;
+		@include respond-to(small-all) {
+			top: 40px;
+			margin-top: 0;
+			left: 0;
+			right: 0;
+			width: 95%;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 
@@ -176,6 +197,9 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 		bottom: -85px;
 		@include respond-to(medium) {
 			bottom: -80px;
+		}
+		@include respond-to(extra-small) {
+			width: 100%;
 		}
 	}
 }
