@@ -1,16 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
 .nav {
   position: absolute;
   z-index: 11;
@@ -71,7 +59,7 @@
 .nav__link.active:after {
   opacity: 1;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -519px;
+  background-position: 0px -590px;
   width: 71px;
   height: 70px;
   -webkit-transition-duration: .3s;
@@ -86,7 +74,7 @@
   
   .nav__link.active:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -118,7 +106,7 @@
 .nav__link:hover:before {
   opacity: 1;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -594px;
+  background-position: 0px -665px;
   width: 71px;
   height: 70px;
   -webkit-transition-duration: .3s;
@@ -133,7 +121,7 @@
   
   .nav__link:hover:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -286,12 +274,6 @@
 }
 
 
-
-
-
-
-
-
 .bottom-info {
   position: absolute;
   z-index: 11;
@@ -336,7 +318,7 @@
   
   .bottom-info__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -624,7 +606,7 @@
 .maps-arrow__icon {
   float: right;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -423px;
+  background-position: 0px -494px;
   width: 20px;
   height: 27px;
 }
@@ -633,7 +615,7 @@
   
   .maps-arrow__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -670,12 +652,6 @@
     left: 50px;
   }
 }
-
-
-
-
-
-
 
 
 .advantages {
@@ -748,7 +724,7 @@
   position: relative;
   display: block;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1094px;
+  background-position: 0px -1165px;
   width: 130px;
   height: 127px;
 }
@@ -757,7 +733,7 @@
   
   .advantages__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -830,7 +806,7 @@
   
   .advantages__wrap.advantages_speaker .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -849,7 +825,7 @@
   
   .advantages__wrap.advantages_flow .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -868,7 +844,7 @@
   
   .advantages__wrap.advantages_reporter .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1062,12 +1038,6 @@
 }
 
 
-
-
-
-
-
-
 .timer {
   min-height: 790px;
   padding-top: 100px;
@@ -1236,7 +1206,7 @@
 .timer__info-icon {
   margin-right: 20px;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -455px;
+  background-position: 0px -526px;
   width: 20px;
   height: 26px;
 }
@@ -1245,7 +1215,7 @@
   
   .timer__info-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1376,12 +1346,6 @@
 .seconds__wrap-line.prev {
   background-color: #676767;
 }
-
-
-
-
-
-
 
 
 .new {
@@ -1727,7 +1691,7 @@
 
 .icon-new-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1226px;
+  background-position: 0px -1297px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -1738,14 +1702,14 @@
   
   .icon-new-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .icon-new-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1296px;
+  background-position: 0px -1367px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -1756,7 +1720,7 @@
   
   .icon-new-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1770,7 +1734,7 @@
 
 .icon-new-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1442px;
+  background-position: 0px -1513px;
   width: 97px;
   height: 99px;
   top: 150px;
@@ -1781,7 +1745,7 @@
   
   .icon-new-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1810,7 +1774,7 @@
   
   .even .icon-new-0:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -772px;
+    background-position: 0px -843px;
     width: 109px;
     height: 113px;
     left: -45px;
@@ -1821,7 +1785,7 @@
   
   .even .icon-new-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1829,7 +1793,7 @@
   
   .even .icon-new-0:after {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -890px;
+    background-position: 0px -961px;
     width: 141px;
     height: 147px;
   }
@@ -1839,7 +1803,7 @@
   
   .even .icon-new-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1847,7 +1811,7 @@
   
   .even .icon-new-1:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -1042px;
+    background-position: 0px -1113px;
     width: 48px;
     height: 47px;
   }
@@ -1857,7 +1821,7 @@
   
   .even .icon-new-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1960,12 +1924,6 @@
     opacity: 1;
   }
 }
-
-
-
-
-
-
 
 
 .speaker {
@@ -2285,7 +2243,7 @@
 
 .icon-speaker-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1226px;
+  background-position: 0px -1297px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -2296,14 +2254,14 @@
   
   .icon-speaker-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .icon-speaker-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1296px;
+  background-position: 0px -1367px;
   width: 137px;
   height: 141px;
   top: -10px;
@@ -2314,14 +2272,14 @@
   
   .icon-speaker-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .icon-speaker-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1442px;
+  background-position: 0px -1513px;
   width: 97px;
   height: 99px;
   bottom: 130px;
@@ -2332,7 +2290,7 @@
   
   .icon-speaker-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2466,12 +2424,6 @@
 }
 
 
-
-
-
-
-
-
 .program {
   overflow: hidden;
   position: relative;
@@ -2506,7 +2458,7 @@
 
 .program__left .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1226px;
+  background-position: 0px -1297px;
   width: 66px;
   height: 65px;
   left: -40px;
@@ -2517,14 +2469,14 @@
   
   .program__left .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1296px;
+  background-position: 0px -1367px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -2535,14 +2487,14 @@
   
   .program__left .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1442px;
+  background-position: 0px -1513px;
   width: 97px;
   height: 99px;
   bottom: -60px;
@@ -2553,7 +2505,7 @@
   
   .program__left .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2565,7 +2517,7 @@
 
 .program__left .program__desc-time:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -314px;
+  background-position: 0px -385px;
   width: 18px;
   height: 18px;
 }
@@ -2574,7 +2526,7 @@
   
   .program__left .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2594,7 +2546,7 @@
 
 .program__right .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -772px;
+  background-position: 0px -843px;
   width: 109px;
   height: 113px;
   bottom: -50px;
@@ -2605,14 +2557,14 @@
   
   .program__right .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -890px;
+  background-position: 0px -961px;
   width: 141px;
   height: 147px;
   top: -50px;
@@ -2623,14 +2575,14 @@
   
   .program__right .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1042px;
+  background-position: 0px -1113px;
   width: 48px;
   height: 47px;
   top: 60px;
@@ -2641,7 +2593,7 @@
   
   .program__right .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2653,7 +2605,7 @@
 
 .program__right .program__desc-time:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -291px;
+  background-position: 0px -362px;
   width: 18px;
   height: 18px;
 }
@@ -2662,7 +2614,7 @@
   
   .program__right .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2726,7 +2678,7 @@
 
 .program__block .icon-triangle-1:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1094px;
+  background-position: 0px -1165px;
   width: 130px;
   height: 127px;
   top: 20px;
@@ -2740,7 +2692,7 @@
   
   .program__block .icon-triangle-1:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2849,16 +2801,15 @@
 
 
 .price__row {
-  height: 280px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2883,22 +2834,16 @@
 
 
 .price__left {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
   background-color: #10bc2c;
+  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+  background: #10bc2c url("../img/img-price-bg.png") center repeat;
 }
 
 
 .price__left .price__text,
 .price__left .price__sum {
   color: #fff;
-}
-
-
-.price__right {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #f3f3f3;
 }
 
 
@@ -2928,10 +2873,9 @@
 
 .price__left, .price__right {
   position: relative;
-  width: 600px;
+  width: 100%;
   height: 100%;
   text-align: center;
-  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 }
 
 @media screen and (max-width: 767px) {
@@ -2962,6 +2906,7 @@
 .price__left .price__sum, .price__right .price__sum {
   font-size: 25px;
   font-family: "GothaProLig";
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -3089,6 +3034,107 @@
 }
 
 
+.contacts {
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .contacts {
+    padding-bottom: 30px;
+  }
+}
+
+
+.contacts__left .contacts__icon {
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px -264px;
+  width: 29px;
+  height: 28px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .contacts__left .contacts__icon {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 141px 1612px;
+  }
+}
+
+
+.contacts__right {
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .contacts__right {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+}
+
+
+.contacts__right .contacts__icon {
+  background-image: url(../img/sprite_KDS.png);
+  background-position: 0px -297px;
+  width: 33px;
+  height: 33px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
+  .contacts__right .contacts__icon {
+    background-image: url(../img/sprite_KDS@2x.png);
+    background-size: 141px 1612px;
+  }
+}
+
+
+.contacts__left, .contacts__right {
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .contacts__left, .contacts__right {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.contacts__title-sub {
+  font-size: 14px;
+  font-family: "GothaProReg";
+  height: 60px;
+  color: #676767;
+}
+
+
+.contacts__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+
+.contacts__text {
+  font-size: 20px;
+  font-family: "GothaProReg";
+  color: #269ed8;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .contacts__text {
+    font-size: 16px;
+  }
+}
+
+
 .maps {
   height: 380px;
 }
@@ -3098,12 +3144,6 @@
   width: 100%;
   height: 100%;
 }
-
-
-
-
-
-
 
 
 .subscribe {
@@ -3126,7 +3166,7 @@
 
 .subscribe__form.error .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -363px;
+  background-position: 0px -434px;
   width: 21px;
   height: 21px;
 }
@@ -3135,14 +3175,14 @@
   
   .subscribe__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .subscribe__form.done .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -337px;
+  background-position: 0px -408px;
   width: 21px;
   height: 21px;
 }
@@ -3151,7 +3191,7 @@
   
   .subscribe__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -3322,12 +3362,6 @@ input[name="subscribe"]::placeholder {
 }
 
 
-
-
-
-
-
-
 .modal {
   display: none;
   position: fixed;
@@ -3437,6 +3471,15 @@ input[name="subscribe"]::placeholder {
 }
 
 
+.modal__input-promo {
+  font-family: "GothaProBol";
+  color: #10bc2c;
+  margin-top: 30px;
+  margin-bottom: 0;
+  border: 1px solid #10bc2c;
+}
+
+
 .modal__text {
   text-transform: uppercase;
   color: #269ed8;
@@ -3499,7 +3542,7 @@ input[name="subscribe"]::placeholder {
   
   .modal .checkbox__btn-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -3515,7 +3558,7 @@ input[name="subscribe"]::placeholder {
   
   .modal .checkbox__btn.active .checkbox__btn-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -3550,10 +3593,33 @@ input[name="subscribe"]::placeholder {
 }
 
 
+input.modal__input-promo::-webkit-input-placeholder {
+  color: #10bc2c;
+}
 
 
+input.modal__input-promo::-moz-placeholder {
+  color: #10bc2c;
+}
 
 
+input.modal__input-promo:-moz-placeholder {
+  color: #10bc2c;
+}
+
+
+input.modal__input-promo::-webkit-input-placeholder {
+  color: #10bc2c;
+}
+input.modal__input-promo::-moz-placeholder {
+  color: #10bc2c;
+}
+input.modal__input-promo:-ms-input-placeholder {
+  color: #10bc2c;
+}
+input.modal__input-promo::placeholder {
+  color: #10bc2c;
+}
 
 
 .modal__speaker {
@@ -3700,7 +3766,7 @@ input[name="subscribe"]::placeholder {
 
 .modal__speaker .modal__ln {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -486px;
+  background-position: 0px -557px;
   width: 28px;
   height: 28px;
 }
@@ -3709,14 +3775,14 @@ input[name="subscribe"]::placeholder {
   
   .modal__speaker .modal__ln {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .modal__speaker .modal__fb {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -389px;
+  background-position: 0px -460px;
   width: 13px;
   height: 29px;
 }
@@ -3725,7 +3791,7 @@ input[name="subscribe"]::placeholder {
   
   .modal__speaker .modal__fb {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -3831,12 +3897,6 @@ input[name="subscribe"]::placeholder {
 }
 
 
-
-
-
-
-
-
 .footer {
   position: relative;
   min-height: 250px;
@@ -3917,7 +3977,7 @@ input[name="subscribe"]::placeholder {
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 

@@ -220,12 +220,6 @@
 }
 
 
-
-
-
-
-
-
 .preparation {
   padding: 100px 0;
 }
@@ -280,7 +274,7 @@
   top: -10px;
   vertical-align: top;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -264px;
+  background-position: 0px -335px;
   width: 22px;
   height: 22px;
 }
@@ -289,7 +283,7 @@
   
   .preparation__title-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -339,7 +333,7 @@
 
 .preparation__form.error .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -363px;
+  background-position: 0px -434px;
   width: 21px;
   height: 21px;
 }
@@ -348,14 +342,14 @@
   
   .preparation__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .preparation__form.done .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -337px;
+  background-position: 0px -408px;
   width: 21px;
   height: 21px;
 }
@@ -364,7 +358,7 @@
   
   .preparation__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -377,7 +371,7 @@
   right: 0;
   margin: auto;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -669px;
+  background-position: 0px -740px;
   width: 103px;
   height: 98px;
 }
@@ -386,7 +380,7 @@
   
   .preparation__form:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -462,12 +456,6 @@
     width: 90%;
   }
 }
-
-
-
-
-
-
 
 
 .box {
@@ -789,7 +777,7 @@
 
 .icon-box-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1226px;
+  background-position: 0px -1297px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -800,14 +788,14 @@
   
   .icon-box-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .icon-box-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1296px;
+  background-position: 0px -1367px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -818,7 +806,7 @@
   
   .icon-box-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -832,7 +820,7 @@
 
 .icon-box-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1442px;
+  background-position: 0px -1513px;
   width: 97px;
   height: 99px;
   top: 150px;
@@ -843,7 +831,7 @@
   
   .icon-box-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -872,7 +860,7 @@
   
   .even .icon-box-0:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -772px;
+    background-position: 0px -843px;
     width: 109px;
     height: 113px;
     left: -45px;
@@ -883,7 +871,7 @@
   
   .even .icon-box-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -891,7 +879,7 @@
   
   .even .icon-box-0:after {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -890px;
+    background-position: 0px -961px;
     width: 141px;
     height: 147px;
   }
@@ -901,7 +889,7 @@
   
   .even .icon-box-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -909,7 +897,7 @@
   
   .even .icon-box-1:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -1042px;
+    background-position: 0px -1113px;
     width: 48px;
     height: 47px;
   }
@@ -919,7 +907,7 @@
   
   .even .icon-box-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -929,12 +917,6 @@
     right: 56%;
   }
 }
-
-
-
-
-
-
 
 
 .subscribe {
@@ -957,7 +939,7 @@
 
 .subscribe__form.error .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -363px;
+  background-position: 0px -434px;
   width: 21px;
   height: 21px;
 }
@@ -966,14 +948,14 @@
   
   .subscribe__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .subscribe__form.done .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -337px;
+  background-position: 0px -408px;
   width: 21px;
   height: 21px;
 }
@@ -982,7 +964,7 @@
   
   .subscribe__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1164,12 +1146,6 @@ input[name="subscribe"]::placeholder {
 }
 
 
-
-
-
-
-
-
 .footer {
   position: relative;
   min-height: 250px;
@@ -1250,7 +1226,7 @@ input[name="subscribe"]::placeholder {
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 

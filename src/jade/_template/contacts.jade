@@ -1,0 +1,26 @@
+
+.contacts#contacts
+    p.main__title!= "КОНТАКТЫ"
+
+    .container.clearfix
+        .contacts__left
+            p.contacts__title-sub!= "Почта для вопросов, предложений партнерства и покупка групповых билетов"
+
+            .contacts__wrap
+                i.contacts__icon
+                a(
+                    href="mailto:office@septa-agency.com"
+                    title=""
+                    class="contacts__text"
+                )!= "office@septa-agency.com"
+
+        .contacts__right
+            p.contacts__title-sub!= "Телефон"
+
+            .contacts__wrap
+                i.contacts__icon
+                a(
+                    href="tel:+380934438571"
+                    title=""
+                    class="contacts__text"
+                )!= "+38 <strong>093</strong> 443 85 71"

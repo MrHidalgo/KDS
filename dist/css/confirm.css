@@ -101,12 +101,6 @@
 }
 
 
-
-
-
-
-
-
 .thank {
   text-align: center;
   padding-bottom: 250px;
@@ -150,12 +144,6 @@
     margin-bottom: 30px;
   }
 }
-
-
-
-
-
-
 
 
 .footer {
@@ -238,7 +226,7 @@
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 

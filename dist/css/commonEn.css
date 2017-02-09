@@ -593,18 +593,6 @@ input[type=checkbox] {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .nav {
   position: absolute;
   z-index: 11;
@@ -665,7 +653,7 @@ input[type=checkbox] {
 .nav__link.active:after {
   opacity: 1;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -519px;
+  background-position: 0px -590px;
   width: 71px;
   height: 70px;
   -webkit-transition-duration: .3s;
@@ -680,7 +668,7 @@ input[type=checkbox] {
   
   .nav__link.active:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -712,7 +700,7 @@ input[type=checkbox] {
 .nav__link:hover:before {
   opacity: 1;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -594px;
+  background-position: 0px -665px;
   width: 71px;
   height: 70px;
   -webkit-transition-duration: .3s;
@@ -727,7 +715,7 @@ input[type=checkbox] {
   
   .nav__link:hover:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -880,12 +868,6 @@ input[type=checkbox] {
 }
 
 
-
-
-
-
-
-
 .bottom-info {
   position: absolute;
   z-index: 11;
@@ -930,7 +912,7 @@ input[type=checkbox] {
   
   .bottom-info__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1218,7 +1200,7 @@ input[type=checkbox] {
 .maps-arrow__icon {
   float: right;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -423px;
+  background-position: 0px -494px;
   width: 20px;
   height: 27px;
 }
@@ -1227,7 +1209,7 @@ input[type=checkbox] {
   
   .maps-arrow__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1264,12 +1246,6 @@ input[type=checkbox] {
     left: 50px;
   }
 }
-
-
-
-
-
-
 
 
 .advantages {
@@ -1342,7 +1318,7 @@ input[type=checkbox] {
   position: relative;
   display: block;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1094px;
+  background-position: 0px -1165px;
   width: 130px;
   height: 127px;
 }
@@ -1351,7 +1327,7 @@ input[type=checkbox] {
   
   .advantages__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1424,7 +1400,7 @@ input[type=checkbox] {
   
   .advantages__wrap.advantages_speaker .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1443,7 +1419,7 @@ input[type=checkbox] {
   
   .advantages__wrap.advantages_flow .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1462,7 +1438,7 @@ input[type=checkbox] {
   
   .advantages__wrap.advantages_reporter .advantages__icon:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1656,12 +1632,6 @@ input[type=checkbox] {
 }
 
 
-
-
-
-
-
-
 .timer {
   min-height: 790px;
   padding-top: 100px;
@@ -1830,7 +1800,7 @@ input[type=checkbox] {
 .timer__info-icon {
   margin-right: 20px;
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -455px;
+  background-position: 0px -526px;
   width: 20px;
   height: 26px;
 }
@@ -1839,7 +1809,7 @@ input[type=checkbox] {
   
   .timer__info-icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -1970,12 +1940,6 @@ input[type=checkbox] {
 .seconds__wrap-line.prev {
   background-color: #676767;
 }
-
-
-
-
-
-
 
 
 .new {
@@ -2321,7 +2285,7 @@ input[type=checkbox] {
 
 .icon-new-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1226px;
+  background-position: 0px -1297px;
   width: 66px;
   height: 65px;
   left: -20px;
@@ -2332,14 +2296,14 @@ input[type=checkbox] {
   
   .icon-new-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .icon-new-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1296px;
+  background-position: 0px -1367px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -2350,7 +2314,7 @@ input[type=checkbox] {
   
   .icon-new-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2364,7 +2328,7 @@ input[type=checkbox] {
 
 .icon-new-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1442px;
+  background-position: 0px -1513px;
   width: 97px;
   height: 99px;
   top: 150px;
@@ -2375,7 +2339,7 @@ input[type=checkbox] {
   
   .icon-new-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2404,7 +2368,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -772px;
+    background-position: 0px -843px;
     width: 109px;
     height: 113px;
     left: -45px;
@@ -2415,7 +2379,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2423,7 +2387,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:after {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -890px;
+    background-position: 0px -961px;
     width: 141px;
     height: 147px;
   }
@@ -2433,7 +2397,7 @@ input[type=checkbox] {
   
   .even .icon-new-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2441,7 +2405,7 @@ input[type=checkbox] {
   
   .even .icon-new-1:before {
     background-image: url(../img/sprite_KDS.png);
-    background-position: 0px -1042px;
+    background-position: 0px -1113px;
     width: 48px;
     height: 47px;
   }
@@ -2451,7 +2415,7 @@ input[type=checkbox] {
   
   .even .icon-new-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2556,12 +2520,6 @@ input[type=checkbox] {
 }
 
 
-
-
-
-
-
-
 .program {
   overflow: hidden;
   position: relative;
@@ -2596,7 +2554,7 @@ input[type=checkbox] {
 
 .program__left .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1226px;
+  background-position: 0px -1297px;
   width: 66px;
   height: 65px;
   left: -40px;
@@ -2607,14 +2565,14 @@ input[type=checkbox] {
   
   .program__left .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1296px;
+  background-position: 0px -1367px;
   width: 137px;
   height: 141px;
   top: -30px;
@@ -2625,14 +2583,14 @@ input[type=checkbox] {
   
   .program__left .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__left .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1442px;
+  background-position: 0px -1513px;
   width: 97px;
   height: 99px;
   bottom: -60px;
@@ -2643,7 +2601,7 @@ input[type=checkbox] {
   
   .program__left .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2655,7 +2613,7 @@ input[type=checkbox] {
 
 .program__left .program__desc-time:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -314px;
+  background-position: 0px -385px;
   width: 18px;
   height: 18px;
 }
@@ -2664,7 +2622,7 @@ input[type=checkbox] {
   
   .program__left .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2684,7 +2642,7 @@ input[type=checkbox] {
 
 .program__right .program__block .icon-triangle-0:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -772px;
+  background-position: 0px -843px;
   width: 109px;
   height: 113px;
   bottom: -50px;
@@ -2695,14 +2653,14 @@ input[type=checkbox] {
   
   .program__right .program__block .icon-triangle-0:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-0:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -890px;
+  background-position: 0px -961px;
   width: 141px;
   height: 147px;
   top: -50px;
@@ -2713,14 +2671,14 @@ input[type=checkbox] {
   
   .program__right .program__block .icon-triangle-0:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .program__right .program__block .icon-triangle-1:before {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1042px;
+  background-position: 0px -1113px;
   width: 48px;
   height: 47px;
   top: 60px;
@@ -2731,7 +2689,7 @@ input[type=checkbox] {
   
   .program__right .program__block .icon-triangle-1:before {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2743,7 +2701,7 @@ input[type=checkbox] {
 
 .program__right .program__desc-time:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -291px;
+  background-position: 0px -362px;
   width: 18px;
   height: 18px;
 }
@@ -2752,7 +2710,7 @@ input[type=checkbox] {
   
   .program__right .program__desc-time:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2816,7 +2774,7 @@ input[type=checkbox] {
 
 .program__block .icon-triangle-1:after {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -1094px;
+  background-position: 0px -1165px;
   width: 130px;
   height: 127px;
   top: 20px;
@@ -2830,7 +2788,7 @@ input[type=checkbox] {
   
   .program__block .icon-triangle-1:after {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -2939,16 +2897,15 @@ input[type=checkbox] {
 
 
 .price__row {
-  height: 280px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2973,22 +2930,16 @@ input[type=checkbox] {
 
 
 .price__left {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
   background-color: #10bc2c;
+  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
+  background: #10bc2c url("../img/img-price-bg.png") center repeat;
 }
 
 
 .price__left .price__text,
 .price__left .price__sum {
   color: #fff;
-}
-
-
-.price__right {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #f3f3f3;
 }
 
 
@@ -3018,10 +2969,9 @@ input[type=checkbox] {
 
 .price__left, .price__right {
   position: relative;
-  width: 600px;
+  width: 100%;
   height: 100%;
   text-align: center;
-  box-shadow: 0 21px 28px 0 rgba(1, 2, 2, 0.23);
 }
 
 @media screen and (max-width: 767px) {
@@ -3052,6 +3002,7 @@ input[type=checkbox] {
 .price__left .price__sum, .price__right .price__sum {
   font-size: 25px;
   font-family: "GothaProLig";
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -3087,12 +3038,6 @@ input[type=checkbox] {
 }
 
 
-
-
-
-
-
-
 .subscribe {
   min-height: 115px;
   background-color: #269ed8;
@@ -3113,7 +3058,7 @@ input[type=checkbox] {
 
 .subscribe__form.error .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -363px;
+  background-position: 0px -434px;
   width: 21px;
   height: 21px;
 }
@@ -3122,14 +3067,14 @@ input[type=checkbox] {
   
   .subscribe__form.error .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
 
 .subscribe__form.done .icon__status {
   background-image: url(../img/sprite_KDS.png);
-  background-position: 0px -337px;
+  background-position: 0px -408px;
   width: 21px;
   height: 21px;
 }
@@ -3138,7 +3083,7 @@ input[type=checkbox] {
   
   .subscribe__form.done .icon__status {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 
@@ -3309,12 +3254,6 @@ input[name="subscribe"]::placeholder {
 }
 
 
-
-
-
-
-
-
 .footer {
   position: relative;
   min-height: 250px;
@@ -3395,7 +3334,7 @@ input[name="subscribe"]::placeholder {
   
   .footer__icon {
     background-image: url(../img/sprite_KDS@2x.png);
-    background-size: 141px 1541px;
+    background-size: 141px 1612px;
   }
 }
 

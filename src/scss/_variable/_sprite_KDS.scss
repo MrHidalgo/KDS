@@ -1,16 +1,14 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
 $sp-i-advantages-flow-name: 'sp-i-advantages-flow';
 $sp-i-advantages-flow-x: 0px;
 $sp-i-advantages-flow-y: 0px;
@@ -19,9 +17,9 @@ $sp-i-advantages-flow-offset-y: 0px;
 $sp-i-advantages-flow-width: 99px;
 $sp-i-advantages-flow-height: 54px;
 $sp-i-advantages-flow-total-width: 141px;
-$sp-i-advantages-flow-total-height: 1541px;
+$sp-i-advantages-flow-total-height: 1612px;
 $sp-i-advantages-flow-image: '../img/sprite_KDS.png';
-$sp-i-advantages-flow: (0px, 0px, 0px, 0px, 99px, 54px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-advantages-flow', );
+$sp-i-advantages-flow: (0px, 0px, 0px, 0px, 99px, 54px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-advantages-flow', );
 $sp-i-advantages-reporter-name: 'sp-i-advantages-reporter';
 $sp-i-advantages-reporter-x: 0px;
 $sp-i-advantages-reporter-y: 59px;
@@ -30,9 +28,9 @@ $sp-i-advantages-reporter-offset-y: -59px;
 $sp-i-advantages-reporter-width: 55px;
 $sp-i-advantages-reporter-height: 55px;
 $sp-i-advantages-reporter-total-width: 141px;
-$sp-i-advantages-reporter-total-height: 1541px;
+$sp-i-advantages-reporter-total-height: 1612px;
 $sp-i-advantages-reporter-image: '../img/sprite_KDS.png';
-$sp-i-advantages-reporter: (0px, 59px, 0px, -59px, 55px, 55px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-advantages-reporter', );
+$sp-i-advantages-reporter: (0px, 59px, 0px, -59px, 55px, 55px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-advantages-reporter', );
 $sp-i-advantages-speaker-name: 'sp-i-advantages-speaker';
 $sp-i-advantages-speaker-x: 0px;
 $sp-i-advantages-speaker-y: 119px;
@@ -41,9 +39,9 @@ $sp-i-advantages-speaker-offset-y: -119px;
 $sp-i-advantages-speaker-width: 57px;
 $sp-i-advantages-speaker-height: 54px;
 $sp-i-advantages-speaker-total-width: 141px;
-$sp-i-advantages-speaker-total-height: 1541px;
+$sp-i-advantages-speaker-total-height: 1612px;
 $sp-i-advantages-speaker-image: '../img/sprite_KDS.png';
-$sp-i-advantages-speaker: (0px, 119px, 0px, -119px, 57px, 54px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-advantages-speaker', );
+$sp-i-advantages-speaker: (0px, 119px, 0px, -119px, 57px, 54px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-advantages-speaker', );
 $sp-i-bottom-info-name: 'sp-i-bottomInfo';
 $sp-i-bottom-info-x: 0px;
 $sp-i-bottom-info-y: 178px;
@@ -52,9 +50,9 @@ $sp-i-bottom-info-offset-y: -178px;
 $sp-i-bottom-info-width: 43px;
 $sp-i-bottom-info-height: 37px;
 $sp-i-bottom-info-total-width: 141px;
-$sp-i-bottom-info-total-height: 1541px;
+$sp-i-bottom-info-total-height: 1612px;
 $sp-i-bottom-info-image: '../img/sprite_KDS.png';
-$sp-i-bottom-info: (0px, 178px, 0px, -178px, 43px, 37px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-bottomInfo', );
+$sp-i-bottom-info: (0px, 178px, 0px, -178px, 43px, 37px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-bottomInfo', );
 $sp-i-checkbox-active-name: 'sp-i-checkbox-active';
 $sp-i-checkbox-active-x: 0px;
 $sp-i-checkbox-active-y: 220px;
@@ -63,9 +61,9 @@ $sp-i-checkbox-active-offset-y: -220px;
 $sp-i-checkbox-active-width: 17px;
 $sp-i-checkbox-active-height: 17px;
 $sp-i-checkbox-active-total-width: 141px;
-$sp-i-checkbox-active-total-height: 1541px;
+$sp-i-checkbox-active-total-height: 1612px;
 $sp-i-checkbox-active-image: '../img/sprite_KDS.png';
-$sp-i-checkbox-active: (0px, 220px, 0px, -220px, 17px, 17px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-checkbox-active', );
+$sp-i-checkbox-active: (0px, 220px, 0px, -220px, 17px, 17px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-checkbox-active', );
 $sp-i-checkbox-name: 'sp-i-checkbox';
 $sp-i-checkbox-x: 0px;
 $sp-i-checkbox-y: 242px;
@@ -74,218 +72,240 @@ $sp-i-checkbox-offset-y: -242px;
 $sp-i-checkbox-width: 17px;
 $sp-i-checkbox-height: 17px;
 $sp-i-checkbox-total-width: 141px;
-$sp-i-checkbox-total-height: 1541px;
+$sp-i-checkbox-total-height: 1612px;
 $sp-i-checkbox-image: '../img/sprite_KDS.png';
-$sp-i-checkbox: (0px, 242px, 0px, -242px, 17px, 17px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-checkbox', );
+$sp-i-checkbox: (0px, 242px, 0px, -242px, 17px, 17px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-checkbox', );
+$sp-i-contacts-mail-name: 'sp-i-contacts-mail';
+$sp-i-contacts-mail-x: 0px;
+$sp-i-contacts-mail-y: 264px;
+$sp-i-contacts-mail-offset-x: 0px;
+$sp-i-contacts-mail-offset-y: -264px;
+$sp-i-contacts-mail-width: 29px;
+$sp-i-contacts-mail-height: 28px;
+$sp-i-contacts-mail-total-width: 141px;
+$sp-i-contacts-mail-total-height: 1612px;
+$sp-i-contacts-mail-image: '../img/sprite_KDS.png';
+$sp-i-contacts-mail: (0px, 264px, 0px, -264px, 29px, 28px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-contacts-mail', );
+$sp-i-contacts-phone-name: 'sp-i-contacts-phone';
+$sp-i-contacts-phone-x: 0px;
+$sp-i-contacts-phone-y: 297px;
+$sp-i-contacts-phone-offset-x: 0px;
+$sp-i-contacts-phone-offset-y: -297px;
+$sp-i-contacts-phone-width: 33px;
+$sp-i-contacts-phone-height: 33px;
+$sp-i-contacts-phone-total-width: 141px;
+$sp-i-contacts-phone-total-height: 1612px;
+$sp-i-contacts-phone-image: '../img/sprite_KDS.png';
+$sp-i-contacts-phone: (0px, 297px, 0px, -297px, 33px, 33px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-contacts-phone', );
 $sp-i-cursor-name: 'sp-i-cursor';
 $sp-i-cursor-x: 0px;
-$sp-i-cursor-y: 264px;
+$sp-i-cursor-y: 335px;
 $sp-i-cursor-offset-x: 0px;
-$sp-i-cursor-offset-y: -264px;
+$sp-i-cursor-offset-y: -335px;
 $sp-i-cursor-width: 22px;
 $sp-i-cursor-height: 22px;
 $sp-i-cursor-total-width: 141px;
-$sp-i-cursor-total-height: 1541px;
+$sp-i-cursor-total-height: 1612px;
 $sp-i-cursor-image: '../img/sprite_KDS.png';
-$sp-i-cursor: (0px, 264px, 0px, -264px, 22px, 22px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-cursor', );
+$sp-i-cursor: (0px, 335px, 0px, -335px, 22px, 22px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-cursor', );
 $sp-i-desc-pr-tr-b-name: 'sp-i-desc-pr-tr-b';
 $sp-i-desc-pr-tr-b-x: 0px;
-$sp-i-desc-pr-tr-b-y: 291px;
+$sp-i-desc-pr-tr-b-y: 362px;
 $sp-i-desc-pr-tr-b-offset-x: 0px;
-$sp-i-desc-pr-tr-b-offset-y: -291px;
+$sp-i-desc-pr-tr-b-offset-y: -362px;
 $sp-i-desc-pr-tr-b-width: 18px;
 $sp-i-desc-pr-tr-b-height: 18px;
 $sp-i-desc-pr-tr-b-total-width: 141px;
-$sp-i-desc-pr-tr-b-total-height: 1541px;
+$sp-i-desc-pr-tr-b-total-height: 1612px;
 $sp-i-desc-pr-tr-b-image: '../img/sprite_KDS.png';
-$sp-i-desc-pr-tr-b: (0px, 291px, 0px, -291px, 18px, 18px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-desc-pr-tr-b', );
+$sp-i-desc-pr-tr-b: (0px, 362px, 0px, -362px, 18px, 18px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-desc-pr-tr-b', );
 $sp-i-desc-pr-tr-y-name: 'sp-i-desc-pr-tr-y';
 $sp-i-desc-pr-tr-y-x: 0px;
-$sp-i-desc-pr-tr-y-y: 314px;
+$sp-i-desc-pr-tr-y-y: 385px;
 $sp-i-desc-pr-tr-y-offset-x: 0px;
-$sp-i-desc-pr-tr-y-offset-y: -314px;
+$sp-i-desc-pr-tr-y-offset-y: -385px;
 $sp-i-desc-pr-tr-y-width: 18px;
 $sp-i-desc-pr-tr-y-height: 18px;
 $sp-i-desc-pr-tr-y-total-width: 141px;
-$sp-i-desc-pr-tr-y-total-height: 1541px;
+$sp-i-desc-pr-tr-y-total-height: 1612px;
 $sp-i-desc-pr-tr-y-image: '../img/sprite_KDS.png';
-$sp-i-desc-pr-tr-y: (0px, 314px, 0px, -314px, 18px, 18px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-desc-pr-tr-y', );
+$sp-i-desc-pr-tr-y: (0px, 385px, 0px, -385px, 18px, 18px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-desc-pr-tr-y', );
 $sp-i-done-name: 'sp-i-done';
 $sp-i-done-x: 0px;
-$sp-i-done-y: 337px;
+$sp-i-done-y: 408px;
 $sp-i-done-offset-x: 0px;
-$sp-i-done-offset-y: -337px;
+$sp-i-done-offset-y: -408px;
 $sp-i-done-width: 21px;
 $sp-i-done-height: 21px;
 $sp-i-done-total-width: 141px;
-$sp-i-done-total-height: 1541px;
+$sp-i-done-total-height: 1612px;
 $sp-i-done-image: '../img/sprite_KDS.png';
-$sp-i-done: (0px, 337px, 0px, -337px, 21px, 21px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-done', );
+$sp-i-done: (0px, 408px, 0px, -408px, 21px, 21px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-done', );
 $sp-i-error-name: 'sp-i-error';
 $sp-i-error-x: 0px;
-$sp-i-error-y: 363px;
+$sp-i-error-y: 434px;
 $sp-i-error-offset-x: 0px;
-$sp-i-error-offset-y: -363px;
+$sp-i-error-offset-y: -434px;
 $sp-i-error-width: 21px;
 $sp-i-error-height: 21px;
 $sp-i-error-total-width: 141px;
-$sp-i-error-total-height: 1541px;
+$sp-i-error-total-height: 1612px;
 $sp-i-error-image: '../img/sprite_KDS.png';
-$sp-i-error: (0px, 363px, 0px, -363px, 21px, 21px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-error', );
+$sp-i-error: (0px, 434px, 0px, -434px, 21px, 21px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-error', );
 $sp-i-fb-name: 'sp-i-fb';
 $sp-i-fb-x: 0px;
-$sp-i-fb-y: 389px;
+$sp-i-fb-y: 460px;
 $sp-i-fb-offset-x: 0px;
-$sp-i-fb-offset-y: -389px;
+$sp-i-fb-offset-y: -460px;
 $sp-i-fb-width: 13px;
 $sp-i-fb-height: 29px;
 $sp-i-fb-total-width: 141px;
-$sp-i-fb-total-height: 1541px;
+$sp-i-fb-total-height: 1612px;
 $sp-i-fb-image: '../img/sprite_KDS.png';
-$sp-i-fb: (0px, 389px, 0px, -389px, 13px, 29px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-fb', );
+$sp-i-fb: (0px, 460px, 0px, -460px, 13px, 29px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-fb', );
 $sp-i-header-arrow-maps-name: 'sp-i-header-arrow-maps';
 $sp-i-header-arrow-maps-x: 0px;
-$sp-i-header-arrow-maps-y: 423px;
+$sp-i-header-arrow-maps-y: 494px;
 $sp-i-header-arrow-maps-offset-x: 0px;
-$sp-i-header-arrow-maps-offset-y: -423px;
+$sp-i-header-arrow-maps-offset-y: -494px;
 $sp-i-header-arrow-maps-width: 20px;
 $sp-i-header-arrow-maps-height: 27px;
 $sp-i-header-arrow-maps-total-width: 141px;
-$sp-i-header-arrow-maps-total-height: 1541px;
+$sp-i-header-arrow-maps-total-height: 1612px;
 $sp-i-header-arrow-maps-image: '../img/sprite_KDS.png';
-$sp-i-header-arrow-maps: (0px, 423px, 0px, -423px, 20px, 27px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-header-arrow-maps', );
+$sp-i-header-arrow-maps: (0px, 494px, 0px, -494px, 20px, 27px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-header-arrow-maps', );
 $sp-i-info-name: 'sp-i-info';
 $sp-i-info-x: 0px;
-$sp-i-info-y: 455px;
+$sp-i-info-y: 526px;
 $sp-i-info-offset-x: 0px;
-$sp-i-info-offset-y: -455px;
+$sp-i-info-offset-y: -526px;
 $sp-i-info-width: 20px;
 $sp-i-info-height: 26px;
 $sp-i-info-total-width: 141px;
-$sp-i-info-total-height: 1541px;
+$sp-i-info-total-height: 1612px;
 $sp-i-info-image: '../img/sprite_KDS.png';
-$sp-i-info: (0px, 455px, 0px, -455px, 20px, 26px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-info', );
+$sp-i-info: (0px, 526px, 0px, -526px, 20px, 26px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-info', );
 $sp-i-ln-name: 'sp-i-ln';
 $sp-i-ln-x: 0px;
-$sp-i-ln-y: 486px;
+$sp-i-ln-y: 557px;
 $sp-i-ln-offset-x: 0px;
-$sp-i-ln-offset-y: -486px;
+$sp-i-ln-offset-y: -557px;
 $sp-i-ln-width: 28px;
 $sp-i-ln-height: 28px;
 $sp-i-ln-total-width: 141px;
-$sp-i-ln-total-height: 1541px;
+$sp-i-ln-total-height: 1612px;
 $sp-i-ln-image: '../img/sprite_KDS.png';
-$sp-i-ln: (0px, 486px, 0px, -486px, 28px, 28px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-ln', );
+$sp-i-ln: (0px, 557px, 0px, -557px, 28px, 28px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-ln', );
 $sp-i-nav-active-name: 'sp-i-nav-active';
 $sp-i-nav-active-x: 0px;
-$sp-i-nav-active-y: 519px;
+$sp-i-nav-active-y: 590px;
 $sp-i-nav-active-offset-x: 0px;
-$sp-i-nav-active-offset-y: -519px;
+$sp-i-nav-active-offset-y: -590px;
 $sp-i-nav-active-width: 71px;
 $sp-i-nav-active-height: 70px;
 $sp-i-nav-active-total-width: 141px;
-$sp-i-nav-active-total-height: 1541px;
+$sp-i-nav-active-total-height: 1612px;
 $sp-i-nav-active-image: '../img/sprite_KDS.png';
-$sp-i-nav-active: (0px, 519px, 0px, -519px, 71px, 70px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-nav-active', );
+$sp-i-nav-active: (0px, 590px, 0px, -590px, 71px, 70px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-nav-active', );
 $sp-i-nav-hover-name: 'sp-i-nav-hover';
 $sp-i-nav-hover-x: 0px;
-$sp-i-nav-hover-y: 594px;
+$sp-i-nav-hover-y: 665px;
 $sp-i-nav-hover-offset-x: 0px;
-$sp-i-nav-hover-offset-y: -594px;
+$sp-i-nav-hover-offset-y: -665px;
 $sp-i-nav-hover-width: 71px;
 $sp-i-nav-hover-height: 70px;
 $sp-i-nav-hover-total-width: 141px;
-$sp-i-nav-hover-total-height: 1541px;
+$sp-i-nav-hover-total-height: 1612px;
 $sp-i-nav-hover-image: '../img/sprite_KDS.png';
-$sp-i-nav-hover: (0px, 594px, 0px, -594px, 71px, 70px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-nav-hover', );
+$sp-i-nav-hover: (0px, 665px, 0px, -665px, 71px, 70px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-nav-hover', );
 $sp-i-preparation-triangle-name: 'sp-i-preparation-triangle';
 $sp-i-preparation-triangle-x: 0px;
-$sp-i-preparation-triangle-y: 669px;
+$sp-i-preparation-triangle-y: 740px;
 $sp-i-preparation-triangle-offset-x: 0px;
-$sp-i-preparation-triangle-offset-y: -669px;
+$sp-i-preparation-triangle-offset-y: -740px;
 $sp-i-preparation-triangle-width: 103px;
 $sp-i-preparation-triangle-height: 98px;
 $sp-i-preparation-triangle-total-width: 141px;
-$sp-i-preparation-triangle-total-height: 1541px;
+$sp-i-preparation-triangle-total-height: 1612px;
 $sp-i-preparation-triangle-image: '../img/sprite_KDS.png';
-$sp-i-preparation-triangle: (0px, 669px, 0px, -669px, 103px, 98px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-preparation-triangle', );
+$sp-i-preparation-triangle: (0px, 740px, 0px, -740px, 103px, 98px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-preparation-triangle', );
 $sp-i-triangle-b-0-name: 'sp-i-triangle-b-0';
 $sp-i-triangle-b-0-x: 0px;
-$sp-i-triangle-b-0-y: 772px;
+$sp-i-triangle-b-0-y: 843px;
 $sp-i-triangle-b-0-offset-x: 0px;
-$sp-i-triangle-b-0-offset-y: -772px;
+$sp-i-triangle-b-0-offset-y: -843px;
 $sp-i-triangle-b-0-width: 109px;
 $sp-i-triangle-b-0-height: 113px;
 $sp-i-triangle-b-0-total-width: 141px;
-$sp-i-triangle-b-0-total-height: 1541px;
+$sp-i-triangle-b-0-total-height: 1612px;
 $sp-i-triangle-b-0-image: '../img/sprite_KDS.png';
-$sp-i-triangle-b-0: (0px, 772px, 0px, -772px, 109px, 113px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-b-0', );
+$sp-i-triangle-b-0: (0px, 843px, 0px, -843px, 109px, 113px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-b-0', );
 $sp-i-triangle-b-1-name: 'sp-i-triangle-b-1';
 $sp-i-triangle-b-1-x: 0px;
-$sp-i-triangle-b-1-y: 890px;
+$sp-i-triangle-b-1-y: 961px;
 $sp-i-triangle-b-1-offset-x: 0px;
-$sp-i-triangle-b-1-offset-y: -890px;
+$sp-i-triangle-b-1-offset-y: -961px;
 $sp-i-triangle-b-1-width: 141px;
 $sp-i-triangle-b-1-height: 147px;
 $sp-i-triangle-b-1-total-width: 141px;
-$sp-i-triangle-b-1-total-height: 1541px;
+$sp-i-triangle-b-1-total-height: 1612px;
 $sp-i-triangle-b-1-image: '../img/sprite_KDS.png';
-$sp-i-triangle-b-1: (0px, 890px, 0px, -890px, 141px, 147px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-b-1', );
+$sp-i-triangle-b-1: (0px, 961px, 0px, -961px, 141px, 147px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-b-1', );
 $sp-i-triangle-b-2-name: 'sp-i-triangle-b-2';
 $sp-i-triangle-b-2-x: 0px;
-$sp-i-triangle-b-2-y: 1042px;
+$sp-i-triangle-b-2-y: 1113px;
 $sp-i-triangle-b-2-offset-x: 0px;
-$sp-i-triangle-b-2-offset-y: -1042px;
+$sp-i-triangle-b-2-offset-y: -1113px;
 $sp-i-triangle-b-2-width: 48px;
 $sp-i-triangle-b-2-height: 47px;
 $sp-i-triangle-b-2-total-width: 141px;
-$sp-i-triangle-b-2-total-height: 1541px;
+$sp-i-triangle-b-2-total-height: 1612px;
 $sp-i-triangle-b-2-image: '../img/sprite_KDS.png';
-$sp-i-triangle-b-2: (0px, 1042px, 0px, -1042px, 48px, 47px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-b-2', );
+$sp-i-triangle-b-2: (0px, 1113px, 0px, -1113px, 48px, 47px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-b-2', );
 $sp-i-triangle-gray-name: 'sp-i-triangle-gray';
 $sp-i-triangle-gray-x: 0px;
-$sp-i-triangle-gray-y: 1094px;
+$sp-i-triangle-gray-y: 1165px;
 $sp-i-triangle-gray-offset-x: 0px;
-$sp-i-triangle-gray-offset-y: -1094px;
+$sp-i-triangle-gray-offset-y: -1165px;
 $sp-i-triangle-gray-width: 130px;
 $sp-i-triangle-gray-height: 127px;
 $sp-i-triangle-gray-total-width: 141px;
-$sp-i-triangle-gray-total-height: 1541px;
+$sp-i-triangle-gray-total-height: 1612px;
 $sp-i-triangle-gray-image: '../img/sprite_KDS.png';
-$sp-i-triangle-gray: (0px, 1094px, 0px, -1094px, 130px, 127px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-gray', );
+$sp-i-triangle-gray: (0px, 1165px, 0px, -1165px, 130px, 127px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-gray', );
 $sp-i-triangle-y-0-name: 'sp-i-triangle-y-0';
 $sp-i-triangle-y-0-x: 0px;
-$sp-i-triangle-y-0-y: 1226px;
+$sp-i-triangle-y-0-y: 1297px;
 $sp-i-triangle-y-0-offset-x: 0px;
-$sp-i-triangle-y-0-offset-y: -1226px;
+$sp-i-triangle-y-0-offset-y: -1297px;
 $sp-i-triangle-y-0-width: 66px;
 $sp-i-triangle-y-0-height: 65px;
 $sp-i-triangle-y-0-total-width: 141px;
-$sp-i-triangle-y-0-total-height: 1541px;
+$sp-i-triangle-y-0-total-height: 1612px;
 $sp-i-triangle-y-0-image: '../img/sprite_KDS.png';
-$sp-i-triangle-y-0: (0px, 1226px, 0px, -1226px, 66px, 65px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-y-0', );
+$sp-i-triangle-y-0: (0px, 1297px, 0px, -1297px, 66px, 65px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-y-0', );
 $sp-i-triangle-y-1-name: 'sp-i-triangle-y-1';
 $sp-i-triangle-y-1-x: 0px;
-$sp-i-triangle-y-1-y: 1296px;
+$sp-i-triangle-y-1-y: 1367px;
 $sp-i-triangle-y-1-offset-x: 0px;
-$sp-i-triangle-y-1-offset-y: -1296px;
+$sp-i-triangle-y-1-offset-y: -1367px;
 $sp-i-triangle-y-1-width: 137px;
 $sp-i-triangle-y-1-height: 141px;
 $sp-i-triangle-y-1-total-width: 141px;
-$sp-i-triangle-y-1-total-height: 1541px;
+$sp-i-triangle-y-1-total-height: 1612px;
 $sp-i-triangle-y-1-image: '../img/sprite_KDS.png';
-$sp-i-triangle-y-1: (0px, 1296px, 0px, -1296px, 137px, 141px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-y-1', );
+$sp-i-triangle-y-1: (0px, 1367px, 0px, -1367px, 137px, 141px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-y-1', );
 $sp-i-triangle-y-2-name: 'sp-i-triangle-y-2';
 $sp-i-triangle-y-2-x: 0px;
-$sp-i-triangle-y-2-y: 1442px;
+$sp-i-triangle-y-2-y: 1513px;
 $sp-i-triangle-y-2-offset-x: 0px;
-$sp-i-triangle-y-2-offset-y: -1442px;
+$sp-i-triangle-y-2-offset-y: -1513px;
 $sp-i-triangle-y-2-width: 97px;
 $sp-i-triangle-y-2-height: 99px;
 $sp-i-triangle-y-2-total-width: 141px;
-$sp-i-triangle-y-2-total-height: 1541px;
+$sp-i-triangle-y-2-total-height: 1612px;
 $sp-i-triangle-y-2-image: '../img/sprite_KDS.png';
-$sp-i-triangle-y-2: (0px, 1442px, 0px, -1442px, 97px, 99px, 141px, 1541px, '../img/sprite_KDS.png', 'sp-i-triangle-y-2', );
+$sp-i-triangle-y-2: (0px, 1513px, 0px, -1513px, 97px, 99px, 141px, 1612px, '../img/sprite_KDS.png', 'sp-i-triangle-y-2', );
 $sp-i-advantages-flow-2x-name: 'sp-i-advantages-flow@2x';
 $sp-i-advantages-flow-2x-x: 0px;
 $sp-i-advantages-flow-2x-y: 0px;
@@ -294,9 +314,9 @@ $sp-i-advantages-flow-2x-offset-y: 0px;
 $sp-i-advantages-flow-2x-width: 198px;
 $sp-i-advantages-flow-2x-height: 108px;
 $sp-i-advantages-flow-2x-total-width: 282px;
-$sp-i-advantages-flow-2x-total-height: 3082px;
+$sp-i-advantages-flow-2x-total-height: 3224px;
 $sp-i-advantages-flow-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-advantages-flow-2x: (0px, 0px, 0px, 0px, 198px, 108px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-advantages-flow@2x', );
+$sp-i-advantages-flow-2x: (0px, 0px, 0px, 0px, 198px, 108px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-advantages-flow@2x', );
 $sp-i-advantages-reporter-2x-name: 'sp-i-advantages-reporter@2x';
 $sp-i-advantages-reporter-2x-x: 0px;
 $sp-i-advantages-reporter-2x-y: 118px;
@@ -305,9 +325,9 @@ $sp-i-advantages-reporter-2x-offset-y: -118px;
 $sp-i-advantages-reporter-2x-width: 110px;
 $sp-i-advantages-reporter-2x-height: 110px;
 $sp-i-advantages-reporter-2x-total-width: 282px;
-$sp-i-advantages-reporter-2x-total-height: 3082px;
+$sp-i-advantages-reporter-2x-total-height: 3224px;
 $sp-i-advantages-reporter-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-advantages-reporter-2x: (0px, 118px, 0px, -118px, 110px, 110px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-advantages-reporter@2x', );
+$sp-i-advantages-reporter-2x: (0px, 118px, 0px, -118px, 110px, 110px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-advantages-reporter@2x', );
 $sp-i-advantages-speaker-2x-name: 'sp-i-advantages-speaker@2x';
 $sp-i-advantages-speaker-2x-x: 0px;
 $sp-i-advantages-speaker-2x-y: 238px;
@@ -316,9 +336,9 @@ $sp-i-advantages-speaker-2x-offset-y: -238px;
 $sp-i-advantages-speaker-2x-width: 114px;
 $sp-i-advantages-speaker-2x-height: 108px;
 $sp-i-advantages-speaker-2x-total-width: 282px;
-$sp-i-advantages-speaker-2x-total-height: 3082px;
+$sp-i-advantages-speaker-2x-total-height: 3224px;
 $sp-i-advantages-speaker-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-advantages-speaker-2x: (0px, 238px, 0px, -238px, 114px, 108px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-advantages-speaker@2x', );
+$sp-i-advantages-speaker-2x: (0px, 238px, 0px, -238px, 114px, 108px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-advantages-speaker@2x', );
 $sp-i-bottom-info-2x-name: 'sp-i-bottomInfo@2x';
 $sp-i-bottom-info-2x-x: 0px;
 $sp-i-bottom-info-2x-y: 356px;
@@ -327,9 +347,9 @@ $sp-i-bottom-info-2x-offset-y: -356px;
 $sp-i-bottom-info-2x-width: 86px;
 $sp-i-bottom-info-2x-height: 74px;
 $sp-i-bottom-info-2x-total-width: 282px;
-$sp-i-bottom-info-2x-total-height: 3082px;
+$sp-i-bottom-info-2x-total-height: 3224px;
 $sp-i-bottom-info-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-bottom-info-2x: (0px, 356px, 0px, -356px, 86px, 74px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-bottomInfo@2x', );
+$sp-i-bottom-info-2x: (0px, 356px, 0px, -356px, 86px, 74px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-bottomInfo@2x', );
 $sp-i-checkbox-active-2x-name: 'sp-i-checkbox-active@2x';
 $sp-i-checkbox-active-2x-x: 0px;
 $sp-i-checkbox-active-2x-y: 440px;
@@ -338,9 +358,9 @@ $sp-i-checkbox-active-2x-offset-y: -440px;
 $sp-i-checkbox-active-2x-width: 34px;
 $sp-i-checkbox-active-2x-height: 34px;
 $sp-i-checkbox-active-2x-total-width: 282px;
-$sp-i-checkbox-active-2x-total-height: 3082px;
+$sp-i-checkbox-active-2x-total-height: 3224px;
 $sp-i-checkbox-active-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-checkbox-active-2x: (0px, 440px, 0px, -440px, 34px, 34px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-checkbox-active@2x', );
+$sp-i-checkbox-active-2x: (0px, 440px, 0px, -440px, 34px, 34px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-checkbox-active@2x', );
 $sp-i-checkbox-2x-name: 'sp-i-checkbox@2x';
 $sp-i-checkbox-2x-x: 0px;
 $sp-i-checkbox-2x-y: 484px;
@@ -349,234 +369,254 @@ $sp-i-checkbox-2x-offset-y: -484px;
 $sp-i-checkbox-2x-width: 34px;
 $sp-i-checkbox-2x-height: 34px;
 $sp-i-checkbox-2x-total-width: 282px;
-$sp-i-checkbox-2x-total-height: 3082px;
+$sp-i-checkbox-2x-total-height: 3224px;
 $sp-i-checkbox-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-checkbox-2x: (0px, 484px, 0px, -484px, 34px, 34px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-checkbox@2x', );
+$sp-i-checkbox-2x: (0px, 484px, 0px, -484px, 34px, 34px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-checkbox@2x', );
+$sp-i-contacts-mail-2x-name: 'sp-i-contacts-mail@2x';
+$sp-i-contacts-mail-2x-x: 0px;
+$sp-i-contacts-mail-2x-y: 528px;
+$sp-i-contacts-mail-2x-offset-x: 0px;
+$sp-i-contacts-mail-2x-offset-y: -528px;
+$sp-i-contacts-mail-2x-width: 58px;
+$sp-i-contacts-mail-2x-height: 56px;
+$sp-i-contacts-mail-2x-total-width: 282px;
+$sp-i-contacts-mail-2x-total-height: 3224px;
+$sp-i-contacts-mail-2x-image: '../img/sprite_KDS@2x.png';
+$sp-i-contacts-mail-2x: (0px, 528px, 0px, -528px, 58px, 56px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-contacts-mail@2x', );
+$sp-i-contacts-phone-2x-name: 'sp-i-contacts-phone@2x';
+$sp-i-contacts-phone-2x-x: 0px;
+$sp-i-contacts-phone-2x-y: 594px;
+$sp-i-contacts-phone-2x-offset-x: 0px;
+$sp-i-contacts-phone-2x-offset-y: -594px;
+$sp-i-contacts-phone-2x-width: 66px;
+$sp-i-contacts-phone-2x-height: 66px;
+$sp-i-contacts-phone-2x-total-width: 282px;
+$sp-i-contacts-phone-2x-total-height: 3224px;
+$sp-i-contacts-phone-2x-image: '../img/sprite_KDS@2x.png';
+$sp-i-contacts-phone-2x: (0px, 594px, 0px, -594px, 66px, 66px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-contacts-phone@2x', );
 $sp-i-cursor-2x-name: 'sp-i-cursor@2x';
 $sp-i-cursor-2x-x: 0px;
-$sp-i-cursor-2x-y: 528px;
+$sp-i-cursor-2x-y: 670px;
 $sp-i-cursor-2x-offset-x: 0px;
-$sp-i-cursor-2x-offset-y: -528px;
+$sp-i-cursor-2x-offset-y: -670px;
 $sp-i-cursor-2x-width: 44px;
 $sp-i-cursor-2x-height: 44px;
 $sp-i-cursor-2x-total-width: 282px;
-$sp-i-cursor-2x-total-height: 3082px;
+$sp-i-cursor-2x-total-height: 3224px;
 $sp-i-cursor-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-cursor-2x: (0px, 528px, 0px, -528px, 44px, 44px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-cursor@2x', );
+$sp-i-cursor-2x: (0px, 670px, 0px, -670px, 44px, 44px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-cursor@2x', );
 $sp-i-desc-pr-tr-b-2x-name: 'sp-i-desc-pr-tr-b@2x';
 $sp-i-desc-pr-tr-b-2x-x: 0px;
-$sp-i-desc-pr-tr-b-2x-y: 582px;
+$sp-i-desc-pr-tr-b-2x-y: 724px;
 $sp-i-desc-pr-tr-b-2x-offset-x: 0px;
-$sp-i-desc-pr-tr-b-2x-offset-y: -582px;
+$sp-i-desc-pr-tr-b-2x-offset-y: -724px;
 $sp-i-desc-pr-tr-b-2x-width: 36px;
 $sp-i-desc-pr-tr-b-2x-height: 36px;
 $sp-i-desc-pr-tr-b-2x-total-width: 282px;
-$sp-i-desc-pr-tr-b-2x-total-height: 3082px;
+$sp-i-desc-pr-tr-b-2x-total-height: 3224px;
 $sp-i-desc-pr-tr-b-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-desc-pr-tr-b-2x: (0px, 582px, 0px, -582px, 36px, 36px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-desc-pr-tr-b@2x', );
+$sp-i-desc-pr-tr-b-2x: (0px, 724px, 0px, -724px, 36px, 36px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-desc-pr-tr-b@2x', );
 $sp-i-desc-pr-tr-y-2x-name: 'sp-i-desc-pr-tr-y@2x';
 $sp-i-desc-pr-tr-y-2x-x: 0px;
-$sp-i-desc-pr-tr-y-2x-y: 628px;
+$sp-i-desc-pr-tr-y-2x-y: 770px;
 $sp-i-desc-pr-tr-y-2x-offset-x: 0px;
-$sp-i-desc-pr-tr-y-2x-offset-y: -628px;
+$sp-i-desc-pr-tr-y-2x-offset-y: -770px;
 $sp-i-desc-pr-tr-y-2x-width: 36px;
 $sp-i-desc-pr-tr-y-2x-height: 36px;
 $sp-i-desc-pr-tr-y-2x-total-width: 282px;
-$sp-i-desc-pr-tr-y-2x-total-height: 3082px;
+$sp-i-desc-pr-tr-y-2x-total-height: 3224px;
 $sp-i-desc-pr-tr-y-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-desc-pr-tr-y-2x: (0px, 628px, 0px, -628px, 36px, 36px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-desc-pr-tr-y@2x', );
+$sp-i-desc-pr-tr-y-2x: (0px, 770px, 0px, -770px, 36px, 36px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-desc-pr-tr-y@2x', );
 $sp-i-done-2x-name: 'sp-i-done@2x';
 $sp-i-done-2x-x: 0px;
-$sp-i-done-2x-y: 674px;
+$sp-i-done-2x-y: 816px;
 $sp-i-done-2x-offset-x: 0px;
-$sp-i-done-2x-offset-y: -674px;
+$sp-i-done-2x-offset-y: -816px;
 $sp-i-done-2x-width: 42px;
 $sp-i-done-2x-height: 42px;
 $sp-i-done-2x-total-width: 282px;
-$sp-i-done-2x-total-height: 3082px;
+$sp-i-done-2x-total-height: 3224px;
 $sp-i-done-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-done-2x: (0px, 674px, 0px, -674px, 42px, 42px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-done@2x', );
+$sp-i-done-2x: (0px, 816px, 0px, -816px, 42px, 42px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-done@2x', );
 $sp-i-error-2x-name: 'sp-i-error@2x';
 $sp-i-error-2x-x: 0px;
-$sp-i-error-2x-y: 726px;
+$sp-i-error-2x-y: 868px;
 $sp-i-error-2x-offset-x: 0px;
-$sp-i-error-2x-offset-y: -726px;
+$sp-i-error-2x-offset-y: -868px;
 $sp-i-error-2x-width: 42px;
 $sp-i-error-2x-height: 42px;
 $sp-i-error-2x-total-width: 282px;
-$sp-i-error-2x-total-height: 3082px;
+$sp-i-error-2x-total-height: 3224px;
 $sp-i-error-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-error-2x: (0px, 726px, 0px, -726px, 42px, 42px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-error@2x', );
+$sp-i-error-2x: (0px, 868px, 0px, -868px, 42px, 42px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-error@2x', );
 $sp-i-fb-2x-name: 'sp-i-fb@2x';
 $sp-i-fb-2x-x: 0px;
-$sp-i-fb-2x-y: 778px;
+$sp-i-fb-2x-y: 920px;
 $sp-i-fb-2x-offset-x: 0px;
-$sp-i-fb-2x-offset-y: -778px;
+$sp-i-fb-2x-offset-y: -920px;
 $sp-i-fb-2x-width: 26px;
 $sp-i-fb-2x-height: 58px;
 $sp-i-fb-2x-total-width: 282px;
-$sp-i-fb-2x-total-height: 3082px;
+$sp-i-fb-2x-total-height: 3224px;
 $sp-i-fb-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-fb-2x: (0px, 778px, 0px, -778px, 26px, 58px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-fb@2x', );
+$sp-i-fb-2x: (0px, 920px, 0px, -920px, 26px, 58px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-fb@2x', );
 $sp-i-header-arrow-maps-2x-name: 'sp-i-header-arrow-maps@2x';
 $sp-i-header-arrow-maps-2x-x: 0px;
-$sp-i-header-arrow-maps-2x-y: 846px;
+$sp-i-header-arrow-maps-2x-y: 988px;
 $sp-i-header-arrow-maps-2x-offset-x: 0px;
-$sp-i-header-arrow-maps-2x-offset-y: -846px;
+$sp-i-header-arrow-maps-2x-offset-y: -988px;
 $sp-i-header-arrow-maps-2x-width: 40px;
 $sp-i-header-arrow-maps-2x-height: 54px;
 $sp-i-header-arrow-maps-2x-total-width: 282px;
-$sp-i-header-arrow-maps-2x-total-height: 3082px;
+$sp-i-header-arrow-maps-2x-total-height: 3224px;
 $sp-i-header-arrow-maps-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-header-arrow-maps-2x: (0px, 846px, 0px, -846px, 40px, 54px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-header-arrow-maps@2x', );
+$sp-i-header-arrow-maps-2x: (0px, 988px, 0px, -988px, 40px, 54px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-header-arrow-maps@2x', );
 $sp-i-info-2x-name: 'sp-i-info@2x';
 $sp-i-info-2x-x: 0px;
-$sp-i-info-2x-y: 910px;
+$sp-i-info-2x-y: 1052px;
 $sp-i-info-2x-offset-x: 0px;
-$sp-i-info-2x-offset-y: -910px;
+$sp-i-info-2x-offset-y: -1052px;
 $sp-i-info-2x-width: 40px;
 $sp-i-info-2x-height: 52px;
 $sp-i-info-2x-total-width: 282px;
-$sp-i-info-2x-total-height: 3082px;
+$sp-i-info-2x-total-height: 3224px;
 $sp-i-info-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-info-2x: (0px, 910px, 0px, -910px, 40px, 52px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-info@2x', );
+$sp-i-info-2x: (0px, 1052px, 0px, -1052px, 40px, 52px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-info@2x', );
 $sp-i-ln-2x-name: 'sp-i-ln@2x';
 $sp-i-ln-2x-x: 0px;
-$sp-i-ln-2x-y: 972px;
+$sp-i-ln-2x-y: 1114px;
 $sp-i-ln-2x-offset-x: 0px;
-$sp-i-ln-2x-offset-y: -972px;
+$sp-i-ln-2x-offset-y: -1114px;
 $sp-i-ln-2x-width: 56px;
 $sp-i-ln-2x-height: 56px;
 $sp-i-ln-2x-total-width: 282px;
-$sp-i-ln-2x-total-height: 3082px;
+$sp-i-ln-2x-total-height: 3224px;
 $sp-i-ln-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-ln-2x: (0px, 972px, 0px, -972px, 56px, 56px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-ln@2x', );
+$sp-i-ln-2x: (0px, 1114px, 0px, -1114px, 56px, 56px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-ln@2x', );
 $sp-i-nav-active-2x-name: 'sp-i-nav-active@2x';
 $sp-i-nav-active-2x-x: 0px;
-$sp-i-nav-active-2x-y: 1038px;
+$sp-i-nav-active-2x-y: 1180px;
 $sp-i-nav-active-2x-offset-x: 0px;
-$sp-i-nav-active-2x-offset-y: -1038px;
+$sp-i-nav-active-2x-offset-y: -1180px;
 $sp-i-nav-active-2x-width: 142px;
 $sp-i-nav-active-2x-height: 140px;
 $sp-i-nav-active-2x-total-width: 282px;
-$sp-i-nav-active-2x-total-height: 3082px;
+$sp-i-nav-active-2x-total-height: 3224px;
 $sp-i-nav-active-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-nav-active-2x: (0px, 1038px, 0px, -1038px, 142px, 140px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-nav-active@2x', );
+$sp-i-nav-active-2x: (0px, 1180px, 0px, -1180px, 142px, 140px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-nav-active@2x', );
 $sp-i-nav-hover-2x-name: 'sp-i-nav-hover@2x';
 $sp-i-nav-hover-2x-x: 0px;
-$sp-i-nav-hover-2x-y: 1188px;
+$sp-i-nav-hover-2x-y: 1330px;
 $sp-i-nav-hover-2x-offset-x: 0px;
-$sp-i-nav-hover-2x-offset-y: -1188px;
+$sp-i-nav-hover-2x-offset-y: -1330px;
 $sp-i-nav-hover-2x-width: 142px;
 $sp-i-nav-hover-2x-height: 140px;
 $sp-i-nav-hover-2x-total-width: 282px;
-$sp-i-nav-hover-2x-total-height: 3082px;
+$sp-i-nav-hover-2x-total-height: 3224px;
 $sp-i-nav-hover-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-nav-hover-2x: (0px, 1188px, 0px, -1188px, 142px, 140px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-nav-hover@2x', );
+$sp-i-nav-hover-2x: (0px, 1330px, 0px, -1330px, 142px, 140px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-nav-hover@2x', );
 $sp-i-preparation-triangle-2x-name: 'sp-i-preparation-triangle@2x';
 $sp-i-preparation-triangle-2x-x: 0px;
-$sp-i-preparation-triangle-2x-y: 1338px;
+$sp-i-preparation-triangle-2x-y: 1480px;
 $sp-i-preparation-triangle-2x-offset-x: 0px;
-$sp-i-preparation-triangle-2x-offset-y: -1338px;
+$sp-i-preparation-triangle-2x-offset-y: -1480px;
 $sp-i-preparation-triangle-2x-width: 206px;
 $sp-i-preparation-triangle-2x-height: 196px;
 $sp-i-preparation-triangle-2x-total-width: 282px;
-$sp-i-preparation-triangle-2x-total-height: 3082px;
+$sp-i-preparation-triangle-2x-total-height: 3224px;
 $sp-i-preparation-triangle-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-preparation-triangle-2x: (0px, 1338px, 0px, -1338px, 206px, 196px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-preparation-triangle@2x', );
+$sp-i-preparation-triangle-2x: (0px, 1480px, 0px, -1480px, 206px, 196px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-preparation-triangle@2x', );
 $sp-i-triangle-b-0-2x-name: 'sp-i-triangle-b-0@2x';
 $sp-i-triangle-b-0-2x-x: 0px;
-$sp-i-triangle-b-0-2x-y: 1544px;
+$sp-i-triangle-b-0-2x-y: 1686px;
 $sp-i-triangle-b-0-2x-offset-x: 0px;
-$sp-i-triangle-b-0-2x-offset-y: -1544px;
+$sp-i-triangle-b-0-2x-offset-y: -1686px;
 $sp-i-triangle-b-0-2x-width: 218px;
 $sp-i-triangle-b-0-2x-height: 226px;
 $sp-i-triangle-b-0-2x-total-width: 282px;
-$sp-i-triangle-b-0-2x-total-height: 3082px;
+$sp-i-triangle-b-0-2x-total-height: 3224px;
 $sp-i-triangle-b-0-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-b-0-2x: (0px, 1544px, 0px, -1544px, 218px, 226px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-b-0@2x', );
+$sp-i-triangle-b-0-2x: (0px, 1686px, 0px, -1686px, 218px, 226px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-b-0@2x', );
 $sp-i-triangle-b-1-2x-name: 'sp-i-triangle-b-1@2x';
 $sp-i-triangle-b-1-2x-x: 0px;
-$sp-i-triangle-b-1-2x-y: 1780px;
+$sp-i-triangle-b-1-2x-y: 1922px;
 $sp-i-triangle-b-1-2x-offset-x: 0px;
-$sp-i-triangle-b-1-2x-offset-y: -1780px;
+$sp-i-triangle-b-1-2x-offset-y: -1922px;
 $sp-i-triangle-b-1-2x-width: 282px;
 $sp-i-triangle-b-1-2x-height: 294px;
 $sp-i-triangle-b-1-2x-total-width: 282px;
-$sp-i-triangle-b-1-2x-total-height: 3082px;
+$sp-i-triangle-b-1-2x-total-height: 3224px;
 $sp-i-triangle-b-1-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-b-1-2x: (0px, 1780px, 0px, -1780px, 282px, 294px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-b-1@2x', );
+$sp-i-triangle-b-1-2x: (0px, 1922px, 0px, -1922px, 282px, 294px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-b-1@2x', );
 $sp-i-triangle-b-2-2x-name: 'sp-i-triangle-b-2@2x';
 $sp-i-triangle-b-2-2x-x: 0px;
-$sp-i-triangle-b-2-2x-y: 2084px;
+$sp-i-triangle-b-2-2x-y: 2226px;
 $sp-i-triangle-b-2-2x-offset-x: 0px;
-$sp-i-triangle-b-2-2x-offset-y: -2084px;
+$sp-i-triangle-b-2-2x-offset-y: -2226px;
 $sp-i-triangle-b-2-2x-width: 96px;
 $sp-i-triangle-b-2-2x-height: 94px;
 $sp-i-triangle-b-2-2x-total-width: 282px;
-$sp-i-triangle-b-2-2x-total-height: 3082px;
+$sp-i-triangle-b-2-2x-total-height: 3224px;
 $sp-i-triangle-b-2-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-b-2-2x: (0px, 2084px, 0px, -2084px, 96px, 94px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-b-2@2x', );
+$sp-i-triangle-b-2-2x: (0px, 2226px, 0px, -2226px, 96px, 94px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-b-2@2x', );
 $sp-i-triangle-gray-2x-name: 'sp-i-triangle-gray@2x';
 $sp-i-triangle-gray-2x-x: 0px;
-$sp-i-triangle-gray-2x-y: 2188px;
+$sp-i-triangle-gray-2x-y: 2330px;
 $sp-i-triangle-gray-2x-offset-x: 0px;
-$sp-i-triangle-gray-2x-offset-y: -2188px;
+$sp-i-triangle-gray-2x-offset-y: -2330px;
 $sp-i-triangle-gray-2x-width: 260px;
 $sp-i-triangle-gray-2x-height: 254px;
 $sp-i-triangle-gray-2x-total-width: 282px;
-$sp-i-triangle-gray-2x-total-height: 3082px;
+$sp-i-triangle-gray-2x-total-height: 3224px;
 $sp-i-triangle-gray-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-gray-2x: (0px, 2188px, 0px, -2188px, 260px, 254px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-gray@2x', );
+$sp-i-triangle-gray-2x: (0px, 2330px, 0px, -2330px, 260px, 254px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-gray@2x', );
 $sp-i-triangle-y-0-2x-name: 'sp-i-triangle-y-0@2x';
 $sp-i-triangle-y-0-2x-x: 0px;
-$sp-i-triangle-y-0-2x-y: 2452px;
+$sp-i-triangle-y-0-2x-y: 2594px;
 $sp-i-triangle-y-0-2x-offset-x: 0px;
-$sp-i-triangle-y-0-2x-offset-y: -2452px;
+$sp-i-triangle-y-0-2x-offset-y: -2594px;
 $sp-i-triangle-y-0-2x-width: 132px;
 $sp-i-triangle-y-0-2x-height: 130px;
 $sp-i-triangle-y-0-2x-total-width: 282px;
-$sp-i-triangle-y-0-2x-total-height: 3082px;
+$sp-i-triangle-y-0-2x-total-height: 3224px;
 $sp-i-triangle-y-0-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-y-0-2x: (0px, 2452px, 0px, -2452px, 132px, 130px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-y-0@2x', );
+$sp-i-triangle-y-0-2x: (0px, 2594px, 0px, -2594px, 132px, 130px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-y-0@2x', );
 $sp-i-triangle-y-1-2x-name: 'sp-i-triangle-y-1@2x';
 $sp-i-triangle-y-1-2x-x: 0px;
-$sp-i-triangle-y-1-2x-y: 2592px;
+$sp-i-triangle-y-1-2x-y: 2734px;
 $sp-i-triangle-y-1-2x-offset-x: 0px;
-$sp-i-triangle-y-1-2x-offset-y: -2592px;
+$sp-i-triangle-y-1-2x-offset-y: -2734px;
 $sp-i-triangle-y-1-2x-width: 274px;
 $sp-i-triangle-y-1-2x-height: 282px;
 $sp-i-triangle-y-1-2x-total-width: 282px;
-$sp-i-triangle-y-1-2x-total-height: 3082px;
+$sp-i-triangle-y-1-2x-total-height: 3224px;
 $sp-i-triangle-y-1-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-y-1-2x: (0px, 2592px, 0px, -2592px, 274px, 282px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-y-1@2x', );
+$sp-i-triangle-y-1-2x: (0px, 2734px, 0px, -2734px, 274px, 282px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-y-1@2x', );
 $sp-i-triangle-y-2-2x-name: 'sp-i-triangle-y-2@2x';
 $sp-i-triangle-y-2-2x-x: 0px;
-$sp-i-triangle-y-2-2x-y: 2884px;
+$sp-i-triangle-y-2-2x-y: 3026px;
 $sp-i-triangle-y-2-2x-offset-x: 0px;
-$sp-i-triangle-y-2-2x-offset-y: -2884px;
+$sp-i-triangle-y-2-2x-offset-y: -3026px;
 $sp-i-triangle-y-2-2x-width: 194px;
 $sp-i-triangle-y-2-2x-height: 198px;
 $sp-i-triangle-y-2-2x-total-width: 282px;
-$sp-i-triangle-y-2-2x-total-height: 3082px;
+$sp-i-triangle-y-2-2x-total-height: 3224px;
 $sp-i-triangle-y-2-2x-image: '../img/sprite_KDS@2x.png';
-$sp-i-triangle-y-2-2x: (0px, 2884px, 0px, -2884px, 194px, 198px, 282px, 3082px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-y-2@2x', );
+$sp-i-triangle-y-2-2x: (0px, 3026px, 0px, -3026px, 194px, 198px, 282px, 3224px, '../img/sprite_KDS@2x.png', 'sp-i-triangle-y-2@2x', );
 $spritesheet-width: 141px;
-$spritesheet-height: 1541px;
+$spritesheet-height: 1612px;
 $spritesheet-image: '../img/sprite_KDS.png';
-$spritesheet-sprites: ($sp-i-advantages-flow, $sp-i-advantages-reporter, $sp-i-advantages-speaker, $sp-i-bottom-info, $sp-i-checkbox-active, $sp-i-checkbox, $sp-i-cursor, $sp-i-desc-pr-tr-b, $sp-i-desc-pr-tr-y, $sp-i-done, $sp-i-error, $sp-i-fb, $sp-i-header-arrow-maps, $sp-i-info, $sp-i-ln, $sp-i-nav-active, $sp-i-nav-hover, $sp-i-preparation-triangle, $sp-i-triangle-b-0, $sp-i-triangle-b-1, $sp-i-triangle-b-2, $sp-i-triangle-gray, $sp-i-triangle-y-0, $sp-i-triangle-y-1, $sp-i-triangle-y-2, );
-$spritesheet: (141px, 1541px, '../img/sprite_KDS.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($sp-i-advantages-flow, $sp-i-advantages-reporter, $sp-i-advantages-speaker, $sp-i-bottom-info, $sp-i-checkbox-active, $sp-i-checkbox, $sp-i-contacts-mail, $sp-i-contacts-phone, $sp-i-cursor, $sp-i-desc-pr-tr-b, $sp-i-desc-pr-tr-y, $sp-i-done, $sp-i-error, $sp-i-fb, $sp-i-header-arrow-maps, $sp-i-info, $sp-i-ln, $sp-i-nav-active, $sp-i-nav-hover, $sp-i-preparation-triangle, $sp-i-triangle-b-0, $sp-i-triangle-b-1, $sp-i-triangle-b-2, $sp-i-triangle-gray, $sp-i-triangle-y-0, $sp-i-triangle-y-1, $sp-i-triangle-y-2, );
+$spritesheet: (141px, 1612px, '../img/sprite_KDS.png', $spritesheet-sprites, );
 $retina-spritesheet-width: 282px;
-$retina-spritesheet-height: 3082px;
+$retina-spritesheet-height: 3224px;
 $retina-spritesheet-image: '../img/sprite_KDS@2x.png';
-$retina-spritesheet-sprites: ($sp-i-advantages-flow-2x, $sp-i-advantages-reporter-2x, $sp-i-advantages-speaker-2x, $sp-i-bottom-info-2x, $sp-i-checkbox-active-2x, $sp-i-checkbox-2x, $sp-i-cursor-2x, $sp-i-desc-pr-tr-b-2x, $sp-i-desc-pr-tr-y-2x, $sp-i-done-2x, $sp-i-error-2x, $sp-i-fb-2x, $sp-i-header-arrow-maps-2x, $sp-i-info-2x, $sp-i-ln-2x, $sp-i-nav-active-2x, $sp-i-nav-hover-2x, $sp-i-preparation-triangle-2x, $sp-i-triangle-b-0-2x, $sp-i-triangle-b-1-2x, $sp-i-triangle-b-2-2x, $sp-i-triangle-gray-2x, $sp-i-triangle-y-0-2x, $sp-i-triangle-y-1-2x, $sp-i-triangle-y-2-2x, );
-$retina-spritesheet: (282px, 3082px, '../img/sprite_KDS@2x.png', $retina-spritesheet-sprites, );
+$retina-spritesheet-sprites: ($sp-i-advantages-flow-2x, $sp-i-advantages-reporter-2x, $sp-i-advantages-speaker-2x, $sp-i-bottom-info-2x, $sp-i-checkbox-active-2x, $sp-i-checkbox-2x, $sp-i-contacts-mail-2x, $sp-i-contacts-phone-2x, $sp-i-cursor-2x, $sp-i-desc-pr-tr-b-2x, $sp-i-desc-pr-tr-y-2x, $sp-i-done-2x, $sp-i-error-2x, $sp-i-fb-2x, $sp-i-header-arrow-maps-2x, $sp-i-info-2x, $sp-i-ln-2x, $sp-i-nav-active-2x, $sp-i-nav-hover-2x, $sp-i-preparation-triangle-2x, $sp-i-triangle-b-0-2x, $sp-i-triangle-b-1-2x, $sp-i-triangle-b-2-2x, $sp-i-triangle-gray-2x, $sp-i-triangle-y-0-2x, $sp-i-triangle-y-1-2x, $sp-i-triangle-y-2-2x, );
+$retina-spritesheet: (282px, 3224px, '../img/sprite_KDS@2x.png', $retina-spritesheet-sprites, );
 
-/*
-These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
-
-The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
-*/
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
 $sp-i-advantages-flow-group-name: 'sp-i-advantages-flow';
 $sp-i-advantages-flow-group: ('sp-i-advantages-flow', $sp-i-advantages-flow, $sp-i-advantages-flow-2x, );
 $sp-i-advantages-reporter-group-name: 'sp-i-advantages-reporter';
@@ -589,6 +629,10 @@ $sp-i-checkbox-active-group-name: 'sp-i-checkbox-active';
 $sp-i-checkbox-active-group: ('sp-i-checkbox-active', $sp-i-checkbox-active, $sp-i-checkbox-active-2x, );
 $sp-i-checkbox-group-name: 'sp-i-checkbox';
 $sp-i-checkbox-group: ('sp-i-checkbox', $sp-i-checkbox, $sp-i-checkbox-2x, );
+$sp-i-contacts-mail-group-name: 'sp-i-contacts-mail';
+$sp-i-contacts-mail-group: ('sp-i-contacts-mail', $sp-i-contacts-mail, $sp-i-contacts-mail-2x, );
+$sp-i-contacts-phone-group-name: 'sp-i-contacts-phone';
+$sp-i-contacts-phone-group: ('sp-i-contacts-phone', $sp-i-contacts-phone, $sp-i-contacts-phone-2x, );
 $sp-i-cursor-group-name: 'sp-i-cursor';
 $sp-i-cursor-group: ('sp-i-cursor', $sp-i-cursor, $sp-i-cursor-2x, );
 $sp-i-desc-pr-tr-b-group-name: 'sp-i-desc-pr-tr-b';
@@ -627,34 +671,32 @@ $sp-i-triangle-y-1-group-name: 'sp-i-triangle-y-1';
 $sp-i-triangle-y-1-group: ('sp-i-triangle-y-1', $sp-i-triangle-y-1, $sp-i-triangle-y-1-2x, );
 $sp-i-triangle-y-2-group-name: 'sp-i-triangle-y-2';
 $sp-i-triangle-y-2-group: ('sp-i-triangle-y-2', $sp-i-triangle-y-2, $sp-i-triangle-y-2-2x, );
-$retina-groups: ($sp-i-advantages-flow-group, $sp-i-advantages-reporter-group, $sp-i-advantages-speaker-group, $sp-i-bottom-info-group, $sp-i-checkbox-active-group, $sp-i-checkbox-group, $sp-i-cursor-group, $sp-i-desc-pr-tr-b-group, $sp-i-desc-pr-tr-y-group, $sp-i-done-group, $sp-i-error-group, $sp-i-fb-group, $sp-i-header-arrow-maps-group, $sp-i-info-group, $sp-i-ln-group, $sp-i-nav-active-group, $sp-i-nav-hover-group, $sp-i-preparation-triangle-group, $sp-i-triangle-b-0-group, $sp-i-triangle-b-1-group, $sp-i-triangle-b-2-group, $sp-i-triangle-gray-group, $sp-i-triangle-y-0-group, $sp-i-triangle-y-1-group, $sp-i-triangle-y-2-group, );
+$retina-groups: ($sp-i-advantages-flow-group, $sp-i-advantages-reporter-group, $sp-i-advantages-speaker-group, $sp-i-bottom-info-group, $sp-i-checkbox-active-group, $sp-i-checkbox-group, $sp-i-contacts-mail-group, $sp-i-contacts-phone-group, $sp-i-cursor-group, $sp-i-desc-pr-tr-b-group, $sp-i-desc-pr-tr-y-group, $sp-i-done-group, $sp-i-error-group, $sp-i-fb-group, $sp-i-header-arrow-maps-group, $sp-i-info-group, $sp-i-ln-group, $sp-i-nav-active-group, $sp-i-nav-hover-group, $sp-i-preparation-triangle-group, $sp-i-triangle-b-0-group, $sp-i-triangle-b-1-group, $sp-i-triangle-b-2-group, $sp-i-triangle-gray-group, $sp-i-triangle-y-0-group, $sp-i-triangle-y-1-group, $sp-i-triangle-y-2-group, );
 
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);
 }
@@ -681,18 +723,16 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   @include sprite-height($sprite);
 }
 
-/*
-The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
-  It should be used with a "retina group" variable.
-
-The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
-
-$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
-
-.icon-home {
-  @include retina-sprite($icon-home-group);
-}
-*/
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
 @mixin sprite-background-size($sprite) {
   $sprite-total-width: nth($sprite, 7);
   $sprite-total-height: nth($sprite, 8);
@@ -711,12 +751,10 @@ $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
   }
 }
 
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
     $sprite-name: nth($sprite, 10);
@@ -726,12 +764,10 @@ The `sprites` mixin generates identical output to the CSS template
   }
 }
 
-/*
-The `retina-sprites` mixin generates a CSS rule and media query for retina groups
-  This yields the same output as CSS retina template but can be overridden in SCSS
-
-@include retina-sprites($retina-groups);
-*/
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
 @mixin retina-sprites($retina-groups) {
   @each $retina-group in $retina-groups {
     $sprite-name: nth($retina-group, 1);

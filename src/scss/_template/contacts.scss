@@ -1,0 +1,82 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_KDS";
+///
+/// DECLARATION VARIABLE
+///
+$c-dimGray   : return-value(color, dimGray);
+$c-summerSky   : return-value(color, summerSky);
+
+$f-GP_regular	: return-value(fonts, GP_regular);
+///
+/// MAIN
+///
+.contacts {
+	padding-bottom: 100px;
+	@include respond-to(small-all) {
+		padding-bottom: 30px;
+	}
+
+
+	&__left {
+		.contacts__icon {
+			@include retina-sprite($sp-i-contacts-mail-group);
+		}
+	}
+
+
+	&__right {
+		padding-left: 100px;
+		@include respond-to(small-all) {
+			margin-top: 20px;
+			padding-left: 0;
+		}
+
+
+		.contacts__icon {
+			@include retina-sprite($sp-i-contacts-phone-group);
+		}
+	}
+
+
+	&__left,
+	&__right {
+		float: left;
+		width: 50%;
+		@include respond-to(small-all) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+
+
+	&__title-sub {
+		font: {
+			size: 14px;
+			family: $f-GP_regular;
+		}
+		height: 60px;
+		color: $c-dimGray;
+	}
+
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 20px;
+	}
+
+
+	&__text {
+		font: {
+			size: 20px;
+			family: $f-GP_regular;
+		}
+		color: $c-summerSky;
+		vertical-align: middle;
+		@include respond-to(small-all) {
+			font-size: 16px;
+		}
+	}
+}

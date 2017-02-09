@@ -6,12 +6,13 @@
 ///
 $w-all          : return-value(dimension, all);
 
-$c-white				: return-value(color, white);
-$c-black				: return-value(color, black);
-$c-dimGray   		: return-value(color, dimGray);
-$c-summerSky 		: return-value(color, summerSky);
-$c-pelorous  		: return-value(color, pelorous);
-$c-whiteSmoke		: return-value(color, whiteSmoke);
+$c-white		: return-value(color, white);
+$c-black		: return-value(color, black);
+$c-dimGray   	: return-value(color, dimGray);
+$c-summerSky 	: return-value(color, summerSky);
+$c-pelorous  	: return-value(color, pelorous);
+$c-whiteSmoke	: return-value(color, whiteSmoke);
+$c-darkPastelGreen	: return-value(color, darkPastelGreen);
 
 $f-GP_light     : return-value(fonts, GP_light);
 $f-GP_bold      : return-value(fonts, GP_bold);
@@ -120,6 +121,17 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 		padding-left: 20px;
 		padding-right: 20px;
 		margin-bottom: 30px;
+
+
+		&-promo {
+			font-family: $f-GP_bold;
+			color: $c-darkPastelGreen;
+			margin: {
+				top: 30px;
+				bottom: 0;
+			};
+			border: 1px solid $c-darkPastelGreen;
+		}
 	}
 
 
@@ -203,3 +215,9 @@ $f-GP_bold      : return-value(fonts, GP_bold);
 		}
 	}
 }
+
+
+input.modal__input-promo::-webkit-input-placeholder {color: $c-darkPastelGreen;}
+input.modal__input-promo::-moz-placeholder {color: $c-darkPastelGreen;}
+input.modal__input-promo:-moz-placeholder {color: $c-darkPastelGreen;}
+input.modal__input-promo::placeholder {color: $c-darkPastelGreen;}
