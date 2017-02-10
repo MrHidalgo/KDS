@@ -23,14 +23,14 @@ $c-whiteSmoke   : return-value(color, whiteSmoke);
 
 
 	&__row {
-		height: 100px;
+		//height: 100px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		@include respond-to("medium-all") {
-			height: 200px;
+			//height: 200px;
 		}
 
 		&:nth-child(n + 2) {
@@ -45,6 +45,9 @@ $c-whiteSmoke   : return-value(color, whiteSmoke);
 		background-color: $c-whiteSmoke;
 		@include respond-to("medium-all") {
 			margin-bottom: 50px;
+		}
+		@include respond-to(small-all) {
+			display: none;
 		}
 
 		&:nth-of-type(2) {
@@ -65,10 +68,25 @@ $c-whiteSmoke   : return-value(color, whiteSmoke);
 	}
 
 	&__wrap {
+		width: 300px;
+		@include respond-to(large) {
+			width: 250px;
+		}
 		@include respond-to("medium-all") {
 			width: 49%;
 			text-align: center;
 			margin-bottom: 50px;
+		}
+		@include respond-to(small-all) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+
+		img {
+			width: auto !important;
+			height: auto !important;
+			max-width: 100% !important;
 		}
 	}
 }
