@@ -301,6 +301,11 @@ $f-GP_black     : return-value(fonts, GP_black);
 	overflow: hidden;
 
 
+	.nav__link {
+		margin-left: 50px;
+	}
+
+
 	&_fixed {
 		display: none;
 	}
@@ -331,7 +336,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 		family: $f-GP_bold;
 	}
 	color: $c-white;
-	margin-left: 70px;
+	margin-left: 35px;
 	text-transform: uppercase;
 	white-space: nowrap;
 	background-color: $c-darkOrange;

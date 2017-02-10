@@ -52,6 +52,10 @@ $f-GP_bold  : return-value(fonts, GP_bold);
 		margin-left: 70px;
 		text-transform: uppercase;
 		white-space: nowrap;
+		@include respond-to(large) {
+			font-size: 13px;
+			margin-left: 35px;
+		}
 		@include respond-to("medium-all") {
 			display: block;
 			height: 40px;
