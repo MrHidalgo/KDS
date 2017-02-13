@@ -2,13 +2,13 @@ include _mixin/mixin
 
 -
     var linkText = [
-        "О конференции",
+        "Купить билет",
         "Спикеры",
         "Расписание",
         "Контакты"
     ];
     var linkHref = [
-        "#video",
+        "#price",
         "#speaker",
         "#program",
         "#contacts"
@@ -44,7 +44,8 @@ html(lang="en")
         include _template/timer
         include _template/new
         include _template/speaker
-        include _template/price
+        #price
+            include _template/price
         include _template/discover
         include _template/program
         include _template/price

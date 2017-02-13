@@ -12,6 +12,7 @@ $f-GP_regular	: return-value(fonts, GP_regular);
 /// MAIN
 ///
 .contacts {
+	padding-top: 50px;
 	padding-bottom: 100px;
 	@include respond-to(small-all) {
 		padding-bottom: 30px;

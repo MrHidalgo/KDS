@@ -18,11 +18,14 @@ $c-darkPastelGreen: return-value(color, darkPastelGreen);
 
 $f-GP_bold      : return-value(fonts, GP_bold);
 $f-GP_black     : return-value(fonts, GP_black);
-
-
 ///
 /// MAIN
 ///
+.icon-pointer-js {
+	cursor: pointer;
+}
+
+
 .block_skew {
 	transform: skewX(-45deg);
 }

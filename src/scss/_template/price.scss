@@ -75,7 +75,6 @@ $f-GP_light     : return-value(fonts, GP_light);
 	&__right {
 		position: relative;
 		width: 100%;
-		height: 100%;
 		text-align: center;
 
 		@include respond-to("small-all") {

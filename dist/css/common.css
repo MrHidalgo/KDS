@@ -39,6 +39,14 @@
   white-space: nowrap;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .nav__link {
+    font-size: 13px;
+    margin-left: 35px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   
   .nav__link {
@@ -2194,6 +2202,13 @@
   font-size: 22px;
 }
 
+@media screen and (max-width: 767px) {
+  
+  .speaker__block-name {
+    font-size: 12px;
+  }
+}
+
 
 .speaker__block-name:before {
   top: -10px;
@@ -2222,16 +2237,16 @@
   font-family: "GothaProReg";
 }
 
+@media screen and (max-width: 767px) {
+  
+  .speaker__block-work {
+    font-size: 11px;
+  }
+}
+
 
 .speaker__block-name, .speaker__block-work {
   color: #676767;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .speaker__block-name, .speaker__block-work {
-    display: none;
-  }
 }
 
 
@@ -2874,7 +2889,6 @@
 .price__left, .price__right {
   position: relative;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 
@@ -2932,7 +2946,7 @@
 
 
 .partner {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -2951,7 +2965,6 @@
 
 .sponsor__row,
 .partner__row {
-  height: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2972,14 +2985,6 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-}
-
-@media screen and (max-width: 991px) {
-  
-  .sponsor__row,
-  .partner__row {
-    height: 200px;
-  }
 }
 
 
@@ -3004,6 +3009,14 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  
+  .sponsor__line,
+  .partner__line {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 991px) {
   
   .sponsor__line:nth-of-type(2),
@@ -3024,6 +3037,18 @@
   }
 }
 
+
+.img__wrap {
+  width: 300px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .img__wrap {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   
   .img__wrap {
@@ -3033,8 +3058,24 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  
+  .img__wrap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+.img__wrap img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
 
 .contacts {
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -4117,6 +4158,11 @@ input.modal__input-promo::placeholder {
 }
 
 
+.icon-pointer-js {
+  cursor: pointer;
+}
+
+
 .block_skew {
   -webkit-transform: skewX(-45deg);
       -ms-transform: skewX(-45deg);
@@ -4444,6 +4490,11 @@ input.modal__input-promo::placeholder {
 }
 
 
+.navigation .nav__link {
+  margin-left: 50px;
+}
+
+
 .navigation_fixed {
   display: none;
 }
@@ -4476,7 +4527,7 @@ input.modal__input-promo::placeholder {
   font-size: 15px;
   font-family: "GothaProBol";
   color: #fff;
-  margin-left: 70px;
+  margin-left: 35px;
   text-transform: uppercase;
   white-space: nowrap;
   background-color: #ff8d0d;

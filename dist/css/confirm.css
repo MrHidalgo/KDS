@@ -366,6 +366,11 @@
 }
 
 
+.icon-pointer-js {
+  cursor: pointer;
+}
+
+
 .block_skew {
   -webkit-transform: skewX(-45deg);
       -ms-transform: skewX(-45deg);
@@ -693,6 +698,11 @@
 }
 
 
+.navigation .nav__link {
+  margin-left: 50px;
+}
+
+
 .navigation_fixed {
   display: none;
 }
@@ -725,7 +735,7 @@
   font-size: 15px;
   font-family: "GothaProBol";
   color: #fff;
-  margin-left: 70px;
+  margin-left: 35px;
   text-transform: uppercase;
   white-space: nowrap;
   background-color: #ff8d0d;

@@ -228,7 +228,7 @@ $(document).ready(function(){
 
 
     /* SMOOTH SCROLL */
-    $(".nav, .navigation__row").on("click", "a", function (e) {
+    $(".nav, .navigation__row, .header__wrap-btn").on("click", "a", function (e) {
         e.preventDefault();
 
         var id          = $(this).attr('href'),
@@ -237,7 +237,7 @@ $(document).ready(function(){
 
         $('body, html').animate(
             {
-                scrollTop: top
+                scrollTop: top - 50
             }, 1000);
     });
 
@@ -252,8 +252,15 @@ $(document).ready(function(){
     });
 
 
+    /* ICON SEPTA */
+    $(".icon-pointer-js").on("click", function() {
+        window.open('https://www.facebook.com/septa.agency', '', '');
+        return false;
+    });
+
+
     /* MODAL WINDOW */
-    $(".btn-header, .nav__reservations, .btn-timer, .btn-discover").on("click", function(e) {
+    $(".nav__reservations, .btn-timer, .btn-discover").on("click", function(e) {
         e.preventDefault();
 
         $("body").addClass("open-popup");
@@ -279,7 +286,6 @@ $(document).ready(function(){
         ".video__skale-blue, .video__skale-white, .video__skale-gray, " +
         ".navigation__wrap, " +
         ".timer__seconds, .timer__btn, " +
-        ".price__left, .price__right, " +
         ".discover__wrap, " +
         ".program__left, .program__right, " +
         ".subscribe, " +

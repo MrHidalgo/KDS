@@ -8,7 +8,7 @@ $c-whiteSmoke   : return-value(color, whiteSmoke);
 /// MAIN
 ///
 .partner {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	@include respond-to("small-all") {
 		margin-bottom: 40px;
 	}

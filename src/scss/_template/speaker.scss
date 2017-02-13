@@ -206,6 +206,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 			position: relative;
 			margin-bottom: 30px;
 			font-size: 22px;
+			@include respond-to("small-all") {
+				font-size: 12px;
+			}
 
 
 			&:before {
@@ -236,6 +239,9 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 				size: 18px;
 				family: $f-GP_regular;
 			}
+			@include respond-to("small-all") {
+				font-size: 11px;
+			}
 		}
 
 
@@ -243,7 +249,7 @@ $f-GP_regular       : return-value(fonts, GP_regular);
 		&-work {
 			color: $c-dimGray;
 			@include respond-to("small-all") {
-				display: none;
+				//display: none;
 			}
 		}
 	}
