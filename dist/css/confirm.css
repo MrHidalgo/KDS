@@ -397,7 +397,7 @@
 @media screen and (max-width: 767px) {
   
   .btn-header {
-    bottom: 123px;
+    bottom: 63px;
   }
 }
 
@@ -793,13 +793,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media screen and (max-width: 1024px) {
-  
-  html {
-    overflow-x: hidden;
-  }
-}
-
 
 body {
   margin: 0;
@@ -814,12 +807,8 @@ body {
 }
 
 
-body.open-menu {
-  overflow: hidden;
-}
-
-
-body.open-popup {
+.open-menu,
+.open-popup {
   overflow: hidden;
 }
 
@@ -907,4 +896,24 @@ input[type=checkbox] {
 
 .clearfix {
   zoom: 1;
+}
+
+
+.unfixed {
+  position: relative;
+  left: auto;
+  bottom: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
 }

@@ -24,11 +24,6 @@ html{
 html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-@media screen and (max-width: 1024px){
-	html {
-		overflow-x: hidden;
-	}
-}
 
 
 body{
@@ -48,14 +43,14 @@ body{
 	background-color: $c-white;
 
 
-	&.open-menu {
-		overflow: hidden;
-	}
+	&.open-menu {}
 
+	&.open-popup {}
+}
 
-	&.open-popup {
-		overflow: hidden;
-	}
+.open-menu,
+.open-popup {
+	overflow: hidden;
 }
 
 * {
@@ -135,4 +130,21 @@ input[type=checkbox] {
 
 .clearfix {
 	zoom: 1;
+}
+
+.unfixed {
+	position: relative;
+	left: auto;
+	bottom: auto;
+}
+
+@media screen and (max-width: 1024px){
+	html {
+		overflow-x: hidden;
+	}
+	input,
+	select,
+	textarea {
+		font-size: 16px;
+	}
 }

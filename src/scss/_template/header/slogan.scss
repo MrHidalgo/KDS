@@ -50,6 +50,7 @@ $f-GP_light : return-value(fonts, GP_light);
 		@include respond-to("small-all") {
 			font-size: 16px;
 			width: 100%;
+			padding-right: 15px;
 		}
 	}
 

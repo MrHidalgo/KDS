@@ -34,7 +34,7 @@ $f-GP_light   : return-value(fonts, GP_light);
 	overflow: hidden;
 	background: $c-whiteSmoke;
 	@include respond-to("small-all") {
-		min-height: 680px;
+		min-height: 750px;
 	}
 
 

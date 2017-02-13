@@ -418,6 +418,7 @@
   .slogan__text {
     font-size: 16px;
     width: 100%;
+    padding-right: 15px;
   }
 }
 
@@ -437,7 +438,7 @@
 @media screen and (max-width: 767px) {
   
   .header {
-    min-height: 680px;
+    min-height: 750px;
   }
 }
 
@@ -3407,13 +3408,13 @@ input[name="subscribe"]::placeholder {
   display: none;
   position: fixed;
   z-index: 1000;
-  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-overflow-scrolling: touch;
   outline: 0;
 }
 
@@ -3426,7 +3427,7 @@ input[name="subscribe"]::placeholder {
 
 .modal__container {
   position: relative;
-  z-index: 1001;
+  z-index: 1050;
   top: 50%;
   left: 50%;
   max-width: 430px;
@@ -4189,7 +4190,7 @@ input.modal__input-promo::placeholder {
 @media screen and (max-width: 767px) {
   
   .btn-header {
-    bottom: 123px;
+    bottom: 63px;
   }
 }
 
@@ -4585,13 +4586,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media screen and (max-width: 1024px) {
-  
-  html {
-    overflow-x: hidden;
-  }
-}
-
 
 body {
   margin: 0;
@@ -4606,12 +4600,8 @@ body {
 }
 
 
-body.open-menu {
-  overflow: hidden;
-}
-
-
-body.open-popup {
+.open-menu,
+.open-popup {
   overflow: hidden;
 }
 
@@ -4699,4 +4689,24 @@ input[type=checkbox] {
 
 .clearfix {
   zoom: 1;
+}
+
+
+.unfixed {
+  position: relative;
+  left: auto;
+  bottom: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
 }

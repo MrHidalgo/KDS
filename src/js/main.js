@@ -166,6 +166,7 @@ $(window).on("scroll", function() {
 
 
 $(document).ready(function(){
+
     /* TIMER */
     getfrominputs();
     /* CUSTOM CHECKBOX */
@@ -263,22 +264,30 @@ $(document).ready(function(){
     $(".nav__reservations, .btn-timer, .btn-discover").on("click", function(e) {
         e.preventDefault();
 
-        $("body").addClass("open-popup");
+        $("body, html").addClass("open-popup");
         $(".modal__main").fadeIn();
     });
     $(".speaker__main-block, .speaker__dop-block").on("click", function(e) {
         e.preventDefault();
 
-        $("body").addClass("open-popup");
+        $("body, html").addClass("open-popup");
         $(".modal__speaker").fadeIn();
     });
-
     $(".modal__close, .btn-main").on("click", function(e) {
         e.preventDefault();
 
-        $("body").removeClass("open-popup");
+        $("body, html").removeClass("open-popup");
         $(this).closest(".modal").fadeOut();
     });
+
+
+    if(navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        $(document).on('blur', 'input, textarea', function () {
+            setTimeout(function () {
+                window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+            }, 0);
+        });
+    }
 
 
     /* NOIZE */
@@ -307,32 +316,38 @@ $(document).ready(function(){
     if($(window).width() > '767') {
         $('.advantages').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated fadeInRight',
-                classToRemove : 'hidden'
+                classToRemove : 'hidden',
+                removeClassAfterAnimation: true
             }
         );
         $('.new').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInLeft',
-                classToRemove : 'hidden'
+                classToRemove : 'hidden',
+                removeClassAfterAnimation: true
             }
         );
         $('.speaker').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInUp',
-                classToRemove : 'hidden'
+                classToRemove : 'hidden',
+                removeClassAfterAnimation: true
             }
         );
         $('.price').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated bounceInLeft',
-                classToRemove : 'hidden'
+                classToRemove : 'hidden',
+                removeClassAfterAnimation: true
             }
         );
         $('.program__left').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInLeft',
-                classToRemove : 'hidden'
+                classToRemove : 'hidden',
+                removeClassAfterAnimation: true
             }
         );
         $('.program__right').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInRight',
-                classToRemove : 'hidden'
+                classToRemove : 'hidden',
+                removeClassAfterAnimation: true
             }
         );
     }
