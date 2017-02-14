@@ -970,7 +970,9 @@
 
 
 .subscribe__row {
-  height: 115px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 115px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1384,7 +1386,7 @@ input[name="subscribe"]::placeholder {
 
 
 .btn-header {
-  bottom: 165px;
+  bottom: 125px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {

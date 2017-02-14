@@ -229,7 +229,7 @@ $(document).ready(function(){
 
 
     /* SMOOTH SCROLL */
-    $(".nav, .navigation__row, .header__wrap-btn").on("click", "a", function (e) {
+    $(".nav a, .navigation__row a, .header__btn-wrap a, .btn-timer").on("click", function (e) {
         e.preventDefault();
 
         var id          = $(this).attr('href'),
@@ -261,7 +261,7 @@ $(document).ready(function(){
 
 
     /* MODAL WINDOW */
-    $(".nav__reservations, .btn-timer, .btn-discover").on("click", function(e) {
+    $(".nav__reservations, .btn-discover").on("click", function(e) {
         e.preventDefault();
 
         $("body, html").addClass("open-popup");
@@ -291,7 +291,7 @@ $(document).ready(function(){
 
 
     /* NOIZE */
-    var strClass = ".header__wrap-row, .btn-mobile, " +
+    var strClass = ".header__wrap-row, .btn-mobile, .btn-header, " +
         ".video__skale-blue, .video__skale-white, .video__skale-gray, " +
         ".navigation__wrap, " +
         ".timer__seconds, .timer__btn, " +

@@ -3239,7 +3239,9 @@
 
 
 .subscribe__row {
-  height: 115px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 115px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3428,7 +3430,7 @@ input[name="subscribe"]::placeholder {
 .modal__container {
   position: relative;
   z-index: 1050;
-  top: 50%;
+  top: 40%;
   left: 50%;
   max-width: 430px;
   min-height: 526px;
@@ -4177,7 +4179,7 @@ input.modal__input-promo::placeholder {
 
 
 .btn-header {
-  bottom: 165px;
+  bottom: 125px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
