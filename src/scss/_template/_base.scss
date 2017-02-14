@@ -36,7 +36,7 @@ $f-GP_black     : return-value(fonts, GP_black);
 
 
 	&-header {
-		bottom: 165px;
+		bottom: 125px;
 		@include respond-to("medium") {
 			left: 100px;
 		}
